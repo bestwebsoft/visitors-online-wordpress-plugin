@@ -3,7 +3,7 @@
 
 This plugin allows you to see the number of visitors on the site. You can set the time when a visitor is considered being online on the plugin settings page. The plugin provides the ability to display statistics on countries and browsers. All visitors are identified as registered users, guests or bots. You can also see the day with the highest number of visits. Information about visitors can be displayed using a widget or shortcode. Also, it can be seen on the Dashboard.
 
-<img src="http://bestwebsoft.com/wp-content/uploads/2015/05/xvisitors-online-banner-website.jpg.pagespeed.ic.Cj2L7Gs_fk.webp" />
+<img src="http://bestwebsoft.com/wp-content/uploads/2015/05/visitors-online-banner-website.jpg" />
 
 <a href="http://bestwebsoft.com/products/visitors-online/description" target=_blank>Description</a> | 
 <a href="http://bestwebsoft.com/products/visitors-online/installation" target=_blank>Installation</a> | 
