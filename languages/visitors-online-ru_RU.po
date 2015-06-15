@@ -1,0 +1,263 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Visitors-Online\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-06-09 14:04+0300\n"
+"PO-Revision-Date: 2015-06-09 14:05+0300\n"
+"Last-Translator: bestwebsoft.com <plugins@bestwebsoft.com>\n"
+"Language-Team: bestwebsoft <http://bestwebsoft.com/>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: visitors-online.php:129
+msgid "Import was finished"
+msgstr "Импорт успешно закончен"
+
+#: visitors-online.php:130
+#: import-country.php:148
+#: import-country.php:203
+#: import-country.php:211
+msgid "Not enough rights to import from the GeoIPCountryWhois.csv file, import is impossible"
+msgstr "Недостаточно прав для импорта из файла GeoIPCountryWhois.csv, импорт невозможен"
+
+#: visitors-online.php:405
+msgid "Statistics was cleared successfully"
+msgstr "Статистика успешно очищена"
+
+#: visitors-online.php:419
+msgid "Please fill The time period. The settings are not saved"
+msgstr "Пожалуйста заполните период времени. Настройки не сохранены."
+
+#: visitors-online.php:425
+msgid "Settings saved"
+msgstr "Настройки сохранены"
+
+#: visitors-online.php:430
+msgid "Visitors online Settings"
+msgstr "Настройки Посетителей онлайн"
+
+#: visitors-online.php:432
+#: visitors-online.php:792
+#: visitors-online.php:809
+msgid "Settings"
+msgstr "Настройки"
+
+#: visitors-online.php:433
+#: visitors-online.php:793
+msgid "FAQ"
+msgstr "FAQ"
+
+#: visitors-online.php:439
+msgid "Notice"
+msgstr "Внимание"
+
+#: visitors-online.php:440
+msgid "The plugin's settings have been changed. In order to save them please don't forget to click the 'Save Changes' button."
+msgstr "Настройки плагина изменены. Чтобы сохранить их, пожалуйста, не забудьте кликнуть 'Сохранить изменения'."
+
+#: visitors-online.php:444
+msgid "If you would like to add the counter of Visitors online to your website, just copy and paste this shortcode to your post or page"
+msgstr "Если вы хотите добавить счетчик Посетителей онлайн на ваш сайт, вставьте этот шорткод в ваш пост или страницу"
+
+#: visitors-online.php:446
+msgid "you can also add a widget"
+msgstr "вы также можете добавить виджет"
+
+#: visitors-online.php:449
+msgid "Statistics can be viewed on the Dashboard."
+msgstr "Статистику можно посмотреть на панели администратора."
+
+#: visitors-online.php:454
+msgid "The time period when the user is online, without making any actions"
+msgstr "Интервал времени, в течении которого пользователь считается онлайн, не производя никаких действий"
+
+#: visitors-online.php:457
+#: visitors-online.php:616
+msgid "min"
+msgstr "мин"
+
+#: visitors-online.php:461
+msgid "Clear the statistics"
+msgstr "Очистить статистику"
+
+#: visitors-online.php:463
+msgid "Clear"
+msgstr "Очистить"
+
+#: visitors-online.php:470
+msgid "Save Changes"
+msgstr "Сохранить изменения"
+
+#: visitors-online.php:682
+msgid "Visitors online"
+msgstr "Посетителей онлайн "
+
+#: visitors-online.php:683
+#: visitors-online.php:697
+msgid "users"
+msgstr "пользователей"
+
+#: visitors-online.php:684
+#: visitors-online.php:698
+msgid "guests"
+msgstr "гостей"
+
+#: visitors-online.php:685
+#: visitors-online.php:699
+msgid "bots"
+msgstr "ботов"
+
+#: visitors-online.php:695
+msgid "The maximum number of visits was"
+msgstr "Максимальное количество посещений было"
+
+#: visitors-online.php:696
+msgid "all visits"
+msgstr "всего посетителей"
+
+#: visitors-online.php:701
+msgid "country"
+msgstr "страна"
+
+#: visitors-online.php:704
+msgid "browser"
+msgstr "браузер"
+
+#: visitors-online.php:728
+msgid "This Widget shows the number of active visitors on the site, including users, guests and bots."
+msgstr "Этот виджет показывает количество активных посетителей на сайте,  в том числе пользователей, гостей и ботов."
+
+#: visitors-online.php:755
+msgid "Title"
+msgstr "Заголовок"
+
+#: visitors-online.php:794
+msgid "Support"
+msgstr "Техподдержка"
+
+#: import-country.php:156
+msgid "Importing country information from the GeoIPCountryWhois.csv file"
+msgstr "Импорт информации о странах из файла GeoIPCountryWhois.csv"
+
+#: import-country.php:158
+msgid "You do not have permission to access the file"
+msgstr "У вас нет доступа к файлу"
+
+#: import-country.php:159
+msgid "cannot be imported"
+msgstr "импорт невозможен"
+
+#: import-country.php:164
+msgid "the file is not found, import is impossible"
+msgstr "файл не найден, импорт невозможен"
+
+#: import-country.php:170
+msgid "The table is already loaded, you can also update the data using this instructions"
+msgstr "Таблица уже загружена, вы также можете обновить данные используя инструкцию"
+
+#: import-country.php:172
+msgid "Instructions on downloading and updating the country table"
+msgstr "Инструкция по загрузке и обновлению таблицы стран"
+
+#: import-country.php:179
+msgid "Update"
+msgstr "Обновить"
+
+#: import-country.php:181
+msgid "Import"
+msgstr "Импорт"
+
+#: import-country.php:190
+msgid "Number of loaded files"
+msgstr "Количество загруженных файлов"
+
+#: import-country.php:191
+msgid "Number of a loading file"
+msgstr "Номер загружаемого файла"
+
+#: import-country.php:208
+#, fuzzy
+msgid "Import was finished."
+msgstr "Импорт успешно закончен"
+
+#~ msgid "Visitors Online"
+#~ msgstr "Посетители онлайн"
+
+#~ msgid "Statistics clean"
+#~ msgstr "Статистика очищена"
+
+#~ msgid "Loading files number"
+#~ msgstr "Загружается файл номер"
+
+#~ msgid "day"
+#~ msgstr "день"
+
+#~ msgid "Users"
+#~ msgstr "Пользователей"
+
+#~ msgid "Import table country"
+#~ msgstr "Импорт таблицы стран"
+
+#~ msgid "or widget"
+#~ msgstr "или виджет"
+
+#~ msgid "for browser"
+#~ msgstr "по браузерам"
+
+#~ msgid "for country"
+#~ msgstr "по странам"
+
+#~ msgid "Detailing statistics:"
+#~ msgstr "Детализация статистики:"
+
+#~ msgid "Users Online"
+#~ msgstr "Пользователи онлайн"
+
+#~ msgid "for IP"
+#~ msgstr "по IP"
+
+#~ msgid "Visits online"
+#~ msgstr "Посетители онлайн"
+
+#~ msgid "Not set"
+#~ msgstr "Не установлено"
+
+#~ msgid "On"
+#~ msgstr "Включено"
+
+#~ msgid "Off"
+#~ msgstr "Выключено"
+
+#~ msgid "Online Visitors"
+#~ msgstr "Онлайн посетителей"
+
+#~ msgid "Id user"
+#~ msgstr "Id пользователя"
+
+#~ msgid "Date connection"
+#~ msgstr "Дата подключения"
+
+#~ msgid "Time on"
+#~ msgstr "Время подключения"
+
+#~ msgid "Time off"
+#~ msgstr "Время отключения"
+
+#, fuzzy
+#~ msgid "User type"
+#~ msgstr "Тип посетителя"
+
+#~ msgid "IP user"
+#~ msgstr "IP пользователя"
+
+#~ msgid "User cookie"
+#~ msgstr "Кукис пользователя"
+
+#~ msgid "Ip user"
+#~ msgstr "IP пользователя"
