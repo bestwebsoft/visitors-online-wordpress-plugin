@@ -147,13 +147,14 @@ if ( ! function_exists( 'vstrsnln_form_import_country' ) ) {
                     /* Open the file in read mode */
                     $current_file = fopen( plugin_dir_path( __FILE__ ) . 'GeoIPCountryWhois.csv', 'r' ); 
                     if ( $current_file ) {
-                        _e( 'Importing country information from the GeoIPCountryWhois.csv file', 'visitors-online' );
+                        $vstrsnln_content = __( 'To collect statistics on the country for the day with the highest number of visits, you need to import the information on the countries to the database.', 'visitors-online' ) . '<br />';
+                        $vstrsnln_content .= __( 'Importing country information from the GeoIPCountryWhois.csv file', 'visitors-online' );
                     } else {
                         $vstrsnln_content = __( 'You do not have permission to access the file', 'visitors-online' ) . '&#032;&#032;' . plugin_dir_path( __FILE__ ) . 'GeoIPCountryWhois.csv' .
                         '&#044;&#032;&#032;' . __( 'cannot be imported', 'visitors-online' );
-                        echo $vstrsnln_content;
                         $vstrsnln_file_there = 0;
                     }
+                    echo $vstrsnln_content;
                 } else {
                     $vstrsnln_content = plugin_dir_path( __FILE__ ) . 'GeoIPCountryWhois.csv' . '&#032;&#032;' . __( 'the file is not found, import is impossible', 'visitors-online' );
                     echo $vstrsnln_content;
@@ -200,7 +201,7 @@ if ( ! function_exists( 'vstrsnln_press_buttom_import' ) ) {
             } else {
                 $vstrsnln_result = vstrsnln_import_noscript( $vstrsnln_count_files );
                 if ( $vstrsnln_result == true ) {
-                    $message = __( 'Import was finished.', 'visitors-online' );
+                    $message = __( 'Import was finished', 'visitors-online' );
                     $result = true;
                 } else {
                     $error = __( 'Not enough rights to import from the GeoIPCountryWhois.csv file, import is impossible', 'visitors-online' );

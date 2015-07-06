@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Visitors-Online\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-06 14:37+0300\n"
+"POT-Creation-Date: 2015-07-06 14:38+0300\n"
 "PO-Revision-Date: 2015-07-06 14:38+0300\n"
 "Last-Translator: bestwebsoft.com <plugins@bestwebsoft.com>\n"
 "Language-Team: bestwebsoft <http://bestwebsoft.com/>\n"
@@ -18,35 +18,35 @@ msgstr ""
 #: visitors-online.php:129
 #: import-country.php:204
 msgid "Import was finished"
-msgstr "Импорт успешно закончен"
+msgstr "Імпорт успішно завершено"
 
 #: visitors-online.php:130
 #: import-country.php:199
 #: import-country.php:207
 msgid "Not enough rights to import from the GeoIPCountryWhois.csv file, import is impossible"
-msgstr "Недостаточно прав для импорта из файла GeoIPCountryWhois.csv, импорт невозможен"
+msgstr "Недостатньо прав для доступу до файлу GeoIPCountryWhois.csv, імпорт неможливий"
 
 #: visitors-online.php:405
 msgid "Statistics was cleared successfully"
-msgstr "Статистика успешно очищена"
+msgstr "Статистику успішно очищено"
 
 #: visitors-online.php:419
 msgid "Please fill The time period. The settings are not saved"
-msgstr "Пожалуйста заполните период времени. Настройки не сохранены."
+msgstr "Будь ласка, заповніть часовий проміжок. Налаштування не збережено"
 
 #: visitors-online.php:425
 msgid "Settings saved"
-msgstr "Настройки сохранены"
+msgstr "Налаштування збережено"
 
 #: visitors-online.php:446
 msgid "Visitors Online Settings"
-msgstr "Настройки Visitors Online"
+msgstr "Налаштування Visitors Online"
 
 #: visitors-online.php:448
 #: visitors-online.php:849
 #: visitors-online.php:866
 msgid "Settings"
-msgstr "Настройки"
+msgstr "Налаштування"
 
 #: visitors-online.php:449
 #: visitors-online.php:850
@@ -55,41 +55,41 @@ msgstr "FAQ"
 
 #: visitors-online.php:450
 msgid "Go PRO"
-msgstr "Перейти на Pro версию"
+msgstr "Перейти на Pro версію"
 
 #: visitors-online.php:456
 msgid "Notice"
-msgstr "Внимание"
+msgstr "Увага"
 
 #: visitors-online.php:457
 msgid "The plugin's settings have been changed. In order to save them please don't forget to click the 'Save Changes' button."
-msgstr "Настройки плагина изменены. Чтобы сохранить их, пожалуйста, не забудьте кликнуть 'Сохранить изменения'."
+msgstr "Налаштування плагіну змінено. Щоб зберегти їх, будь ласка, не забудьте клікнути 'Зберегти зміни'."
 
 #: visitors-online.php:461
 msgid "If you would like to add the counter of Visitors Online to your website, just copy and paste this shortcode to your post or page"
-msgstr "Если вы хотите добавить счетчик Visitors Online на ваш сайт, вставьте этот шорткод в ваш пост или страницу"
+msgstr "Якщо ви хочете додати лічильник Visitors Online на ваш сайт, вставте цей шорткод у ваш пост чи сторінку"
 
 #: visitors-online.php:463
 msgid "you can also add a widget"
-msgstr "вы также можете добавить виджет"
+msgstr "ви також можете додати віджет"
 
 #: visitors-online.php:466
 msgid "Statistics can be viewed on the Dashboard."
-msgstr "Статистику можно посмотреть на панели администратора."
+msgstr "Статистику можна знайти на панелі адміністратора."
 
 #: visitors-online.php:472
 msgid "The time period when the user is online, without making any actions"
-msgstr "Интервал времени, в течении которого пользователь считается онлайн, не производя никаких действий"
+msgstr "Час протягом якого користувач вважається онлайн, не роблячи ніяких дій"
 
 #: visitors-online.php:475
 #: visitors-online.php:671
 msgid "min"
-msgstr "мин"
+msgstr "хв"
 
 #: visitors-online.php:485
 #, fuzzy
 msgid "Automatic contry table update every"
-msgstr "Автоматическое обновление таблицы стран каждые"
+msgstr "Автоматичне оновлення таблиці країн"
 
 #: visitors-online.php:489
 msgid "day"
@@ -97,19 +97,19 @@ msgstr "день"
 
 #: visitors-online.php:491
 msgid "on the developers site the data is updated on the first Tuesday of every month"
-msgstr "на сайте разработчиков данные обновляются первый вторник каждого месяца"
+msgstr "на сайті дані оновлюються в перший вівторок кожного місяця"
 
 #: visitors-online.php:497
 msgid "If you upgrade to Pro version all your settings will be saved."
-msgstr "При обновлении до версии Pro все ваши настройки будут сохранены ."
+msgstr "При переході на Pro версію, всі ваші налаштування буде збережено."
 
 #: visitors-online.php:504
 msgid "Unlock premium options by upgrading to a PRO version."
-msgstr "Разблокировать премиум опции, обновление до версии PRO."
+msgstr "Відкрити преміум опції, перейшовши на Pro версію."
 
 #: visitors-online.php:505
 msgid "Learn More"
-msgstr "Читать дальше"
+msgstr "Дізнатись більше"
 
 #: visitors-online.php:508
 msgid "Go"
@@ -117,24 +117,24 @@ msgstr "Перейти"
 
 #: visitors-online.php:515
 msgid "Clear the statistics"
-msgstr "Очистить статистику"
+msgstr "Очистити статистику"
 
 #: visitors-online.php:517
 msgid "Clear"
-msgstr "Очистить"
+msgstr "Очистити"
 
 #: visitors-online.php:524
 msgid "Save Changes"
-msgstr "Сохранить изменения"
+msgstr "Зберегти зміни"
 
 #: visitors-online.php:737
 msgid "Visitors online"
-msgstr "Посетителей онлайн "
+msgstr "Visitors online"
 
 #: visitors-online.php:738
 #: visitors-online.php:752
 msgid "users"
-msgstr "пользователей"
+msgstr "користувачів"
 
 #: visitors-online.php:739
 #: visitors-online.php:753
@@ -144,19 +144,19 @@ msgstr "гостей"
 #: visitors-online.php:740
 #: visitors-online.php:754
 msgid "bots"
-msgstr "ботов"
+msgstr "ботів"
 
 #: visitors-online.php:750
 msgid "The maximum number of visits was"
-msgstr "Максимальное количество посещений было"
+msgstr "Максимальна кількість відвідувань була"
 
 #: visitors-online.php:751
 msgid "all visits"
-msgstr "всего посетителей"
+msgstr "всього відвідувань"
 
 #: visitors-online.php:756
 msgid "country"
-msgstr "страна"
+msgstr "країна"
 
 #: visitors-online.php:759
 msgid "browser"
@@ -164,7 +164,7 @@ msgstr "браузер"
 
 #: visitors-online.php:783
 msgid "This Widget shows the number of active visitors on the site, including users, guests and bots."
-msgstr "Этот виджет показывает количество активных посетителей на сайте,  в том числе пользователей, гостей и ботов."
+msgstr "Цей віджет показує кількість активних відвідувачів на сайті,  в тому числі користувачів, гостей і ботів."
 
 #: visitors-online.php:810
 msgid "Title"
@@ -172,55 +172,55 @@ msgstr "Заголовок"
 
 #: visitors-online.php:851
 msgid "Support"
-msgstr "Техподдержка"
+msgstr "Техпідтримка"
 
 #: import-country.php:150
 msgid "To collect statistics on the country for the day with the highest number of visits, you need to import the information on the countries to the database."
-msgstr "Для сбора статистических данных о стране для дня с наибольшим количеством посещений, необходимо импортировать информацию о странах в базу данных ."
+msgstr "Для збору статистичних даних про країну за добу з найбільшою кількістю відвідувань, необхідно імпортувати інформацію про країни до бази даних."
 
 #: import-country.php:151
 msgid "Importing country information from the GeoIPCountryWhois.csv file"
-msgstr "Импорт информации о странах из файла GeoIPCountryWhois.csv"
+msgstr "Імпорт інформації про країни з файлу GeoIPCountryWhois.csv"
 
 #: import-country.php:153
 msgid "You do not have permission to access the file"
-msgstr "У вас нет доступа к файлу"
+msgstr "У вас немає прав для доступу до файлу"
 
 #: import-country.php:154
 msgid "cannot be imported"
-msgstr "импорт невозможен"
+msgstr "імпорт неможливий"
 
 #: import-country.php:159
 msgid "the file is not found, import is impossible"
-msgstr "файл не найден, импорт невозможен"
+msgstr "файл не знайдено, імпорт неможливий"
 
 #: import-country.php:165
 msgid "The table is already loaded, you can also update the data using this instructions"
-msgstr "Таблица уже загружена, вы также можете обновить данные используя инструкцию"
+msgstr "Таблицю завантажено, ви також можете оновити дані, використовуючи інструкцію"
 
 #: import-country.php:167
 msgid "Instructions on downloading and updating the country table"
-msgstr "Инструкция по загрузке и обновлению таблицы стран"
+msgstr "Інструкція по завантаженню і оновленню таблиці країн"
 
 #: import-country.php:174
 msgid "Update"
-msgstr "Обновить"
+msgstr "Оновити"
 
 #: import-country.php:176
 msgid "Import"
-msgstr "Импорт"
+msgstr "Імпорт"
 
 #: import-country.php:185
 msgid "Number of loaded files"
-msgstr "Количество загруженных файлов"
+msgstr "Кількість завантажених файлів"
 
 #: import-country.php:186
 msgid "Number of a loading file"
-msgstr "Номер загружаемого файла"
+msgstr "Номер файлу, що завантажується"
 
 #, fuzzy
 #~ msgid "Import was finished."
-#~ msgstr "Импорт успешно закончен"
+#~ msgstr "Імпорт успішно завершено"
 
 #~ msgid "Visitors Online"
 #~ msgstr "Посетители онлайн"

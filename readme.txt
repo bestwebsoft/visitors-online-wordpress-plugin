@@ -1,10 +1,10 @@
-=== Visitors online by BestWebSoft ===
+=== Visitors Online by BestWebSoft ===
 Contributors: bestwebsoft
 Donate link: http://bestwebsoft.com/donate/
-Tags: add User Online plugin, visitors online plugin, UserOnline, UsersOnline, visitors online, count visitors, guests, guestscount, guestsonline, guests online, bots, gests, online guests plugin, a bot, user online, users online, who online, online, users, user, widget, VisitorOnline, Visitors online
+Tags: add User Online plugin, visitors online plugin, UserOnline, UsersOnline, visitors online, count visitors, guests, guestscount, guestsonline, guests online, bots, gests, online guests plugin, a bot, user online, users online, who online, online, users, user, widget, VisitorOnline, Visitors Online
 Requires at least: 3.4
 Tested up to: 4.2.2
-Stable tag: 0.1
+Stable tag: 0.2
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -12,16 +12,20 @@ Plugin allows to see how many users, guests and bots are online on the website. 
 
 == Description ==
 
-This plugin allows you to see the number of visitors on the site. You can set the time when a visitor is considered being online on the plugin settings page. The plugin provides the ability to display statistics on countries and browsers. All visitors are identified as registered users, guests or bots. You can also see the day with the highest number of visits. Information about visitors can be displayed using a widget or shortcode. Also, it can be seen on the Dashboard.
+This plugin allows you to see the number of visitors on the site. You can set the time when a visitor is considered being online on the plugin settings page. The plugin provides the ability to display statistics on countries and browsers for the day with the highest number of visits. 
+All visitors are identified as registered users, guests or bots. You can also see the day with the highest number of visits. Information about visitors can be displayed using a widget or shortcode. Also, it can be seen on the Dashboard.
+
+http://www.youtube.com/watch?v=7e6LzyRzxwA
 
 <a href="http://wordpress.org/plugins/visitors-online/faq/" target="_blank">FAQ</a>
 
 <a href="http://support.bestwebsoft.com" target="_blank">Support</a>
 
+<a href="http://bestwebsoft.com/products/visitors-online/?k=a58d73e5dee0c701959b47ea355c6e5b" target="_blank">Upgrade to Pro Version</a>
+
 = Features =
 
 * Allows to set the time when the visitor is considered being online without making any actions
-* Allows you to set the details on countries and browsers
 * Allows to clear statistics
 * Displays information on the Dashboard
 * Allows you to display information using a widget or shortcode
@@ -55,6 +59,8 @@ We can fix some things for free for the users who provide a translation of our p
 3. You can adjust the necessary settings using your WordPress admin panel in "BWS Plugins" > "Visitors Online".
 4. Create a page or a post and insert the short-code [vstrsnln_info] into the text.
 5. Add a widget Visitors Online to the Sidebar column.
+
+View a PDF version of <a href="https://docs.google.com/document/d/1Jhr5kJN56Bkbo4T1N_zWBR1nLfk6j0Lw5av1326KnIM/edit" target="_blank">Step-by-step Instruction on Visitors Online Installation</a>
 
 == Frequently Asked Questions ==
 
@@ -90,16 +96,23 @@ Please make sure that the problem hasn't been discussed on our forum yet (<a hre
 == Screenshots ==
 
 1. Plugin Settings page.
-2. Displaying Visitors online on the Dashboard.
-3. Displaying Visitors online in the Sidebar on your WordPress website.
+2. Displaying Visitors Online on the Dashboard.
+3. Displaying Visitors Online in the Sidebar on your WordPress website.
 
 == Changelog ==
+
+= V0.2 - 06.07.2015 = 
+* Update : The Ukrainian language file is updated.
+* Update : BWS plugins section is updated.
 
 = V0.1 - 15.06.2015 = 
 * Bugfix : The code refactoring was performed.
 * NEW : Added detection of the country.
 
 == Upgrade Notice ==
+
+= V0.2 =
+The Ukrainian language file is updated. BWS plugins section is updated.
 
 = V0.1 =
 The code refactoring was performed. Added detection of the country
