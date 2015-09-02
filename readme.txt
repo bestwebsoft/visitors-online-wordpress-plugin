@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: http://bestwebsoft.com/donate/
 Tags: add User Online plugin, visitors online plugin, UserOnline, UsersOnline, visitors online, count visitors, guests, guestscount, guestsonline, guests online, bots, gests, online guests plugin, a bot, user online, users online, who online, online, users, user, widget, VisitorOnline, Visitors Online
 Requires at least: 3.4
-Tested up to: 4.2.2
-Stable tag: 0.2
+Tested up to: 4.3
+Stable tag: 0.3
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -17,23 +17,25 @@ All visitors are identified as registered users, guests or bots. You can also se
 
 http://www.youtube.com/watch?v=7e6LzyRzxwA
 
-<a href="http://wordpress.org/plugins/visitors-online/faq/" target="_blank">FAQ</a>
+<a href="http://www.youtube.com/watch?v=izPS7Tbgxqg" target="_blank">Visitors Online by BestWebSoft Video instruction on Installation</a>
 
-<a href="http://support.bestwebsoft.com" target="_blank">Support</a>
+<a href="http://wordpress.org/plugins/visitors-online/faq/" target="_blank">Visitors Online by BestWebSoft FAQ</a>
 
-<a href="http://bestwebsoft.com/products/visitors-online/?k=a58d73e5dee0c701959b47ea355c6e5b" target="_blank">Upgrade to Pro Version</a>
+<a href="http://support.bestwebsoft.com" target="_blank">Visitors Online by BestWebSoft Support</a>
+
+<a href="http://bestwebsoft.com/products/visitors-online/?k=a58d73e5dee0c701959b47ea355c6e5b" target="_blank">Upgrade to Visitors Online Pro by BestWebSoft </a>
 
 = Features =
 
-* Allows to set the time when the visitor is considered being online without making any actions
-* Allows to clear statistics
+* Display information using a widget or shortcode
 * Displays information on the Dashboard
-* Allows you to display information using a widget or shortcode
+* Set the time when the visitor is considered being online without making any actions
+* Clear statistics
 
 = How It Works = 
 
 - the user will be displayed online, if he/she had left the site, but the time when the user is considered being online is not yet passed. 
-- to define the user`s country, you will need to download the file according to the instruction https://docs.google.com/document/d/1sxxeDleJdPS8HvRdYwYSABQ586t1s-Z8r6wy55iXJCM/edit
+- to define the user`s country, you will need to download the file according to the instruction <a href="https://docs.google.com/document/d/1sxxeDleJdPS8HvRdYwYSABQ586t1s-Z8r6wy55iXJCM/edit" target="_blank">https://docs.google.com/document/d/1sxxeDleJdPS8HvRdYwYSABQ586t1s-Z8r6wy55iXJCM/edit</a>
 - if the number of visits from different countries is the same, the plugin will display several countries, but not more than three;
 - if the number of visits from different browsers is the same, the plugin will display several browsers, but not more than three
 
@@ -61,6 +63,8 @@ We can fix some things for free for the users who provide a translation of our p
 5. Add a widget Visitors Online to the Sidebar column.
 
 View a PDF version of <a href="https://docs.google.com/document/d/1Jhr5kJN56Bkbo4T1N_zWBR1nLfk6j0Lw5av1326KnIM/edit" target="_blank">Step-by-step Instruction on Visitors Online Installation</a>
+
+http://www.youtube.com/watch?v=izPS7Tbgxqg
 
 == Frequently Asked Questions ==
 
@@ -101,18 +105,25 @@ Please make sure that the problem hasn't been discussed on our forum yet (<a hre
 
 == Changelog ==
 
-= V0.2 - 06.07.2015 = 
+= V0.3 - 02.09.2015 = 
+* Update : We updated all functionality for wordpress 4.3.
+
+= V0.2 - 03.07.2015 = 
 * Update : The Ukrainian language file is updated.
 * Update : BWS plugins section is updated.
 
-= V0.1 - 15.06.2015 = 
+= V0.1 - 25.05.2015 = 
 * Bugfix : The code refactoring was performed.
 * NEW : Added detection of the country.
 
 == Upgrade Notice ==
 
+= V0.3 = 
+We updated all functionality for wordpress 4.3.
+
 = V0.2 =
-The Ukrainian language file is updated. BWS plugins section is updated.
+The Ukrainian language file is updated
+BWS plugins section is updated.
 
 = V0.1 =
 The code refactoring was performed. Added detection of the country

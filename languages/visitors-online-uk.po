@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Visitors-Online\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-06 14:38+0300\n"
-"PO-Revision-Date: 2015-07-06 14:38+0300\n"
+"POT-Creation-Date: 2015-09-02 13:33+0300\n"
+"PO-Revision-Date: 2015-09-02 13:34+0300\n"
 "Last-Translator: bestwebsoft.com <plugins@bestwebsoft.com>\n"
 "Language-Team: bestwebsoft <http://bestwebsoft.com/>\n"
 "Language: \n"
@@ -14,165 +14,6 @@ msgstr ""
 "X-Poedit-Basepath: ../\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
-
-#: visitors-online.php:129
-#: import-country.php:204
-msgid "Import was finished"
-msgstr "Імпорт успішно завершено"
-
-#: visitors-online.php:130
-#: import-country.php:199
-#: import-country.php:207
-msgid "Not enough rights to import from the GeoIPCountryWhois.csv file, import is impossible"
-msgstr "Недостатньо прав для доступу до файлу GeoIPCountryWhois.csv, імпорт неможливий"
-
-#: visitors-online.php:405
-msgid "Statistics was cleared successfully"
-msgstr "Статистику успішно очищено"
-
-#: visitors-online.php:419
-msgid "Please fill The time period. The settings are not saved"
-msgstr "Будь ласка, заповніть часовий проміжок. Налаштування не збережено"
-
-#: visitors-online.php:425
-msgid "Settings saved"
-msgstr "Налаштування збережено"
-
-#: visitors-online.php:446
-msgid "Visitors Online Settings"
-msgstr "Налаштування Visitors Online"
-
-#: visitors-online.php:448
-#: visitors-online.php:849
-#: visitors-online.php:866
-msgid "Settings"
-msgstr "Налаштування"
-
-#: visitors-online.php:449
-#: visitors-online.php:850
-msgid "FAQ"
-msgstr "FAQ"
-
-#: visitors-online.php:450
-msgid "Go PRO"
-msgstr "Перейти на Pro версію"
-
-#: visitors-online.php:456
-msgid "Notice"
-msgstr "Увага"
-
-#: visitors-online.php:457
-msgid "The plugin's settings have been changed. In order to save them please don't forget to click the 'Save Changes' button."
-msgstr "Налаштування плагіну змінено. Щоб зберегти їх, будь ласка, не забудьте клікнути 'Зберегти зміни'."
-
-#: visitors-online.php:461
-msgid "If you would like to add the counter of Visitors Online to your website, just copy and paste this shortcode to your post or page"
-msgstr "Якщо ви хочете додати лічильник Visitors Online на ваш сайт, вставте цей шорткод у ваш пост чи сторінку"
-
-#: visitors-online.php:463
-msgid "you can also add a widget"
-msgstr "ви також можете додати віджет"
-
-#: visitors-online.php:466
-msgid "Statistics can be viewed on the Dashboard."
-msgstr "Статистику можна знайти на панелі адміністратора."
-
-#: visitors-online.php:472
-msgid "The time period when the user is online, without making any actions"
-msgstr "Час протягом якого користувач вважається онлайн, не роблячи ніяких дій"
-
-#: visitors-online.php:475
-#: visitors-online.php:671
-msgid "min"
-msgstr "хв"
-
-#: visitors-online.php:485
-#, fuzzy
-msgid "Automatic contry table update every"
-msgstr "Автоматичне оновлення таблиці країн"
-
-#: visitors-online.php:489
-msgid "day"
-msgstr "день"
-
-#: visitors-online.php:491
-msgid "on the developers site the data is updated on the first Tuesday of every month"
-msgstr "на сайті дані оновлюються в перший вівторок кожного місяця"
-
-#: visitors-online.php:497
-msgid "If you upgrade to Pro version all your settings will be saved."
-msgstr "При переході на Pro версію, всі ваші налаштування буде збережено."
-
-#: visitors-online.php:504
-msgid "Unlock premium options by upgrading to a PRO version."
-msgstr "Відкрити преміум опції, перейшовши на Pro версію."
-
-#: visitors-online.php:505
-msgid "Learn More"
-msgstr "Дізнатись більше"
-
-#: visitors-online.php:508
-msgid "Go"
-msgstr "Перейти"
-
-#: visitors-online.php:515
-msgid "Clear the statistics"
-msgstr "Очистити статистику"
-
-#: visitors-online.php:517
-msgid "Clear"
-msgstr "Очистити"
-
-#: visitors-online.php:524
-msgid "Save Changes"
-msgstr "Зберегти зміни"
-
-#: visitors-online.php:737
-msgid "Visitors online"
-msgstr "Visitors online"
-
-#: visitors-online.php:738
-#: visitors-online.php:752
-msgid "users"
-msgstr "користувачів"
-
-#: visitors-online.php:739
-#: visitors-online.php:753
-msgid "guests"
-msgstr "гостей"
-
-#: visitors-online.php:740
-#: visitors-online.php:754
-msgid "bots"
-msgstr "ботів"
-
-#: visitors-online.php:750
-msgid "The maximum number of visits was"
-msgstr "Максимальна кількість відвідувань була"
-
-#: visitors-online.php:751
-msgid "all visits"
-msgstr "всього відвідувань"
-
-#: visitors-online.php:756
-msgid "country"
-msgstr "країна"
-
-#: visitors-online.php:759
-msgid "browser"
-msgstr "браузер"
-
-#: visitors-online.php:783
-msgid "This Widget shows the number of active visitors on the site, including users, guests and bots."
-msgstr "Цей віджет показує кількість активних відвідувачів на сайті,  в тому числі користувачів, гостей і ботів."
-
-#: visitors-online.php:810
-msgid "Title"
-msgstr "Заголовок"
-
-#: visitors-online.php:851
-msgid "Support"
-msgstr "Техпідтримка"
 
 #: import-country.php:150
 msgid "To collect statistics on the country for the day with the highest number of visits, you need to import the information on the countries to the database."
@@ -217,6 +58,163 @@ msgstr "Кількість завантажених файлів"
 #: import-country.php:186
 msgid "Number of a loading file"
 msgstr "Номер файлу, що завантажується"
+
+#: import-country.php:199
+#: import-country.php:207
+#: visitors-online.php:133
+msgid "Not enough rights to import from the GeoIPCountryWhois.csv file, import is impossible"
+msgstr "Недостатньо прав для доступу до файлу GeoIPCountryWhois.csv, імпорт неможливий"
+
+#: import-country.php:204
+#: visitors-online.php:132
+msgid "Import was finished"
+msgstr "Імпорт успішно завершено"
+
+#: visitors-online.php:408
+msgid "Statistics was cleared successfully"
+msgstr "Статистику успішно очищено"
+
+#: visitors-online.php:422
+msgid "Please fill The time period. The settings are not saved"
+msgstr "Будь ласка, заповніть часовий проміжок. Налаштування не збережено"
+
+#: visitors-online.php:428
+msgid "Settings saved"
+msgstr "Налаштування збережено"
+
+#: visitors-online.php:449
+msgid "Visitors Online Settings"
+msgstr "Налаштування Visitors Online"
+
+#: visitors-online.php:451
+#: visitors-online.php:867
+#: visitors-online.php:884
+msgid "Settings"
+msgstr "Налаштування"
+
+#: visitors-online.php:452
+#: visitors-online.php:868
+msgid "FAQ"
+msgstr "FAQ"
+
+#: visitors-online.php:453
+msgid "Go PRO"
+msgstr "Перейти на Pro версію"
+
+#: visitors-online.php:459
+msgid "Notice"
+msgstr "Увага"
+
+#: visitors-online.php:460
+msgid "The plugin's settings have been changed. In order to save them please don't forget to click the 'Save Changes' button."
+msgstr "Налаштування плагіну змінено. Щоб зберегти їх, будь ласка, не забудьте клікнути 'Зберегти зміни'."
+
+#: visitors-online.php:464
+msgid "If you would like to add the counter of Visitors Online to your website, just copy and paste this shortcode to your post or page"
+msgstr "Якщо ви хочете додати лічильник Visitors Online на ваш сайт, вставте цей шорткод у ваш пост чи сторінку"
+
+#: visitors-online.php:466
+msgid "you can also add a widget"
+msgstr "ви також можете додати віджет"
+
+#: visitors-online.php:469
+msgid "Statistics can be viewed on the Dashboard."
+msgstr "Статистику можна знайти на панелі адміністратора."
+
+#: visitors-online.php:475
+msgid "The time period when the user is online, without making any actions"
+msgstr "Час протягом якого користувач вважається онлайн, не роблячи ніяких дій"
+
+#: visitors-online.php:478
+#: visitors-online.php:670
+msgid "min"
+msgstr "хв"
+
+#: visitors-online.php:488
+msgid "Automatic contry table update every"
+msgstr "Автоматичне оновлення таблиці країн кожні"
+
+#: visitors-online.php:492
+msgid "day"
+msgstr "день"
+
+#: visitors-online.php:494
+msgid "on the developers site the data is updated on the first Tuesday of every month"
+msgstr "на сайті дані оновлюються в перший вівторок кожного місяця"
+
+#: visitors-online.php:499
+msgid "If you upgrade to Pro version all your settings will be saved."
+msgstr "При переході на Pro версію, всі ваші налаштування буде збережено."
+
+#: visitors-online.php:506
+msgid "Unlock premium options by upgrading to Pro version"
+msgstr "Відкрити преміум опції, перейшовши на Pro версію"
+
+#: visitors-online.php:508
+msgid "Learn More"
+msgstr "Дізнатись більше"
+
+#: visitors-online.php:514
+msgid "Clear the statistics"
+msgstr "Очистити статистику"
+
+#: visitors-online.php:516
+msgid "Clear"
+msgstr "Очистити"
+
+#: visitors-online.php:523
+msgid "Save Changes"
+msgstr "Зберегти зміни"
+
+#: visitors-online.php:736
+msgid "Visitors online"
+msgstr "Visitors online"
+
+#: visitors-online.php:737
+#: visitors-online.php:751
+msgid "users"
+msgstr "користувачів"
+
+#: visitors-online.php:738
+#: visitors-online.php:752
+msgid "guests"
+msgstr "гостей"
+
+#: visitors-online.php:739
+#: visitors-online.php:753
+msgid "bots"
+msgstr "ботів"
+
+#: visitors-online.php:749
+msgid "The maximum number of visits was"
+msgstr "Максимальна кількість відвідувань була"
+
+#: visitors-online.php:750
+msgid "all visits"
+msgstr "всього відвідувань"
+
+#: visitors-online.php:755
+msgid "country"
+msgstr "країна"
+
+#: visitors-online.php:758
+msgid "browser"
+msgstr "браузер"
+
+#: visitors-online.php:782
+msgid "This Widget shows the number of active visitors on the site, including users, guests and bots."
+msgstr "Цей віджет показує кількість активних відвідувачів на сайті,  в тому числі користувачів, гостей і ботів."
+
+#: visitors-online.php:809
+msgid "Title"
+msgstr "Заголовок"
+
+#: visitors-online.php:869
+msgid "Support"
+msgstr "Техпідтримка"
+
+#~ msgid "Go"
+#~ msgstr "Перейти"
 
 #, fuzzy
 #~ msgid "Import was finished."

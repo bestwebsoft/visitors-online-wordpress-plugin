@@ -13,7 +13,7 @@
     padding: 15px 10px;
     vertical-align: middle;
 }
-#vstrsnln_message{
+#vstrsnln_message {
     display: none;
     margin-left: 112px;
 }
@@ -41,15 +41,6 @@
     margin: 0;
     padding: 0;
 }
-.vstrsnln_style_bold {
-    font-weight: bold;
-    font-size: 1.2em;
-}
-.vstrsnln_span {
-    color: #888888;
-    font-size: 10px;
-}
-
 @media screen and (max-width:450px) {
     .vstrsnln-form-detailing td,
     .vstrsnln-form-detailing th {
