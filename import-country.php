@@ -166,24 +166,22 @@ if ( ! function_exists( 'vstrsnln_form_import_country' ) ) {
                 } else {
                     _e( 'Instructions on downloading and updating the country table', 'visitors-online' );
                 } ?>
-                 <a href="https://docs.google.com/document/d/1sxxeDleJdPS8HvRdYwYSABQ586t1s-Z8r6wy55iXJCM/edit" target="_blank">https://docs.google.com/document/d/1sxxeDleJdPS8HvRdYwYSABQ586t1s-Z8r6wy55iXJCM/edit</a>
+                 <a href="https://docs.google.com/document/d/1sxxeDleJdPS8HvRdYwYSABQ586t1s-Z8r6wy55iXJCM/edit" target="_blank" style="word-break: break-word;">https://docs.google.com/document/d/1sxxeDleJdPS8HvRdYwYSABQ586t1s-Z8r6wy55iXJCM/edit</a>
             </div>
             <div class="vstrsnln_clear"></div>
             <?php if ( 1 == $vstrsnln_file_there ) {
                 if ( $vstrsnln_table_full > 0 ) { ?>
-                    <input id="vstrsnln_button_import" type="submit" name="vstrsnln_button_import" class="button-primary" value="<?php _e( 'Update', 'visitors-online' ) ?>" />
+                    <input type="submit" name="vstrsnln_button_import" class="button-primary" value="<?php _e( 'Update', 'visitors-online' ); ?>" />
                 <?php } else {?>
-                    <input id="vstrsnln_button_import" type="submit" name="vstrsnln_button_import" class="button-primary" value="<?php _e( 'Import', 'visitors-online' ) ?>" />
+                    <input type="submit" name="vstrsnln_button_import" class="button-primary" value="<?php _e( 'Import', 'visitors-online' ); ?>" />
                 <?php }
             } ?>
             <?php wp_nonce_field( plugin_basename( __FILE__ ), 'vstrsnln_nonce_name' ); ?>
             <input type="hidden" name="vstrsnln_import" value="submit" />
-            <div id="vstrsnln_img_loader">
-                <img src="<?php echo plugins_url( 'images/ajax-loader.gif', __FILE__ ); ?>" alt="" />
-            </div>
+            <div id="vstrsnln_img_loader"><img src="<?php echo plugins_url( 'images/ajax-loader.gif', __FILE__ ); ?>" alt="" /></div>
             <div id="vstrsnln_message">
-                <?php echo __( 'Number of loaded files', 'visitors-online' ) . '&#058;'; ?> <span id='vstrsnln_loaded_rows'></span>
-                <?php echo __( 'Number of a loading file', 'visitors-online' ) . '&#058;'; ?> <span id='vstrsnln_loaded_files'></span>
+                <?php _e( 'Number of loaded files', 'visitors-online' ); ?>: <span id='vstrsnln_loaded_rows'></span>
+                <?php _e( 'Number of a loading file', 'visitors-online' ); ?>: <span id='vstrsnln_loaded_files'></span>
             </div>
         </form>
     <?php }

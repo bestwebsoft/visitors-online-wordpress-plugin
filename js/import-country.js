@@ -2,7 +2,7 @@
 	$( document ).ready( function() {
 		/* Pressing the 'Import Table' */
 		$( '#vstrsnln_button_import' ).click( function() {
-			$( '#vstrsnln_img_loader' ).show();
+			$( '#vstrsnln_img_loader' ).css( 'display', 'inline-block' );
 			$( '#vstrsnln_button_import' ).attr( 'disabled', true );
 			var number_records_file;
 			var number_records_file_text;
