@@ -6,7 +6,7 @@ Description: Plugin allows to see how many users, guests and bots are online on 
 Author: BestWebSoft
 Text Domain: visitors-online
 Domain Path: /languages
-Version: 0.4
+Version: 0.5
 Author URI: http://bestwebsoft.com/
 License: GPLv3 or later
 */
@@ -39,7 +39,7 @@ if ( file_exists( $vstrsnln_fpath ) ) {
 /* Function for adding menu and submenu */
 if ( ! function_exists( 'vstrsnln_admin_menu' ) ) {
 	function vstrsnln_admin_menu() {
-		bws_add_general_menu( plugin_basename( __FILE__ ) );
+		bws_general_menu();
 		$settings = add_submenu_page( 'bws_plugins', 'Visitors Online', 'Visitors Online', 'manage_options', 'visitors-online.php', 'vstrsnln_settings_page' );		
 		add_action( 'load-' . $settings, 'vstrsnln_add_tabs' );
 	}
@@ -477,7 +477,7 @@ if ( ! function_exists( 'vstrsnln_settings_page' ) ) {
 				$message = $go_pro_result['message'];
 		} ?>		
 		<div class="wrap">
-			<h2><?php _e( 'Visitors Online Settings', 'visitors-online' ); ?></h2>
+			<h1><?php _e( 'Visitors Online Settings', 'visitors-online' ); ?></h1>
 			<h2 class="nav-tab-wrapper">
 				<a class="nav-tab <?php if ( ! isset( $_GET['action'] ) ) echo ' nav-tab-active'; ?>" href="admin.php?page=visitors-online.php"><?php _e( 'Settings', 'visitors-online' ); ?></a>
 				<a class="nav-tab bws_go_pro_tab<?php if ( isset( $_GET['action'] ) && 'go_pro' == $_GET['action'] ) echo ' nav-tab-active'; ?>" href="admin.php?page=visitors-online.php&amp;action=go_pro"><?php _e( 'Go PRO', 'visitors-online' ); ?></a>

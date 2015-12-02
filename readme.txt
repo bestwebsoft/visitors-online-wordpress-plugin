@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: http://bestwebsoft.com/donate/
 Tags: a bot, add User Online plugin, add users online counter, add visitors online counter, add visitors counter, best visitors counter, best visitors online counter, best visitors online wp counter, bot, bots, count, counte, conte, counter, count visitors, count visitors plugin, count visitors wp plugin, count users plugin, free counter, free users counter, free visitors counter, free visitors online counter, free visitors online wp plugin, gests, guests, guests online, guestscount, guestsonline, online, online guests plugin, simple counter plugin, simple visitors counter plugin, user, user online, useronline, users, users online, usersonline, VisitorOnline, visitors online, visitors online plugin, who online, widget, wp plugin, wp visitors counter, wp visitors online counter, wp visitors online, wp visitors online plugin, wordpress plugin, wordpress visitors counter, wordpress visitors online counter, wordpress visitors online, wordpress visitors online plugin
 Requires at least: 3.8
-Tested up to: 4.3.1
-Stable tag: 0.4
+Tested up to: 4.4-RC1
+Stable tag: 0.5
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -105,6 +105,9 @@ Please make sure that the problem hasn't been discussed on our forum yet (<a hre
 
 == Changelog ==
 
+= V0.5 - 02.12.2015 =
+* Bugfix : The bug with plugin menu duplicating was fixed.
+
 = V0.4 - 26.10.2015 =
 * NEW : A button for Visitors Online shortcode inserting to the content was added.
 * Bugfix : We fixed SQL injection vulnerability.
@@ -122,6 +125,9 @@ Please make sure that the problem hasn't been discussed on our forum yet (<a hre
 * NEW : Added detection of the country.
 
 == Upgrade Notice ==
+
+= V0.5 =
+The bug with plugin menu duplicating was fixed.
 
 = V0.4 = 
 A button for Visitors Online shortcode inserting to the content was added. We fixed SQL injection vulnerability. Widget displaying was fixed.
