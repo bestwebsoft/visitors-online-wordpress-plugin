@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: http://bestwebsoft.com/donate/
 Tags: a bot, add User Online plugin, add users online counter, add visitors online counter, add visitors counter, best visitors counter, best visitors online counter, best visitors online wp counter, bot, bots, count, counte, conte, counter, count visitors, count visitors plugin, count visitors wp plugin, count users plugin, free counter, free users counter, free visitors counter, free visitors online counter, free visitors online wp plugin, gests, guests, guests online, guestscount, guestsonline, online, online guests plugin, simple counter plugin, simple visitors counter plugin, user, user online, useronline, users, users online, usersonline, VisitorOnline, visitors online, visitors online plugin, who online, widget, wp plugin, wp visitors counter, wp visitors online counter, wp visitors online, wp visitors online plugin, wordpress plugin, wordpress visitors counter, wordpress visitors online counter, wordpress visitors online, wordpress visitors online plugin
 Requires at least: 3.8
-Tested up to: 4.4-RC1
-Stable tag: 0.5
+Tested up to: 4.4.2
+Stable tag: 0.6
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -32,6 +32,8 @@ http://www.youtube.com/watch?v=7e6LzyRzxwA
 * Set the time when the visitor is considered being online without making any actions
 * Clear statistics
 
+If you have a feature, suggestion or idea you'd like to see in the plugin, we'd love to hear about it! <a href="http://support.bestwebsoft.com/hc/en-us/requests/new" target="_blank">Suggest a Feature</a>
+
 = How It Works = 
 
 - the user will be displayed online, if he/she had left the site, but the time when the user is considered being online is not yet passed. 
@@ -41,6 +43,7 @@ http://www.youtube.com/watch?v=7e6LzyRzxwA
 
 = Translation =
 
+* Czech (cs_CZ) (thanks to <a href="mailto:info@pamadessoft.cz">PaMaDeSSoft</a>, www.pamadessoft.cz)
 * Russian (ru_RU)
 * Ukrainian (uk)
 
@@ -105,6 +108,10 @@ Please make sure that the problem hasn't been discussed on our forum yet (<a hre
 
 == Changelog ==
 
+= V0.6 - 15.03.2016 =
+* NEW : Ability to add custom styles.
+* NEW : The Czech language file was added.
+
 = V0.5 - 02.12.2015 =
 * Bugfix : The bug with plugin menu duplicating was fixed.
 
@@ -125,6 +132,9 @@ Please make sure that the problem hasn't been discussed on our forum yet (<a hre
 * NEW : Added detection of the country.
 
 == Upgrade Notice ==
+
+= V0.6 =
+Ability to add custom styles. The Czech language file was added.
 
 = V0.5 =
 The bug with plugin menu duplicating was fixed.

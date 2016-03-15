@@ -212,6 +212,6 @@ if ( ! function_exists( 'vstrsnln_press_buttom_import' ) ) {
         return array( 
             'result'    => $result, 
             'error'     => $error,
-            'message'   => $message);        
+            'message'   => $message );        
     }
 } ?>

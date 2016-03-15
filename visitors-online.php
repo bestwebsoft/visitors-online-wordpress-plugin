@@ -6,12 +6,12 @@ Description: Plugin allows to see how many users, guests and bots are online on 
 Author: BestWebSoft
 Text Domain: visitors-online
 Domain Path: /languages
-Version: 0.5
+Version: 0.6
 Author URI: http://bestwebsoft.com/
 License: GPLv3 or later
 */
 
-/*  © Copyright 2015  BestWebSoft  ( http://support.bestwebsoft.com )
+/*  © Copyright 2016  BestWebSoft  ( http://support.bestwebsoft.com )
 
 	This program is free software; you can redistribute it and/or modify
 	it under the terms of the GNU General Public License, version 2, as 
@@ -100,7 +100,8 @@ if ( ! function_exists ( 'vstrsnln_default_options' ) ) {
 			'plugin_option_version'		=> $vstrsnln_plugin_info["Version"],
 			'plugin_db_version'			=> $db_version,
 			'display_settings_notice'	=> 1,
-			'first_install'				=> strtotime( "now" )
+			'first_install'				=> strtotime( "now" ),
+			'suggest_feature_banner'	=> 1,
 		);
 
 		if ( ! get_option( 'vstrsnln_options' ) )	
@@ -145,6 +146,9 @@ if ( ! function_exists ( 'vstrsnln_admin_head' ) ) {
 			);
 			wp_localize_script( 'vstrsnln_country_script', 'vstrsnln_var', $vstrsnln_var );
 			wp_localize_script( 'vstrsnln_script', 'vstrsnln_ajax', array( 'vstrsnln_nonce' => wp_create_nonce( 'bws_plugin', 'vstrsnln_ajax_nonce_field' ) ) );
+
+			if ( isset( $_GET['action'] ) && 'custom_code' == $_GET['action'] )
+				bws_plugins_include_codemirror();
 		}
 	}
 }
@@ -480,12 +484,13 @@ if ( ! function_exists( 'vstrsnln_settings_page' ) ) {
 			<h1><?php _e( 'Visitors Online Settings', 'visitors-online' ); ?></h1>
 			<h2 class="nav-tab-wrapper">
 				<a class="nav-tab <?php if ( ! isset( $_GET['action'] ) ) echo ' nav-tab-active'; ?>" href="admin.php?page=visitors-online.php"><?php _e( 'Settings', 'visitors-online' ); ?></a>
+				<a class="nav-tab <?php if ( isset( $_GET['action'] ) && 'custom_code' == $_GET['action'] ) echo ' nav-tab-active'; ?>" href="admin.php?page=visitors-online.php&amp;action=custom_code"><?php _e( 'Custom code', 'visitors-online' ); ?></a>
 				<a class="nav-tab bws_go_pro_tab<?php if ( isset( $_GET['action'] ) && 'go_pro' == $_GET['action'] ) echo ' nav-tab-active'; ?>" href="admin.php?page=visitors-online.php&amp;action=go_pro"><?php _e( 'Go PRO', 'visitors-online' ); ?></a>
 			</h2>
-			<div class="updated fade" <?php if ( '' == $message || '' != $error ) echo "style=\"display:none\""; ?>><p><strong><?php echo $message; ?></strong></p></div>
-			<div class="error" <?php if ( '' == $error ) echo 'style="display:none"'; ?>><p><strong><?php echo $error; ?></strong></p></div>
+			<div class="updated fade below-h2" <?php if ( '' == $message || '' != $error ) echo "style=\"display:none\""; ?>><p><strong><?php echo $message; ?></strong></p></div>
+			<div class="error below-h2" <?php if ( '' == $error ) echo 'style="display:none"'; ?>><p><strong><?php echo $error; ?></strong></p></div>
 			<?php if ( ! empty( $hide_result['message'] ) ) { ?>
-				<div class="updated fade"><p><strong><?php echo $hide_result['message']; ?></strong></p></div>
+				<div class="updated fade below-h2"><p><strong><?php echo $hide_result['message']; ?></strong></p></div>
 			<?php }			
 			if ( ! isset( $_GET['action'] ) ) {
 				bws_show_settings_notice(); ?>
@@ -570,9 +575,11 @@ if ( ! function_exists( 'vstrsnln_settings_page' ) ) {
 					<?php wp_nonce_field( plugin_basename( __FILE__ ), 'vstrsnln_nonce_name' ); ?>
 				</form>
 				<?php vstrsnln_form_import_country( "admin.php?page=visitors-online.php" );
+			} elseif ( 'custom_code' == $_GET['action'] ) {
+				bws_custom_code_tab();	
 			} elseif ( 'go_pro' == $_GET['action'] ) {
 				bws_go_pro_tab_show( $bws_hide_premium_options_check, $vstrsnln_plugin_info, plugin_basename( __FILE__ ), 'visitors-online.php', 'visitors-online-pro.php', 'visitors-online-pro/visitors-online-pro.php', 'visitors-online', '1b01d30e84bb97b2afecb5f34c43931d', '216', isset( $go_pro_result['pro_plugin_is_activated'] ) );
-			} 
+			}
 			bws_plugin_reviews_block( $vstrsnln_plugin_info['Name'], 'visitors-online' ); ?>				
 		</div>
 	<?php }	
@@ -835,10 +842,10 @@ if ( ! function_exists( 'vstrsnln_dashboard_widget' ) ) {
 }
 
 /* Creation Widget */
-if ( ! class_exists( 'vstrsnln_widget' ) ) {
-	class vstrsnln_widget extends WP_Widget {
-		/* Instantiate the parent object */
-		function vstrsnln_widget() {
+if ( ! class_exists( 'Vstrsnln_Widget' ) ) {
+	class Vstrsnln_Widget extends WP_Widget {
+
+		public function __construct() {
 			parent::__construct( false, 'Visitors Online', array(
 				'classname'		=> 'visitors-online',
 				'description'	=> __( 'This Widget shows the number of active visitors on the site, including users, guests and bots.', 'visitors-online' )
@@ -880,7 +887,7 @@ if ( ! class_exists( 'vstrsnln_widget' ) ) {
 /* Add widget */
 if ( ! function_exists( 'vstrsnln_register_widget' ) ) {
 	function vstrsnln_register_widget() {
-		register_widget( 'vstrsnln_widget' );
+		register_widget( 'Vstrsnln_Widget' );
 	}
 }
 
@@ -917,6 +924,10 @@ if ( ! function_exists( 'vstrsnln_uninstall' ) ) {
 			wp_clear_scheduled_hook( 'vstrsnln_check_users' );
 			wp_clear_scheduled_hook( 'vstrsnln_count_visits_day' );
 		}
+
+		require_once( dirname( __FILE__ ) . '/bws_menu/bws_include.php' );
+		bws_include_init( plugin_basename( __FILE__ ) );
+		bws_delete_plugin( plugin_basename( __FILE__ ) );
 	}
 }
 
@@ -1000,14 +1011,17 @@ if ( ! function_exists( 'vstrsnln_check_country' ) ) {
 
 if ( ! function_exists ( 'vstrsnln_plugin_banner' ) ) {
 	function vstrsnln_plugin_banner() {
-		global $hook_suffix;	
+		global $hook_suffix, $vstrsnln_plugin_info, $vstrsnln_options;	
 		if ( 'plugins.php' == $hook_suffix ) {
-			global $vstrsnln_plugin_info, $vstrsnln_options;
 
 			if ( isset( $vstrsnln_options['first_install'] ) && strtotime( '-1 week' ) > $vstrsnln_options['first_install'] )
 				bws_plugin_banner( $vstrsnln_plugin_info, 'vstrsnln', 'visitors-online', 'ac4699da21e7e6d6238f373bc0065912', '213', '//ps.w.org/visitors-online/assets/icon-128x128.png' );
 			if ( ! is_network_admin() )
 				bws_plugin_banner_to_settings( $vstrsnln_plugin_info, 'vstrsnln_options', 'visitors-online', 'admin.php?page=visitors-online.php' );
+		}
+
+		if ( isset( $_REQUEST['page'] ) && 'visitors-online.php' == $_REQUEST['page'] ) {
+			bws_plugin_suggest_feature_banner( $vstrsnln_plugin_info, 'vstrsnln_options', 'visitors-online' );
 		}
 	}
 }
