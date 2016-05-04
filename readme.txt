@@ -3,7 +3,7 @@ Contributors: bestwebsoft
 Donate link: http://bestwebsoft.com/donate/
 Tags: a bot, add User Online plugin, add users online counter, add visitors online counter, add visitors counter, best visitors counter, best visitors online counter, best visitors online wp counter, bot, bots, count, counte, conte, counter, count visitors, count visitors plugin, count visitors wp plugin, count users plugin, free counter, free users counter, free visitors counter, free visitors online counter, free visitors online wp plugin, gests, guests, guests online, guestscount, guestsonline, online, online guests plugin, simple counter plugin, simple visitors counter plugin, user, user online, useronline, users, users online, usersonline, VisitorOnline, visitors online, visitors online plugin, who online, widget, wp plugin, wp visitors counter, wp visitors online counter, wp visitors online, wp visitors online plugin, wordpress plugin, wordpress visitors counter, wordpress visitors online counter, wordpress visitors online, wordpress visitors online plugin
 Requires at least: 3.8
-Tested up to: 4.4.2
+Tested up to: 4.5
 Stable tag: 0.6
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -51,7 +51,7 @@ If you would like to create your own language pack or update the existing one, y
 
 = Technical support =
 
-Dear users, our plugins are available for free download. If you have any questions or recommendations regarding the functionality of our plugins (existing options, new options, current issues), please feel free to contact us. Please note that we accept requests in English only. All messages in another languages won't be accepted.
+Dear users, our plugins are available for free download. If you have any questions or recommendations regarding the functionality of our plugins (existing options, new options, current issues), please feel free to contact us. Please note that we accept requests in English only. All messages in other languages won't be accepted.
 
 If you notice any bugs in the plugin's work, you can notify us about them and we'll investigate and fix the issue then. Your request should contain website URL, issues description and WordPress admin panel credentials.
 Moreover, we can customize the plugin according to your requirements. It's a paid service (as a rule it costs $40, but the price can vary depending on the amount of the necessary changes and their complexity). Please note that we could also include this or that feature (developed for you) in the next release and share with the other users then.
