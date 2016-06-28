@@ -1,10 +1,10 @@
 === Visitors Online by BestWebSoft ===
 Contributors: bestwebsoft
 Donate link: http://bestwebsoft.com/donate/
-Tags: a bot, add User Online plugin, add users online counter, add visitors online counter, add visitors counter, best visitors counter, best visitors online counter, best visitors online wp counter, bot, bots, count, counte, conte, counter, count visitors, count visitors plugin, count visitors wp plugin, count users plugin, free counter, free users counter, free visitors counter, free visitors online counter, free visitors online wp plugin, gests, guests, guests online, guestscount, guestsonline, online, online guests plugin, simple counter plugin, simple visitors counter plugin, user, user online, useronline, users, users online, usersonline, VisitorOnline, visitors online, visitors online plugin, who online, widget, wp plugin, wp visitors counter, wp visitors online counter, wp visitors online, wp visitors online plugin, wordpress plugin, wordpress visitors counter, wordpress visitors online counter, wordpress visitors online, wordpress visitors online plugin
+Tags: visitors online, visitors online plugin, count visitor, guests, guests counter, counter, visitors counter, add visitors counter, count, add guests counter, users online, guests online
 Requires at least: 3.8
-Tested up to: 4.5
-Stable tag: 0.6
+Tested up to: 4.5.3
+Stable tag: 0.7
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -47,7 +47,7 @@ If you have a feature, suggestion or idea you'd like to see in the plugin, we'd 
 * Russian (ru_RU)
 * Ukrainian (uk)
 
-If you would like to create your own language pack or update the existing one, you can send <a href="http://codex.wordpress.org/Translating_WordPress" target="_blank">the text of PO and MO files</a> to <a href="http://support.bestwebsoft.com" target="_blank">BestWebSoft</a>, and we'll add it to the plugin. You can download the latest version of the program for working with PO and MO files <a href="http://www.poedit.net/download.php" target="_blank">Poedit</a>.
+Some of these translations are not complete. We are constantly adding new features which should be translated. If you would like to create your own language pack or update the existing one, you can send <a href="http://codex.wordpress.org/Translating_WordPress" target="_blank">the text of PO and MO files</a> to <a href="http://support.bestwebsoft.com/hc/en-us/requests/new" target="_blank">BestWebSoft</a>, and we'll add it to the plugin. You can download the latest version of the program for working with PO and MO files <a href="http://www.poedit.net/download.php" target="_blank">Poedit</a>.
 
 = Technical support =
 
@@ -102,11 +102,14 @@ Please make sure that the problem hasn't been discussed on our forum yet (<a hre
 
 == Screenshots ==
 
-1. Plugin Settings page.
+1. Displaying Visitors Online in the Sidebar on your WordPress website.
 2. Displaying Visitors Online on the Dashboard.
-3. Displaying Visitors Online in the Sidebar on your WordPress website.
+3. Plugin Settings page.
 
 == Changelog ==
+
+= V0.7 - 28.06.2016 =
+* Update : We updated all functionality for wordpress 4.5.3.
 
 = V0.6 - 15.03.2016 =
 * NEW : Ability to add custom styles.
@@ -132,6 +135,9 @@ Please make sure that the problem hasn't been discussed on our forum yet (<a hre
 * NEW : Added detection of the country.
 
 == Upgrade Notice ==
+
+= V0.7 =
+We updated all functionality for wordpress 4.5.3.
 
 = V0.6 =
 Ability to add custom styles. The Czech language file was added.

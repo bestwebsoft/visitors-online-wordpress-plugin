@@ -68,7 +68,6 @@ if ( ! function_exists( 'vstrsnln_insert_rows' ) ) {
         global $wpdb, $wp_filesystem;
         if ( false == $noscript )
             check_ajax_referer( 'bws_plugin', 'vstrsnln_ajax_nonce_field' );
-        $prefix_bws             = $wpdb->base_prefix . 'bws_';
         $vstrsnln_access_type = get_filesystem_method();
         if ( $vstrsnln_access_type == 'direct' ) {
             $vstrsnln_creds = request_filesystem_credentials( site_url() . '/wp-admin/', '', false, false, array() );
@@ -84,7 +83,7 @@ if ( ! function_exists( 'vstrsnln_insert_rows' ) ) {
                     $filename = plugin_dir_path( __FILE__ ) . 'file_' . $_POST['count'] . '.csv';
                     $data_array = $wp_filesystem->get_contents_array( $filename );
                     if ( false !== $data_array && is_array( $data_array ) && ! empty( $data_array ) ) {
-                        $sql = "INSERT IGNORE INTO `" . $prefix_bws . "country`
+                        $sql = "INSERT IGNORE INTO `" . $wpdb->base_prefix . "bws_country`
                             ( `ip_from`, `ip_to`, `ip_from_int`, `ip_to_int`, `short_country`, `name_country` )
                             VALUES ( " . implode( " ) , ( ", $data_array ) . " );";
                         $result = $wpdb->query( $sql );
@@ -97,7 +96,7 @@ if ( ! function_exists( 'vstrsnln_insert_rows' ) ) {
                     $filename   = plugin_dir_path( __FILE__ ) . 'file_' . $number_file . '.csv';
                     $data_array = $wp_filesystem->get_contents_array( $filename );
                     if ( false !== $data_array && is_array( $data_array ) && ! empty( $data_array ) ) {
-                        $sql = "INSERT IGNORE INTO `" . $prefix_bws . "country`
+                        $sql = "INSERT IGNORE INTO `" . $wpdb->base_prefix . "bws_country`
                             ( `ip_from`, `ip_to`, `ip_from_int`, `ip_to_int`, `short_country`, `name_country` )
                             VALUES ( " . implode( " ) , ( ", $data_array ) . " );";
                         $result = $wpdb->query( $sql );
@@ -128,13 +127,11 @@ if ( ! function_exists( 'vstrsnln_import_noscript' ) ) {
 if ( ! function_exists( 'vstrsnln_form_import_country' ) ) {
     function vstrsnln_form_import_country( $page_url ) {
         global $wpdb;
-        $prefix_bws = $wpdb->base_prefix . 'bws_';
-        $vstrsnln_table_name = $prefix_bws . 'country';
         /* Table exists */
-        if ( $wpdb->get_var( "SHOW TABLES LIKE '" . $prefix_bws . "country'" ) == $vstrsnln_table_name ) {
+        if ( $wpdb->get_var( "SHOW TABLES LIKE '" . $wpdb->base_prefix . "bws_country'" ) == $wpdb->base_prefix . 'bws_country' ) {
             $vstrsnln_table_full = $wpdb->get_var( "
                 SELECT count( * )
-                FROM `" . $prefix_bws . "country`
+                FROM `" . $wpdb->base_prefix . "bws_country`
                 LIMIT 1"
             );
         } else {
