@@ -3,12 +3,12 @@ Contributors: bestwebsoft
 Donate link: http://bestwebsoft.com/donate/
 Tags: visitors online, visitors online plugin, count visitor, guests, guests counter, counter, visitors counter, add visitors counter, count, add guests counter, users online, guests online
 Requires at least: 3.8
-Tested up to: 4.5.3
-Stable tag: 0.7
+Tested up to: 4.6
+Stable tag: 0.8
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Plugin allows to see how many users, guests and bots are online on the website. Also, you can see statistics on the highest number of visits.
+Display live count of online visitors who are currently browsing your WordPress website.
 
 == Description ==
 
@@ -61,7 +61,7 @@ We can fix some things for free for the users who provide a translation of our p
 
 1. Upload `visitors-online` folder to the `/wp-content/plugins/` directory.
 2. Activate the plugin using the 'Plugins' menu in your WordPress admin panel.
-3. You can adjust the necessary settings using your WordPress admin panel in "BWS Plugins" > "Visitors Online".
+3. You can adjust the necessary settings using your WordPress admin panel in "BWS Panel" > "Visitors Online".
 4. Create a page or a post and insert the short-code [vstrsnln_info] into the text.
 5. Add a widget Visitors Online to the Sidebar column.
 
@@ -81,7 +81,7 @@ You can see statistics on the admin panel, in any place of a post (if using shor
 
 = Why do the number of users online displayed in statistics is greater, than it actually is? =
 
-The user will be displayed online, if he/she had left the site, but the time when the user is considered being online is not yet passed.
+The user will be displayed online if he/she had left the site, but the time, when the user is considered being online, is not yet passed.
 
 = How bots are defined? =
 
@@ -89,7 +89,7 @@ The plugin receives data from the server variable $_SERVER['HTTP_USER_AGENT'], a
 
 = Why the information about the day with the maximum number of visits does not match the number of actual visitors? =
 
-The plugin counts the number of the site visitors during the day. If the same user visits the site 5 times during the day, the plugin see 5 visits, but not one. The visit means that a user enters the site or console as a guest user or bot, and stays within the time set on the plugin settings page. (The time period when the user is online, without making any actions).
+The plugin counts the number of the site visitors during the day. If the same user visits the site 5 times during the day, the plugin sees 5 visits, but not one. The visit means that a user enters the site or console as a guest user or bot, and stays within the time set on the plugin settings page. (The time period when the user is online, without making any actions).
 
 = I have some problems with the plugin's work. What Information should I provide to receive proper support? =
 
@@ -107,6 +107,10 @@ Please make sure that the problem hasn't been discussed on our forum yet (<a hre
 3. Plugin Settings page.
 
 == Changelog ==
+
+= V0.8 - 10.08.2016 =
+* NEW: The Italian language file was added.
+* Update : All functionality for WordPress 4.6 was updated.
 
 = V0.7 - 28.06.2016 =
 * Update : We updated all functionality for wordpress 4.5.3.
@@ -135,6 +139,10 @@ Please make sure that the problem hasn't been discussed on our forum yet (<a hre
 * NEW : Added detection of the country.
 
 == Upgrade Notice ==
+
+= V0.8 =
+* New languages added.
+* The compatibility with new WordPress version updated.
 
 = V0.7 =
 We updated all functionality for wordpress 4.5.3.
