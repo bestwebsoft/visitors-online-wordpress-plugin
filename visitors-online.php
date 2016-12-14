@@ -1,12 +1,12 @@
 <?php
 /*
 Plugin Name: Visitors Online by BestWebSoft
-Plugin URI: http://bestwebsoft.com/products/visitors-online/
+Plugin URI: http://bestwebsoft.com/products/wordpress/plugins/visitors-online/
 Description: Display live count of online visitors who are currently browsing your WordPress website.
 Author: BestWebSoft
 Text Domain: visitors-online
 Domain Path: /languages
-Version: 0.8
+Version: 0.9
 Author URI: http://bestwebsoft.com/
 License: GPLv3 or later
 */
@@ -547,7 +547,7 @@ if ( ! function_exists( 'vstrsnln_settings_page' ) ) {
 								<div class="bws_info">
 									<?php _e( 'Unlock premium options by upgrading to Pro version', 'visitors-online' ); ?>
 								</div>
-								<a class="bws_button" href="http://bestwebsoft.com/products/visitors-online/?k=1b01d30e84bb97b2afecb5f34c43931d&pn=213&v=<?php echo $vstrsnln_plugin_info["Version"]; ?>&wp_v=<?php echo $wp_version; ?>" target="_blank" title="Visitors Online Pro"><?php _e( 'Learn More', 'visitors-online' ); ?></a>
+								<a class="bws_button" href="http://bestwebsoft.com/products/wordpress/plugins/visitors-online/?k=1b01d30e84bb97b2afecb5f34c43931d&pn=213&v=<?php echo $vstrsnln_plugin_info["Version"]; ?>&wp_v=<?php echo $wp_version; ?>" target="_blank" title="Visitors Online Pro"><?php _e( 'Learn More', 'visitors-online' ); ?></a>
 								<div class="clear"></div>
 							</div>
 						</div>
@@ -928,7 +928,7 @@ if ( ! function_exists( 'vstrsnln_register_plugin_links' ) ) {
 		if ( $file == $base ) {
 			if ( ! is_network_admin() )
 				$links[] = '<a href="admin.php?page=visitors-online.php">' . __( 'Settings', 'visitors-online' ) . '</a>';
-			$links[] = '<a href="http://wordpress.org/plugins/visitors-online/faq/" target="_blank">' . __( 'FAQ', 'visitors-online' ) . '</a>';
+			$links[] = '<a href="http://support.bestwebsoft.com/hc/en-us/sections/201089295" target="_blank">' . __( 'FAQ', 'visitors-online' ) . '</a>';
 			$links[] = '<a href="http://support.bestwebsoft.com">' . __( 'Support', 'visitors-online' ) . '</a>';
 		}
 		return $links;

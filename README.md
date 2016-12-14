@@ -3,9 +3,10 @@
 
 Display live count of online visitors who are currently browsing your WordPress website.
 
-<p>Visitors Online plugin is a helpful tool which displays your website visitors count on Wordpress admin dashboard or as a widget in the front-end.</p>
+<p>Visitors Online plugin is a helpful tool which displays your website visitors count on Wordpress admin dashboard or as a widget in the front-end.
+Customize and manage your visitor statistic list, see how many visitors are on your website, and the highest level of visits.</p>
 
-<p>Customize and manage your visitor statistic list, see how many visitors are on your website, and the highest level of visits. Start tracking your live traffic today!</p>
+<p>Start tracking your live traffic today!</p>
 
 
 <div class='video'></div>
@@ -22,6 +23,7 @@ Display live count of online visitors who are currently browsing your WordPress 
 <li>Compatible with latest WordPress version </li>
 <li>Incredibly simple settings for fast setup without modifying code</li>
 <li>Detailed step-by-step documentation and videos</li>
+<li>Multilingual and RTL ready</li>
 </ul>
 
 <blockquote>
@@ -34,7 +36,7 @@ Display live count of online visitors who are currently browsing your WordPress 
   <li>Get answer to your question within one business day (<a href="http://bestwebsoft.com/support-policy/">Support Policy</a>)</li>
   </ul>
   
-  <p><a href="http://bestwebsoft.com/products/visitors-online/?k=a58d73e5dee0c701959b47ea355c6e5b">Upgrade to Pro Now</a></p>
+  <p><a href="http://bestwebsoft.com/products/wordpress/plugins/visitors-online/?k=a58d73e5dee0c701959b47ea355c6e5b">Upgrade to Pro Now</a></p>
 </blockquote>
 
 <p>If you have a feature suggestion or idea you'd like to see in the plugin, we'd love to hear about it! <a href="http://support.bestwebsoft.com/hc/en-us/requests/new">Suggest a Feature</a></p>
@@ -53,6 +55,7 @@ Display live count of online visitors who are currently browsing your WordPress 
 <h4>Translation</h4>
 
 <ul>
+<li>Arabic (ar) (thanks to <a href="mailto:support@saidmoulla.com">Said Moulla</a>, <a href="http://www.SaidMoulla.com" rel="nofollow">http://www.SaidMoulla.com</a>)</li>
 <li>Czech (cs_CZ) (thanks to <a href="mailto:info@pamadessoft.cz">PaMaDeSSoft</a>, <a href="http://www.pamadessoft.cz" rel="nofollow">http://www.pamadessoft.cz</a>)</li>
 <li>Russian (ru_RU)</li>
 <li>Ukrainian (uk)</li>
@@ -63,7 +66,7 @@ Display live count of online visitors who are currently browsing your WordPress 
 <h4>Recommended Plugins</h4>
 
 <ul>
-<li><a href="http://bestwebsoft.com/products/updater/?k=c2bb0350098ca869742b01301148f8f8">Updater</a> - Automatically check and update WordPress core with all installed plugins to the latest versions. Manual mode, email notifications and backups of all your files and database before updating.</li>
+<li><a href="http://bestwebsoft.com/products/wordpress/plugins/updater/?k=c2bb0350098ca869742b01301148f8f8">Updater</a> - Automatically check and update WordPress core with all installed plugins to the latest versions. Manual mode, email notifications and backups of all your files and database before updating.</li>
 </ul>
 
 <h4>Donate</h4>

@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: http://bestwebsoft.com/donate/
 Tags: visitors online, visitors online plugin, count visitor, guests, guests counter, counter, visitors counter, add visitors counter, count, add guests counter, users online, guests online
 Requires at least: 3.8
-Tested up to: 4.6.1
-Stable tag: 0.8
+Tested up to: 4.7
+Stable tag: 0.9
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -13,8 +13,9 @@ Display live count of online visitors who are currently browsing your WordPress 
 == Description ==
 
 Visitors Online plugin is a helpful tool which displays your website visitors count on Wordpress admin dashboard or as a widget in the front-end.
+Customize and manage your visitor statistic list, see how many visitors are on your website, and the highest level of visits.
 
-Customize and manage your visitor statistic list, see how many visitors are on your website, and the highest level of visits. Start tracking your live traffic today!
+Start tracking your live traffic today!
 
 http://www.youtube.com/watch?v=7e6LzyRzxwA
 
@@ -28,6 +29,7 @@ http://www.youtube.com/watch?v=7e6LzyRzxwA
 * Compatible with latest WordPress version 
 * Incredibly simple settings for fast setup without modifying code
 * Detailed step-by-step documentation and videos
+* Multilingual and RTL ready
 
 > **Pro Features**
 >
@@ -36,7 +38,7 @@ http://www.youtube.com/watch?v=7e6LzyRzxwA
 > * Automatically download and update list of countries and IP addresses
 > * Get answer to your question within one business day ([Support Policy](http://bestwebsoft.com/support-policy/))
 >
-> [Upgrade to Pro Now](http://bestwebsoft.com/products/visitors-online/?k=a58d73e5dee0c701959b47ea355c6e5b)
+> [Upgrade to Pro Now](http://bestwebsoft.com/products/wordpress/plugins/visitors-online/?k=a58d73e5dee0c701959b47ea355c6e5b)
 
 If you have a feature suggestion or idea you'd like to see in the plugin, we'd love to hear about it! [Suggest a Feature](http://support.bestwebsoft.com/hc/en-us/requests/new)
 
@@ -51,6 +53,7 @@ Visit our Help Center if you have any questions, our friendly Support Team is ha
 
 = Translation =
 
+* Arabic (ar) (thanks to [Said Moulla](mailto:support@saidmoulla.com), www.SaidMoulla.com)
 * Czech (cs_CZ) (thanks to [PaMaDeSSoft](mailto:info@pamadessoft.cz), www.pamadessoft.cz)
 * Russian (ru_RU)
 * Ukrainian (uk)
@@ -59,7 +62,7 @@ Some of these translations are not complete. We are constantly adding new featur
 
 = Recommended Plugins =
 
-* [Updater](http://bestwebsoft.com/products/updater/?k=c2bb0350098ca869742b01301148f8f8) - Automatically check and update WordPress core with all installed plugins to the latest versions. Manual mode, email notifications and backups of all your files and database before updating.
+* [Updater](http://bestwebsoft.com/products/wordpress/plugins/updater/?k=c2bb0350098ca869742b01301148f8f8) - Automatically check and update WordPress core with all installed plugins to the latest versions. Manual mode, email notifications and backups of all your files and database before updating.
 
 = Donate =
 
@@ -125,6 +128,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<http:
 
 == Changelog ==
 
+= V0.9 - 14.12.2016 =
+* NEW: The Arabic language file was added.
+
 = V0.8 - 10.08.2016 =
 * NEW: The Italian language file was added.
 * Update : All functionality for WordPress 4.6 was updated.
@@ -156,6 +162,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<http:
 * NEW : Added detection of the country.
 
 == Upgrade Notice ==
+
+= V0.9 =
+* New language added.
 
 = V0.8 =
 * New languages added.
