@@ -1,17 +1,17 @@
 <?php
 /*
 Plugin Name: Visitors Online by BestWebSoft
-Plugin URI: http://bestwebsoft.com/products/wordpress/plugins/visitors-online/
+Plugin URI: https://bestwebsoft.com/products/wordpress/plugins/visitors-online/
 Description: Display live count of online visitors who are currently browsing your WordPress website.
 Author: BestWebSoft
 Text Domain: visitors-online
 Domain Path: /languages
-Version: 0.9
-Author URI: http://bestwebsoft.com/
+Version: 1.0.0
+Author URI: https://bestwebsoft.com/
 License: GPLv3 or later
 */
 
-/*  © Copyright 2016  BestWebSoft  ( http://support.bestwebsoft.com )
+/*  © Copyright 2017  BestWebSoft  ( https://support.bestwebsoft.com )
 
 	This program is free software; you can redistribute it and/or modify
 	it under the terms of the GNU General Public License, version 2, as 
@@ -490,13 +490,13 @@ if ( ! function_exists( 'vstrsnln_settings_page' ) ) {
 				<div>
 					<?php printf( 
 						__( 'You can add the counter of Visitors Online by clicking on %s button.', 'visitors-online' ), 
-						'<span class="bws_code"><img style="vertical-align: sub;" src="' . plugins_url( 'bws_menu/images/shortcode-icon.png', __FILE__ ) . '" alt=""/></span>'
+						'<span class="bws_code"><span class="bwsicons bwsicons-shortcode"></span></span>'
 					); ?>
 					<div class="bws_help_box bws_help_box_right dashicons dashicons-editor-help">
 						<div class="bws_hidden_help_text" style="min-width: 180px;">
 							<?php printf( 
 								__( "You can add the counter of Visitors Online to your content by clicking on %s button in the content edit block using the Visual mode. If the button isn't displayed, please use the shortcode %s", 'visitors-online' ), 
-								'<code><img style="vertical-align: sub;" src="' . plugins_url( 'bws_menu/images/shortcode-icon.png', __FILE__ ) . '" alt="" /></code>',
+								'<span class="bws_code"><span class="bwsicons bwsicons-shortcode"></span></span>',
 								'<code>[vstrsnln_info]</code>'
 							); ?>
 						</div>
@@ -544,10 +544,7 @@ if ( ! function_exists( 'vstrsnln_settings_page' ) ) {
 								</table>	
 							</div>
 							<div class="bws_pro_version_tooltip">
-								<div class="bws_info">
-									<?php _e( 'Unlock premium options by upgrading to Pro version', 'visitors-online' ); ?>
-								</div>
-								<a class="bws_button" href="http://bestwebsoft.com/products/wordpress/plugins/visitors-online/?k=1b01d30e84bb97b2afecb5f34c43931d&pn=213&v=<?php echo $vstrsnln_plugin_info["Version"]; ?>&wp_v=<?php echo $wp_version; ?>" target="_blank" title="Visitors Online Pro"><?php _e( 'Learn More', 'visitors-online' ); ?></a>
+								<a class="bws_button" href="https://bestwebsoft.com/products/wordpress/plugins/visitors-online/?k=1b01d30e84bb97b2afecb5f34c43931d&pn=213&v=<?php echo $vstrsnln_plugin_info["Version"]; ?>&wp_v=<?php echo $wp_version; ?>" target="_blank" title="Visitors Online Pro"><?php _e( 'Learn More', 'visitors-online' ); ?></a>
 								<div class="clear"></div>
 							</div>
 						</div>
@@ -928,8 +925,8 @@ if ( ! function_exists( 'vstrsnln_register_plugin_links' ) ) {
 		if ( $file == $base ) {
 			if ( ! is_network_admin() )
 				$links[] = '<a href="admin.php?page=visitors-online.php">' . __( 'Settings', 'visitors-online' ) . '</a>';
-			$links[] = '<a href="http://support.bestwebsoft.com/hc/en-us/sections/201089295" target="_blank">' . __( 'FAQ', 'visitors-online' ) . '</a>';
-			$links[] = '<a href="http://support.bestwebsoft.com">' . __( 'Support', 'visitors-online' ) . '</a>';
+			$links[] = '<a href="https://support.bestwebsoft.com/hc/en-us/sections/201089295" target="_blank">' . __( 'FAQ', 'visitors-online' ) . '</a>';
+			$links[] = '<a href="https://support.bestwebsoft.com">' . __( 'Support', 'visitors-online' ) . '</a>';
 		}
 		return $links;
 	}

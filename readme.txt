@@ -1,10 +1,10 @@
 === Visitors Online by BestWebSoft ===
 Contributors: bestwebsoft
-Donate link: http://bestwebsoft.com/donate/
+Donate link: https://bestwebsoft.com/donate/
 Tags: visitors online, visitors online plugin, count visitor, guests, guests counter, counter, visitors counter, add visitors counter, count, add guests counter, users online, guests online
 Requires at least: 3.8
-Tested up to: 4.7
-Stable tag: 0.9
+Tested up to: 4.7.3
+Stable tag: 1.0.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -17,7 +17,7 @@ Customize and manage your visitor statistic list, see how many visitors are on y
 
 Start tracking your live traffic today!
 
-http://www.youtube.com/watch?v=7e6LzyRzxwA
+https://www.youtube.com/watch?v=7e6LzyRzxwA
 
 = Free Features =
 
@@ -36,20 +36,21 @@ http://www.youtube.com/watch?v=7e6LzyRzxwA
 > All features from Free version included plus:
 >
 > * Automatically download and update list of countries and IP addresses
-> * Get answer to your question within one business day ([Support Policy](http://bestwebsoft.com/support-policy/))
+> * Get answer to your question within one business day ([Support Policy](https://bestwebsoft.com/support-policy/))
 >
-> [Upgrade to Pro Now](http://bestwebsoft.com/products/wordpress/plugins/visitors-online/?k=a58d73e5dee0c701959b47ea355c6e5b)
+> [Upgrade to Pro Now](https://bestwebsoft.com/products/wordpress/plugins/visitors-online/?k=a58d73e5dee0c701959b47ea355c6e5b)
 
-If you have a feature suggestion or idea you'd like to see in the plugin, we'd love to hear about it! [Suggest a Feature](http://support.bestwebsoft.com/hc/en-us/requests/new)
+If you have a feature suggestion or idea you'd like to see in the plugin, we'd love to hear about it! [Suggest a Feature](https://support.bestwebsoft.com/hc/en-us/requests/new)
 
 = Documentation & Videos =
 
-* [[Doc] Installation](https://docs.google.com/document/d/1Jhr5kJN56Bkbo4T1N_zWBR1nLfk6j0Lw5av1326KnIM/)
-* [[Video] Installation Instruction](http://www.youtube.com/watch?v=izPS7Tbgxqg)
+* [[Doc] Installation](https://docs.google.com/document/d/1-hvn6WRvWnOqj5v5pLUk7Awyu87lq5B_dO-Tv-MC9JQ/)
+* [[Doc] Purchase](https://docs.google.com/document/d/1EUdBVvnm7IHZ6y0DNyldZypUQKpB8UVPToSc_LdOYQI/)
+* [[Video] Installation Instruction](https://www.youtube.com/watch?v=izPS7Tbgxqg)
 
 = Help & Support =
 
-Visit our Help Center if you have any questions, our friendly Support Team is happy to help — <http://support.bestwebsoft.com/>
+Visit our Help Center if you have any questions, our friendly Support Team is happy to help — <https://support.bestwebsoft.com/>
 
 = Translation =
 
@@ -58,17 +59,11 @@ Visit our Help Center if you have any questions, our friendly Support Team is ha
 * Russian (ru_RU)
 * Ukrainian (uk)
 
-Some of these translations are not complete. We are constantly adding new features which should be translated. If you would like to create your own language pack or update the existing one, you can send [the text of PO and MO files](http://codex.wordpress.org/Translating_WordPress) to [BestWebSoft](http://support.bestwebsoft.com/hc/en-us/requests/new) and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO [files Poedit](http://www.poedit.net/download.php).
+Some of these translations are not complete. We are constantly adding new features which should be translated. If you would like to create your own language pack or update the existing one, you can send [the text of PO and MO files](https://codex.wordpress.org/Translating_WordPress) to [BestWebSoft](https://support.bestwebsoft.com/hc/en-us/requests/new) and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO [files Poedit](https://www.poedit.net/download.php).
 
 = Recommended Plugins =
 
-* [Updater](http://bestwebsoft.com/products/wordpress/plugins/updater/?k=c2bb0350098ca869742b01301148f8f8) - Automatically check and update WordPress core with all installed plugins to the latest versions. Manual mode, email notifications and backups of all your files and database before updating.
-
-= Donate =
-
-Donations play an important role in supporting open-source projects. We greatly appreciate any donation you can make to help us continue further development of free products.
-
-[Donate Now](http://bestwebsoft.com/donate/)
+* [Updater](https://bestwebsoft.com/products/wordpress/plugins/updater/?k=c2bb0350098ca869742b01301148f8f8) - Automatically check and update WordPress core with all installed plugins to the latest versions. Manual mode, email notifications and backups of all your files and database before updating.
 
 == Installation ==
 
@@ -78,9 +73,9 @@ Donations play an important role in supporting open-source projects. We greatly 
 4. Create a page or a post and insert the short-code [vstrsnln_info] into the text.
 5. Add a widget Visitors Online to the Sidebar column.
 
-[View a PDF version of Step-by-step Instruction on Visitors Online Installation](https://docs.google.com/document/d/1Jhr5kJN56Bkbo4T1N_zWBR1nLfk6j0Lw5av1326KnIM/)
+[View a PDF version of Step-by-step Instruction on Visitors Online Installation](https://docs.google.com/document/d/1-hvn6WRvWnOqj5v5pLUk7Awyu87lq5B_dO-Tv-MC9JQ/)
 
-http://www.youtube.com/watch?v=izPS7Tbgxqg
+https://www.youtube.com/watch?v=izPS7Tbgxqg
 
 == Frequently Asked Questions ==
 
@@ -93,7 +88,7 @@ http://www.youtube.com/watch?v=izPS7Tbgxqg
 
 = I get "Not enough rights to import from the GeoIPCountryWhois.csv file" error. What shall I do? =
 
-You should set rights 755 to the folders wp-content, plugins, visitors-online and 644 to the GeoIPCountryWhois.csv file. In such case the plugin’s script will have enough rights to upload the file. Here is some useful information for you <http://codex.wordpress.org/Changing_File_Permissions#Shared_Hosting_with_suexec>.
+You should set rights 755 to the folders wp-content, plugins, visitors-online and 644 to the GeoIPCountryWhois.csv file. In such case the plugin’s script will have enough rights to upload the file. Here is some useful information for you <https://codex.wordpress.org/Changing_File_Permissions#Shared_Hosting_with_suexec>.
 
 = Where can I find statistics? =
 
@@ -113,7 +108,7 @@ The plugin counts the number of the site visitors during the day. If the same us
 
 = I have some problems with the plugin's work. What Information should I provide to receive proper support? =
 
-Please make sure that the problem hasn't been discussed yet on our forum (<http://support.bestwebsoft.com>). If no, please provide the following data along with your problem's description:
+Please make sure that the problem hasn't been discussed yet on our forum (<https://support.bestwebsoft.com>). If no, please provide the following data along with your problem's description:
 
 1. the link to the page where the problem occurs
 2. the name of the plugin and its version. If you are using a pro version - your order number.
@@ -127,6 +122,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<http:
 3. Plugin Settings page.
 
 == Changelog ==
+
+= V1.0.0 - 17.04.2017 =
+* Bugfix : Multiple Cross-Site Scripting (XSS) vulnerability was fixed.
 
 = V0.9 - 14.12.2016 =
 * NEW: The Arabic language file was added.
@@ -162,6 +160,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<http:
 * NEW : Added detection of the country.
 
 == Upgrade Notice ==
+
+= V1.0.0 =
+* Bugs fixed.
 
 = V0.9 =
 * New language added.
