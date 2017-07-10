@@ -1,22 +1,25 @@
 /* Styles for settings page */
 #vstrsnln_message {
-    display: none;
-    margin-left: 112px;
+	display: none;
+	margin-left: 112px;
+}
+#vstrsnln_structure_builder {
+	height: 250px;
 }
 #vstrsnln_img_loader {
-    position: relative;
-    vertical-align: middle;
-    display: none;
+	position: relative;
+	vertical-align: middle;
+	display: none;
 }
 #vstrsnln_import_block {
-    margin-bottom: 20px;
-    position: relative;
+	margin-bottom: 20px;
+	position: relative;
 }
 .vstrsnln-info {
-    margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 .vstrsnln_clear {
-    clear: both;
-    margin: 0;
-    padding: 0;
+	clear: both;
+	margin: 0;
+	padding: 0;
 }

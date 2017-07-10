@@ -35,7 +35,7 @@
 		if ( gl_count_rows != false ) {
 			count_rows 				= gl_count_rows;
 			number_records_file 	= gl_number_records_file
-		};	
+		};
 		if ( number_records_file != 0 ) {
 			var ajax_result			= 0;
 			var error_insert	 	= 0;
@@ -56,8 +56,8 @@
 							error_insert = 0;
 							insert_data( false, false );
 						}
-					} else {					
-						if ( error_insert < 3 ) {						
+					} else {
+						if ( error_insert < 3 ) {
 							error_insert++;
 							if ( count_rows <= number_records_file ) {
 								insert_data( false, false );

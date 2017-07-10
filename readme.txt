@@ -2,9 +2,9 @@
 Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: visitors online, visitors online plugin, count visitor, guests, guests counter, counter, visitors counter, add visitors counter, count, add guests counter, users online, guests online
-Requires at least: 3.8
-Tested up to: 4.7.3
-Stable tag: 1.0.0
+Requires at least: 3.9
+Tested up to: 4.8
+Stable tag: 1.0.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -24,9 +24,10 @@ https://www.youtube.com/watch?v=7e6LzyRzxwA
 * Automatically display visitor statistics on your dashboard
 * Add visitor statistics to widgets
 * Set the time when the visitor is considered being online without making any actions
+* Customize the structure for data input [NEW]
 * Reset the statistics table
 * Add custom code via plugin settings page
-* Compatible with latest WordPress version 
+* Compatible with latest WordPress version
 * Incredibly simple settings for fast setup without modifying code
 * Detailed step-by-step documentation and videos
 * Multilingual and RTL ready
@@ -63,7 +64,7 @@ Some of these translations are not complete. We are constantly adding new featur
 
 = Recommended Plugins =
 
-* [Updater](https://bestwebsoft.com/products/wordpress/plugins/updater/?k=c2bb0350098ca869742b01301148f8f8) - Automatically check and update WordPress core with all installed plugins to the latest versions. Manual mode, email notifications and backups of all your files and database before updating.
+* [Updater](https://bestwebsoft.com/products/wordpress/plugins/updater/?k=c2bb0350098ca869742b01301148f8f8) - Automatically check and update WordPress website core with all installed plugins and themes to the latest versions.
 
 == Installation ==
 
@@ -79,9 +80,9 @@ https://www.youtube.com/watch?v=izPS7Tbgxqg
 
 == Frequently Asked Questions ==
 
-= How It Works = 
+= How It Works =
 
-- the user will be displayed online, if he/she had left the site, but the time when the user is considered being online is not yet passed. 
+- the user will be displayed online, if he/she had left the site, but the time when the user is considered being online is not yet passed.
 - to define the user`s country, you will need to download the file according to the instruction <https://docs.google.com/document/d/1sxxeDleJdPS8HvRdYwYSABQ586t1s-Z8r6wy55iXJCM/>
 - if the number of visits from different countries is the same, the plugin will display several countries, but not more than three;
 - if the number of visits from different browsers is the same, the plugin will display several browsers, but not more than three
@@ -123,6 +124,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 
 == Changelog ==
 
+= V1.0.1 - 10.07.2017 =
+* NEW : Ability to change the data structure has been added.
+
 = V1.0.0 - 17.04.2017 =
 * Bugfix : Multiple Cross-Site Scripting (XSS) vulnerability was fixed.
 
@@ -148,18 +152,21 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * Bugfix : We fixed SQL injection vulnerability.
 * Bugfix : Widget displaying was fixed.
 
-= V0.3 - 02.09.2015 = 
+= V0.3 - 02.09.2015 =
 * Update : We updated all functionality for wordpress 4.3.
 
-= V0.2 - 03.07.2015 = 
+= V0.2 - 03.07.2015 =
 * Update : The Ukrainian language file is updated.
 * Update : BWS plugins section is updated.
 
-= V0.1 - 25.05.2015 = 
+= V0.1 - 25.05.2015 =
 * Bugfix : The code refactoring was performed.
 * NEW : Added detection of the country.
 
 == Upgrade Notice ==
+
+= V1.0.1 =
+* Functionality expanded.
 
 = V1.0.0 =
 * Bugs fixed.
@@ -180,10 +187,10 @@ Ability to add custom styles. The Czech language file was added.
 = V0.5 =
 The bug with plugin menu duplicating was fixed.
 
-= V0.4 = 
+= V0.4 =
 A button for Visitors Online shortcode inserting to the content was added. We fixed SQL injection vulnerability. Widget displaying was fixed.
 
-= V0.3 = 
+= V0.3 =
 We updated all functionality for wordpress 4.3.
 
 = V0.2 =

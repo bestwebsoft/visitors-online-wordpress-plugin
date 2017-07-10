@@ -4,7 +4,7 @@ function vstrsnln_check_country_js() {
 			type: 'POST',
 			url: ajaxurl,
 			async: false,
-			data: { 
+			data: {
 				'action': 'vstrsnln_check_country',
 				vstrsnln_ajax_nonce_field: vstrsnln_ajax.vstrsnln_nonce
 			}
