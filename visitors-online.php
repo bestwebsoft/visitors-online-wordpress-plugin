@@ -6,7 +6,7 @@ Description: Display live count of online visitors who are currently browsing yo
 Author: BestWebSoft
 Text Domain: visitors-online
 Domain Path: /languages
-Version: 1.0.1
+Version: 1.0.2
 Author URI: https://bestwebsoft.com/
 License: GPLv3 or later
 */
@@ -29,8 +29,9 @@ License: GPLv3 or later
 
 /* Include files on import of table and declare the prefix */
 $vstrsnln_fpath = dirname( __FILE__ ) . '/import-country.php';
-if ( file_exists( $vstrsnln_fpath ) )
+if ( file_exists( $vstrsnln_fpath ) ) {
 	include $vstrsnln_fpath;
+}
 
 /* Function for adding menu and submenu */
 if ( ! function_exists( 'vstrsnln_admin_menu' ) ) {
@@ -56,8 +57,9 @@ if ( ! function_exists( 'vstrsnln_plugin_init' ) ) {
 		bws_include_init( plugin_basename( __FILE__ ) );
 
 		if ( empty( $vstrsnln_plugin_info ) ) {
-			if ( ! function_exists( 'get_plugin_data' ) )
+			if ( ! function_exists( 'get_plugin_data' ) ) {
 				require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+			}
 			$vstrsnln_plugin_info = get_plugin_data( __FILE__ );
 		}
 		/* Function check if plugin is compatible with current WP version */
@@ -112,8 +114,9 @@ if ( ! function_exists ( 'vstrsnln_default_options' ) ) {
 			$vstrsnln_options['plugin_db_version'] = $db_version;
 			$update_option = true;
 		}
-		if ( isset( $update_option ) )
+		if ( isset( $update_option ) ) {
 			update_option( 'vstrsnln_options', $vstrsnln_options );
+		}
 
 		$vstrsnln_user_interval = $vstrsnln_options['check_user_interval'];
 	}
@@ -134,7 +137,7 @@ if ( ! function_exists( 'vstrsnln_get_options_default' ) ) {
 				__( 'guests', 'visitors-online' ) . " – {GUESTS}\n" .
 				__( 'bots', 'visitors-online' ) . " – {BOTS}\n" .
 				__( 'The maximum number of visits was', 'visitors-online' ) . " – {MAX-DATE}:\n" .
-				__( 'all visits', 'visitors-online' ) . " – {MAX-TOTAL}:\n" .
+				__( 'all visitors', 'visitors-online' ) . " – {MAX-TOTAL}:\n" .
 				__( 'users', 'visitors-online' ) . " – {MAX-USERS}\n" .
 				__( 'guests', 'visitors-online' ) . " – {MAX-GUESTS}\n" .
 				__( 'bots', 'visitors-online' ) . " – {MAX-BOTS}"
@@ -144,11 +147,13 @@ if ( ! function_exists( 'vstrsnln_get_options_default' ) ) {
 		$table_general = vstrsnln_get_table_general( $blog_id );
 
 		$country_name = vstrsnln_get_country_name_table_general( $table_general );
-		if ( $country_name )
+		if ( $country_name ) {
 			$default_options['structure_pattern'] .= "\n" . __( 'country', 'visitors-online' ) . ' – {COUNTRY}';
+		}
 
-		if ( ! empty( $table_general->browser ) )
+		if ( ! empty( $table_general->browser ) ) {
 			$default_options['structure_pattern'] .= "\n" . __( 'browser', 'visitors-online' ) . ' – {BROWSER}';
+		}
 
 		return $default_options;
 	}
@@ -170,8 +175,9 @@ if ( ! function_exists ( 'vstrsnln_admin_head' ) ) {
 			wp_localize_script( 'vstrsnln_country_script', 'vstrsnln_var', $vstrsnln_var );
 			wp_localize_script( 'vstrsnln_script', 'vstrsnln_ajax', array( 'vstrsnln_nonce' => wp_create_nonce( 'bws_plugin', 'vstrsnln_ajax_nonce_field' ) ) );
 
-			if ( isset( $_GET['action'] ) && 'custom_code' == $_GET['action'] )
+			if ( isset( $_GET['action'] ) && 'custom_code' == $_GET['action'] ) {
 				bws_plugins_include_codemirror();
+			}
 		}
 	}
 }
@@ -250,8 +256,9 @@ if ( ! function_exists( 'vstrsnln_write_user_base' ) ) {
 	function vstrsnln_write_user_base() {
 		global $wpdb, $vstrsnln_user_interval;
 		/* Return in doing cron */
-		if ( defined( 'DOING_CRON' ) && DOING_CRON )
+		if ( defined( 'DOING_CRON' ) && DOING_CRON ) {
 			return;
+		}
 
 		if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && ! empty( $_SERVER['HTTP_USER_AGENT'] ) ) {
 			$vstrsnln_user_agent = $_SERVER['HTTP_USER_AGENT'];
@@ -285,7 +292,7 @@ if ( ! function_exists( 'vstrsnln_write_user_base' ) ) {
 					$vstrsnln_user		= true;
 					$vstrsnln_user_type = "user";
 				} else {
-					if ( $vstrsnln_current_id == 0 ) {
+					if ( empty( $vstrsnln_current_id ) ) {
 						$vstrsnln_guest		= true;
 						$vstrsnln_user_type = "guest";
 					} else {
@@ -302,7 +309,7 @@ if ( ! function_exists( 'vstrsnln_write_user_base' ) ) {
 					'time_on'			=> time(),
 					'date_connection'	=> date( 'Y.m.d' ),
 					'user_type' 		=> $vstrsnln_user_type,
-					'blog_id' 			=> $vstrsnln_blog_id
+					'blog_id' 			=> $vstrsnln_blog_id,
 				),
 				array( 'user_cookie' => $_COOKIE['vstrsnln'] )
 			);
@@ -319,21 +326,25 @@ if ( ! function_exists( 'vstrsnln_write_user_base' ) ) {
 				if ( preg_match( '/Opera ( [0-9.]+ ) /i', $vstrsnln_user_agent, $opera ) ) {
 					$vstrsnln_browser = ( $opera[1] ) ? 'Opera ' . $opera[1] : 'Opera ';
 				}
-				if ( $browser == 'MSIE' ) {
+				if ( 'MSIE' == $browser ) {
 					preg_match( '/( Maxthon|Avant Browser|MyIE2 )/i', $vstrsnln_user_agent, $ie );
 					$vstrsnln_browser = ( $ie && $ie[1] ) ? $ie[1] . ' based on IE ' . $version : 'IE '. $version;
 				}
-				if ( $browser == 'Firefox' ) {
+				if ( 'Firefox' == $browser ) {
 					preg_match( '/( Flock|Navigator|Epiphany)\/([0-9.]+ ) /', $vstrsnln_user_agent, $ff );
-					if ( $ff )
+					if ( $ff ) {
 						$vstrsnln_browser = ( $ff[1] && $ff[2] ) ? $ff[1] . ' ' . $ff[2] : '';
+					}
 				}
-				if ( $browser == 'Opera' && $version == '9.80' )
+				if ( 'Opera' == $browser && '9.80' == $version ) {
 					$vstrsnln_browser = 'Opera ' . substr( $vstrsnln_user_agent,-5 );
-				if ( $browser == 'Version' )
+				}
+				if ( 'Version' == $browser ) {
 					$vstrsnln_browser = 'Safari ' . $version;
-				if ( ! $browser && strpos( $vstrsnln_user_agent, 'Gecko' ) )
+				}
+				if ( ! $browser && strpos( $vstrsnln_user_agent, 'Gecko' ) ) {
 					$vstrsnln_browser = 'Browser based on Gecko';
+				}
 				/* Сheck bot */
 				if ( true == vstrsnln_list_bots( $vstrsnln_user_agent ) ) {
 					$vstrsnln_user_type = "bot";
@@ -350,7 +361,7 @@ if ( ! function_exists( 'vstrsnln_write_user_base' ) ) {
 					$vstrsnln_user 		= true;
 					$vstrsnln_user_type = "user";
 				} else {
-					if ( $vstrsnln_current_id == 0 ) {
+					if ( empty( $vstrsnln_current_id ) ) {
 						$vstrsnln_guest 	= true;
 						$vstrsnln_user_type = "guest";
 					} else {
@@ -455,8 +466,9 @@ if ( ! function_exists( 'vstrsnln_settings_page' ) ) {
 					FROM `" . $wpdb->base_prefix . "vstrsnln_general`
 					LIMIT 1"
 				);
-				if ( $vstrsnln_number_general == 0 )
-					$message = __( 'Statistics was cleared successfully', 'visitors-online' );
+				if ( empty( $vstrsnln_number_general ) ) {
+					$message = __( 'Statistics was successfully cleared', 'visitors-online' );
+				}
 			} else {
 				/* Save data for settings page */
 				if ( $vstrsnln_options['check_user_interval'] != $_REQUEST['vstrsnln_check_user_interval'] ) {
@@ -497,10 +509,11 @@ if ( ! function_exists( 'vstrsnln_settings_page' ) ) {
 		/* GO PRO */
 		if ( isset( $_GET['action'] ) && 'go_pro' == $_GET['action'] ) {
 			$go_pro_result = bws_go_pro_tab_check( plugin_basename( __FILE__ ), 'vstrsnln_options' );
-			if ( ! empty( $go_pro_result['error'] ) )
+			if ( ! empty( $go_pro_result['error'] ) ) {
 				$error = $go_pro_result['error'];
-			elseif ( ! empty( $go_pro_result['message'] ) )
+			} elseif ( ! empty( $go_pro_result['message'] ) ) {
 				$message = $go_pro_result['message'];
+			}
 		} ?>
 		<div class="wrap">
 			<h1><?php _e( 'Visitors Online Settings', 'visitors-online' ); ?></h1>
@@ -519,13 +532,13 @@ if ( ! function_exists( 'vstrsnln_settings_page' ) ) {
 				<br/>
 				<div>
 					<?php printf(
-						__( 'You can add the counter of Visitors Online by clicking on %s button.', 'visitors-online' ),
+						__( 'You can add the Visitors Online counter by clicking on %s button.', 'visitors-online' ),
 						'<span class="bws_code"><span class="bwsicons bwsicons-shortcode"></span></span>'
 					); ?>
 					<div class="bws_help_box bws_help_box_right dashicons dashicons-editor-help">
 						<div class="bws_hidden_help_text" style="min-width: 180px;">
 							<?php printf(
-								__( "You can add the counter of Visitors Online to your content by clicking on %s button in the content edit block using the Visual mode. If the button isn't displayed, please use the shortcode %s", 'visitors-online' ),
+								__( "You can add the Visitors Online counter to your content by clicking on %s button in the content edit block using the Visual mode. If the button isn't displayed, please use the shortcode %s", 'visitors-online' ),
 								'<span class="bws_code"><span class="bwsicons bwsicons-shortcode"></span></span>',
 								'<code>[vstrsnln_info]</code>'
 							); ?>
@@ -587,7 +600,7 @@ if ( ! function_exists( 'vstrsnln_settings_page' ) ) {
 											<span class="bws_info">
 												<?php _e( 'This option allows you to download lists with registered IP addresses all over the world to the database (from', 'visitors-online' ); ?>&nbsp;<a href="https://www.maxmind.com" target="_blank">https://www.maxmind.com</a>).
 												<br>
-												<?php _e( 'With this, you receive an information about each IP address, and to which country it belongs to. You can select the desired frequency for IP database updating', 'visitors-online' ); ?>.
+												<?php _e( 'Hence you will receive the information about each IP address, and the country it belongs to. You can select the desired frequency for IP database updating', 'visitors-online' ); ?>.
 											</span>
 										</td>
 									</tr>
@@ -745,8 +758,9 @@ if ( ! function_exists( 'vstrsnln_write_max_visits' ) ) {
 					)
 				);
 			}
-			if( !is_object( $date ) )
+			if( !is_object( $date ) ) {
 				break;
+			}
 		}
 		/* Keep records for two days, delete the remaining */
 		$wpdb->query( "DELETE
@@ -762,8 +776,9 @@ if ( ! function_exists( 'vstrsnln_add_user_interval' ) ) {
 	function vstrsnln_add_user_interval( $schedules ) {
 		global $vstrsnln_options;
 
-		if ( ! $vstrsnln_options )
+		if ( ! $vstrsnln_options ) {
 			vstrsnln_default_options();
+		}
 
 		$vstrsnln_user_interval 		= $vstrsnln_options['check_user_interval'];
 		$vstrsnln_display 				= $vstrsnln_user_interval . __( 'min', 'visitors-online' );
@@ -840,14 +855,17 @@ if ( ! function_exists( 'vstrsnln_info_display' ) ) {
 		);
 
 		/* get total "realtime visitors" count */
-		if ( strpos( $vstrsnln_content, '{USERS}' ) )
+		if ( strpos( $vstrsnln_content, '{USERS}' ) ) {
 			$replacements['total'] += $vstrsnln_type_user->user;
+		}
 
-		if ( strpos( $vstrsnln_content, '{GUESTS}' ) )
+		if ( strpos( $vstrsnln_content, '{GUESTS}' ) ) {
 			$replacements['total'] += $vstrsnln_type_user->guest;
+		}
 
-		if ( strpos( $vstrsnln_content, '{BOTS}' ) )
+		if ( strpos( $vstrsnln_content, '{BOTS}' ) ) {
 			$replacements['total'] += $vstrsnln_type_user->bot;
+		}
 
 		/* add new replacements */
 		if ( ! empty( $table_general ) ) {
@@ -860,20 +878,24 @@ if ( ! function_exists( 'vstrsnln_info_display' ) ) {
 			);
 
 			/* get total "max visitors" count */
-			if ( ! strpos( $vstrsnln_content, '{MAX-USERS}' ) )
+			if ( ! strpos( $vstrsnln_content, '{MAX-USERS}' ) ) {
 				$max_replacements['max-total'] -= $table_general->number_users;
+			}
 
-			if ( ! strpos( $vstrsnln_content, '{MAX-GUESTS}' ) )
+			if ( ! strpos( $vstrsnln_content, '{MAX-GUESTS}' ) ) {
 				$max_replacements['max-total'] -= $table_general->number_guests;
+			}
 
-			if ( ! strpos( $vstrsnln_content, '{MAX-BOTS}' ) )
+			if ( ! strpos( $vstrsnln_content, '{MAX-BOTS}' ) ) {
 				$max_replacements['max-total'] -= $table_general->number_bots;
+			}
 
 			/* add geo replacements */
 			$geo_replacements = array();
 
+			$country_name = vstrsnln_get_country_name_table_general( $table_general );
 			$geo_replacements['country'] =
-				$country_name = vstrsnln_get_country_name_table_general( $table_general ) ?
+				! empty( $country_name ) ?
 				$country_name :
 				__( 'No data', 'visitors-online' );
 
@@ -890,7 +912,9 @@ if ( ! function_exists( 'vstrsnln_info_display' ) ) {
 				'max-total'		=> $replacements['total'],
 				'max-users'		=> $replacements['users'],
 				'max-guests'	=> $replacements['guests'],
-				'max-bots'		=> $replacements['bots']
+				'max-bots'		=> $replacements['bots'],
+				'country'		=> __( 'No data', 'visitors-online' ),
+				'browser'		=> __( 'No data', 'visitors-online' )
 			);
 		}
 
@@ -908,10 +932,11 @@ if ( ! function_exists( 'vstrsnln_info_display' ) ) {
 
 		$vstrsnln_content = '<div class="vstrsnln-block">' . wpautop( $vstrsnln_content ) . '</div>';
 
-		if ( is_admin() || true == $is_widget )
+		if ( is_admin() || true == $is_widget ) {
 			echo $vstrsnln_content;
-		else
+		} else {
 			return $vstrsnln_content;
+		}
 	}
 }
 
@@ -934,8 +959,8 @@ if ( ! function_exists( 'vstrsnln_get_country_name_table_general' ) ) {
 	function vstrsnln_get_country_name_table_general( $table_general ) {
 		global $wpdb;
 
-		if ( ! empty( $table_general->country_id ) ) {
-			$country_name = $wpdb->get_var( "SELECT `country_name` FROM {$wpdb->base_prefix}bws_list_countries WHERE `id` = '" . $table_general->country_id . "' LIMIT 1;" );
+		if ( ! empty( $table_general->country ) ) {
+			$country_name = $wpdb->get_var( "SELECT `name_country` FROM {$wpdb->base_prefix}bws_country WHERE `id_country` = '" . $table_general->country . "' LIMIT 1;" );
 		}
 
 		return
@@ -950,7 +975,7 @@ if ( ! function_exists( 'vstrsnln_shortcode_button_content' ) ) {
 	function vstrsnln_shortcode_button_content( $content ) { ?>
 		<div id="vstrsnln" style="display:none;">
 			<fieldset>
-				<?php _e( 'Add the counter of Visitors Online to your website', 'visitors-online' ); ?>
+				<?php _e( 'Add the Visitors Online counter to your website', 'visitors-online' ); ?>
 			</fieldset>
 			<input class="bws_default_shortcode" type="hidden" name="default" value="[vstrsnln_info]" />
 			<div class="clear"></div>
@@ -1020,8 +1045,9 @@ if ( ! function_exists( 'vstrsnln_uninstall' ) ) {
 	function vstrsnln_uninstall() {
 		global $wpdb;
 
-		if ( ! function_exists( 'get_plugins' ) )
+		if ( ! function_exists( 'get_plugins' ) ) {
 			require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+		}
 		$all_plugins = get_plugins();
 
 		if ( ! array_key_exists( 'visitors-online-pro/visitors-online-pro.php', $all_plugins ) ) {
@@ -1034,12 +1060,14 @@ if ( ! function_exists( 'vstrsnln_uninstall' ) ) {
 				foreach ( $blogids as $blog_id ) {
 					switch_to_blog( $blog_id );
 					delete_option( 'vstrsnln_options' );
+					delete_option( 'widget_vstrsnln_widget' );
 					wp_clear_scheduled_hook( 'vstrsnln_check_users' );
 					wp_clear_scheduled_hook( 'vstrsnln_count_visits_day' );
 				}
 				switch_to_blog( $old_blog );
 			} else {
 				delete_option( 'vstrsnln_options' );
+				delete_option( 'widget_vstrsnln_widget' );
 				wp_clear_scheduled_hook( 'vstrsnln_check_users' );
 				wp_clear_scheduled_hook( 'vstrsnln_count_visits_day' );
 			}
@@ -1058,8 +1086,9 @@ if ( ! function_exists( 'vstrsnln_register_plugin_links' ) ) {
 	function vstrsnln_register_plugin_links( $links, $file ) {
 		$base = plugin_basename( __FILE__ );
 		if ( $file == $base ) {
-			if ( ! is_network_admin() )
+			if ( ! is_network_admin() ) {
 				$links[] = '<a href="admin.php?page=visitors-online.php">' . __( 'Settings', 'visitors-online' ) . '</a>';
+			}
 			$links[] = '<a href="https://support.bestwebsoft.com/hc/en-us/sections/201089295" target="_blank">' . __( 'FAQ', 'visitors-online' ) . '</a>';
 			$links[] = '<a href="https://support.bestwebsoft.com">' . __( 'Support', 'visitors-online' ) . '</a>';
 		}
@@ -1073,8 +1102,9 @@ if ( ! function_exists( 'vstrsnln_plugin_action_links' ) ) {
 		if ( ! is_network_admin() ) {
 			/* Static so we don't call plugin_basename on every plugin row. */
 			static $this_plugin;
-			if ( ! $this_plugin )
+			if ( ! $this_plugin ) {
 				$this_plugin = plugin_basename( __FILE__ );
+			}
 			if ( $file == $this_plugin ) {
 				$settings_link = '<a href="admin.php?page=visitors-online.php">' . __( 'Settings', 'visitors-online' ) . '</a>';
 				array_unshift( $links, $settings_link );
@@ -1100,8 +1130,9 @@ if ( ! function_exists( 'vstrsnln_add_tabs' ) ) {
 if ( ! function_exists( 'vstrsnln_check_country' ) ) {
 	function vstrsnln_check_country( $noscript = false ) {
 		global $wpdb;
-		if ( false == $noscript )
+		if ( false == $noscript ) {
 			check_ajax_referer( 'bws_plugin', 'vstrsnln_ajax_nonce_field' );
+		}
 
 		$vstrsnln_country_undefined	= $wpdb->get_results( "
 			SELECT `ip_user`, `id`
@@ -1136,10 +1167,12 @@ if ( ! function_exists ( 'vstrsnln_plugin_banner' ) ) {
 		global $hook_suffix, $vstrsnln_plugin_info, $vstrsnln_options;
 		if ( 'plugins.php' == $hook_suffix ) {
 
-			if ( isset( $vstrsnln_options['first_install'] ) && strtotime( '-1 week' ) > $vstrsnln_options['first_install'] )
+			if ( isset( $vstrsnln_options['first_install'] ) && strtotime( '-1 week' ) > $vstrsnln_options['first_install'] ) {
 				bws_plugin_banner( $vstrsnln_plugin_info, 'vstrsnln', 'visitors-online', 'ac4699da21e7e6d6238f373bc0065912', '213', '//ps.w.org/visitors-online/assets/icon-128x128.png' );
-			if ( ! is_network_admin() )
+			}
+			if ( ! is_network_admin() ) {
 				bws_plugin_banner_to_settings( $vstrsnln_plugin_info, 'vstrsnln_options', 'visitors-online', 'admin.php?page=visitors-online.php' );
+			}
 		}
 
 		if ( isset( $_REQUEST['page'] ) && 'visitors-online.php' == $_REQUEST['page'] ) {

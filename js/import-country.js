@@ -1,4 +1,4 @@
-( function( $ ) {
+(function( $ ) {
 	$( document ).ready( function() {
 		/* Pressing the 'Import Table' */
 		$( '#vstrsnln_button_import' ).click( function() {
@@ -27,7 +27,7 @@
 					alert( xhr.status );
 					alert( thrownError );
 				}
-			});
+			} );
 			return false;
 		});
 	});
@@ -93,7 +93,7 @@
 					alert( xhr.status );
 					alert( thrownError );
 				}
-			});
+			} );
 		} else {
 			$( '#vstrsnln_img_loader' ).hide();
 			$( '#vstrsnln_button_import' ).attr( 'disabled', false );
@@ -101,4 +101,4 @@
 			$( '.error' ).css( 'display', 'block' );
 		}
 	}
-})(jQuery);
+})( jQuery );

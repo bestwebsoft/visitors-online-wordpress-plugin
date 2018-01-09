@@ -10,7 +10,7 @@ Customize and manage your visitor statistic list, see how many visitors are on y
 <li>Automatically display visitor statistics on your dashboard</li>
 <li>Add visitor statistics to widgets</li>
 <li>Set the time when the visitor is considered being online without making any actions</li>
-<li>Customize the structure for data input [NEW]</li>
+<li>Customize the structure for data input</li>
 <li>Reset the statistics table</li>
 <li>Add custom code via plugin settings page</li>
 <li>Compatible with latest WordPress version</li>
@@ -40,6 +40,7 @@ Customize and manage your visitor statistic list, see how many visitors are on y
 <ul>
 <li>Arabic (ar) (thanks to <a href="mailto:&#115;&#117;&#112;&#112;&#x6f;&#x72;&#x74;&#x40;&#x73;&#x61;&#x69;&#x64;&#x6d;o&#117;&#108;&#108;&#097;&#046;&#099;&#111;&#109;" rel="nofollow">Said Moulla</a>, www.SaidMoulla.com)</li>
 <li>Czech (cs_CZ) (thanks to <a href="mailto:&#105;&#110;&#102;&#111;&#064;&#x70;&#x61;&#x6d;&#x61;&#x64;&#x65;&#115;&#115;&#111;&#102;&#116;.&#x63;&#x7a;" rel="nofollow">PaMaDeSSoft</a>, www.pamadessoft.cz)</li>
+<li>Italian (it_IT) (thanks to <a href="mailto:&#x64;&#x72;&#x6f;&#x6d;&#x61;&#x72;&#x30;3&#048;&#049;&#056;&#054;&#064;&#103;&#109;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;m" rel="nofollow">Dromar</a>)</li>
 <li>Russian (ru_RU)</li>
 <li>Ukrainian (uk)</li>
 </ul>

@@ -2,14 +2,15 @@
 /* Count the number of lines in the file GeoIPCountryWhois.csv */
 if ( ! function_exists( 'vstrsnln_count_rows' ) ) {
 	function vstrsnln_count_rows( $noscript = false ) {
-		if ( false == $noscript )
+		if ( false == $noscript ) {
 			check_ajax_referer( 'bws_plugin', 'vstrsnln_ajax_nonce_field' );
+		}
 
 		$handle = fopen( plugin_dir_path( __FILE__ ) . 'GeoIPCountryWhois.csv', 'r' );
 		if ( $handle ) {
 			$file_number = 1;
 			/* On how many lines in the file */
-			$vstrsnln_lines_count = ( $noscript == false ) ? 3000 : 1000;
+			$vstrsnln_lines_count = ( false == $noscript ) ? 3000 : 1000;
 			if ( ! is_writable( plugin_dir_path( __FILE__ ) ) ) {
 				return 0;
 				exit;
@@ -28,7 +29,7 @@ if ( ! function_exists( 'vstrsnln_count_rows' ) ) {
 						if ( $current_file ) {
 							$i = 0;
 						} else {
-							if ( $noscript == false ) {
+							if ( false == $noscript ) {
 								echo 0;
 							} else {
 								return 0;
@@ -38,20 +39,20 @@ if ( ! function_exists( 'vstrsnln_count_rows' ) ) {
 				}
 				fclose( $current_file );
 				fclose( $handle );
-				if ( $noscript == false ) {
+				if ( false == $noscript ) {
 					echo $file_number;
 				} else {
 					return $file_number;
 				}
 			} else {
-				if ( $noscript == false ) {
+				if ( false == $noscript ) {
 					echo 0;
 				} else {
 					return 0;
 				}
 			}
 		} else {
-			if ( $noscript == false ) {
+			if ( false == $noscript ) {
 				echo 0;
 			} else {
 				return 0;
@@ -66,19 +67,20 @@ if ( ! function_exists( 'vstrsnln_count_rows' ) ) {
 if ( ! function_exists( 'vstrsnln_insert_rows' ) ) {
 	function vstrsnln_insert_rows( $number_file = false, $noscript = false ) {
 		global $wpdb, $wp_filesystem;
-		if ( false == $noscript )
+		if ( false == $noscript ) {
 			check_ajax_referer( 'bws_plugin', 'vstrsnln_ajax_nonce_field' );
+		}
 		$vstrsnln_access_type = get_filesystem_method();
-		if ( $vstrsnln_access_type == 'direct' ) {
+		if ( 'direct' == $vstrsnln_access_type ) {
 			$vstrsnln_creds = request_filesystem_credentials( site_url() . '/wp-admin/', '', false, false, array() );
 			if ( ! WP_Filesystem( $vstrsnln_creds ) ) {
-				if ( $number_file == false ) {
+				if ( false == $number_file ) {
 					echo false;
 				} else {
 					return false;
 				}
 			}
-			if ( $number_file == false ) {
+			if ( false == $number_file ) {
 				if ( isset( $_POST['count'] ) && file_exists( plugin_dir_path( __FILE__ ) . 'file_' . $_POST['count'] . '.csv' ) ) {
 					$filename = plugin_dir_path( __FILE__ ) . 'file_' . $_POST['count'] . '.csv';
 					$data_array = $wp_filesystem->get_contents_array( $filename );
@@ -117,8 +119,9 @@ if ( ! function_exists( 'vstrsnln_import_noscript' ) ) {
 		for ( $count = 1; $count <= $count_files ; $count++ ) {
 			$result = vstrsnln_insert_rows( $count, true );
 		}
-		if ( 0 == $result )
+		if ( empty( $result ) ) {
 			$result = true;
+		}
 		return $result;
 	}
 }
@@ -166,7 +169,7 @@ if ( ! function_exists( 'vstrsnln_form_import_country' ) ) {
 				 <a href="https://docs.google.com/document/d/1sxxeDleJdPS8HvRdYwYSABQ586t1s-Z8r6wy55iXJCM/edit" target="_blank" style="word-break: break-word;">https://docs.google.com/document/d/1sxxeDleJdPS8HvRdYwYSABQ586t1s-Z8r6wy55iXJCM/edit</a>
 			</div>
 			<div class="vstrsnln_clear"></div>
-			<?php if ( 1 == $vstrsnln_file_there ) {
+			<?php if ( ! empty( $vstrsnln_file_there ) ) {
 				if ( $vstrsnln_table_full > 0 ) { ?>
 					<input type="submit" name="vstrsnln_button_import" class="button-primary" value="<?php _e( 'Update', 'visitors-online' ); ?>" />
 				<?php } else {?>
@@ -190,12 +193,12 @@ if ( ! function_exists( 'vstrsnln_press_buttom_import' ) ) {
 		$message = $error = '';
 		if ( isset( $_REQUEST['vstrsnln_button_import'] ) && check_admin_referer( plugin_basename( __FILE__ ), 'vstrsnln_nonce_name' ) ) {
 			$vstrsnln_count_files = vstrsnln_count_rows( true );
-			if ( $vstrsnln_count_files == 0 ) {
+			if ( empty( $vstrsnln_count_files ) ) {
 				$error = __( 'Not enough rights to import from the GeoIPCountryWhois.csv file, import is impossible', 'visitors-online' );
 				$result = false;
 			} else {
 				$vstrsnln_result = vstrsnln_import_noscript( $vstrsnln_count_files );
-				if ( $vstrsnln_result == true ) {
+				if ( true == $vstrsnln_result ) {
 					$message = __( 'Import was finished', 'visitors-online' );
 					$result = true;
 				} else {

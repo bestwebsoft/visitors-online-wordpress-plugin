@@ -1,5 +1,5 @@
 function vstrsnln_check_country_js() {
-	(function($) {
+	(function( $ ) {
 		$.ajax( {
 			type: 'POST',
 			url: ajaxurl,
@@ -9,5 +9,5 @@ function vstrsnln_check_country_js() {
 				vstrsnln_ajax_nonce_field: vstrsnln_ajax.vstrsnln_nonce
 			}
 		});
-	})(jQuery);
+	})( jQuery );
 }

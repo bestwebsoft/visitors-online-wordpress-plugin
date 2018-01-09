@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: visitors online, visitors online plugin, count visitor, guests, guests counter, counter, visitors counter, add visitors counter, count, add guests counter, users online, guests online
 Requires at least: 3.9
-Tested up to: 4.8
-Stable tag: 1.0.1
+Tested up to: 4.9.1
+Stable tag: 1.0.2
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -24,7 +24,7 @@ https://www.youtube.com/watch?v=7e6LzyRzxwA
 * Automatically display visitor statistics on your dashboard
 * Add visitor statistics to widgets
 * Set the time when the visitor is considered being online without making any actions
-* Customize the structure for data input [NEW]
+* Customize the structure for data input
 * Reset the statistics table
 * Add custom code via plugin settings page
 * Compatible with latest WordPress version
@@ -57,6 +57,7 @@ Visit our Help Center if you have any questions, our friendly Support Team is ha
 
 * Arabic (ar) (thanks to [Said Moulla](mailto:support@saidmoulla.com), www.SaidMoulla.com)
 * Czech (cs_CZ) (thanks to [PaMaDeSSoft](mailto:info@pamadessoft.cz), www.pamadessoft.cz)
+* Italian (it_IT) (thanks to [Dromar](mailto:dromar030186@gmail.com))
 * Russian (ru_RU)
 * Ukrainian (uk)
 
@@ -124,6 +125,10 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 
 == Changelog ==
 
+= V1.0.2 - 09.01.2018 =
+* Bugfix : The problem with data displaying in "Country" and "Browser" fields was fixed.
+* Bugfix : Options removal from the database is fixed.
+
 = V1.0.1 - 10.07.2017 =
 * NEW : Ability to change the data structure has been added.
 
@@ -164,6 +169,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * NEW : Added detection of the country.
 
 == Upgrade Notice ==
+
+= V1.0.2 =
+* Bugs fixed.
 
 = V1.0.1 =
 * Functionality expanded.
