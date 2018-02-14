@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: visitors-online\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-08 12:45+0200\n"
-"PO-Revision-Date: 2018-01-08 12:45+0200\n"
+"POT-Creation-Date: 2018-02-13 11:54+0200\n"
+"PO-Revision-Date: 2018-02-13 11:54+0200\n"
 "Last-Translator: bestwebsoft.com <plugins@bestwebsoft.com>\n"
 "Language-Team: pamadessoft <http://pamadessoft.com/>\n"
 "Language: cs_CZ\n"
@@ -68,13 +68,13 @@ msgstr "Počet načtených souborů"
 msgid "Number of a loading file"
 msgstr "Počet načítaných souboru"
 
-#: import-country.php:197 import-country.php:205 visitors-online.php:172
+#: import-country.php:197 import-country.php:205 visitors-online.php:171
 msgid ""
 "Not enough rights to import from the GeoIPCountryWhois.csv file, import is "
 "impossible"
 msgstr "Nedostatečná oprávnění pro import z CSV souboru, import není možný"
 
-#: import-country.php:202 visitors-online.php:171
+#: import-country.php:202 visitors-online.php:170
 msgid "Import was finished"
 msgstr "Import byl dokončen."
 
@@ -102,52 +102,52 @@ msgstr "Maximální počet návštěv byl"
 msgid "all visitors"
 msgstr ""
 
-#: visitors-online.php:151
+#: visitors-online.php:150
 msgid "country"
 msgstr "Státy"
 
-#: visitors-online.php:155
+#: visitors-online.php:154
 msgid "browser"
 msgstr "prohlížeč"
 
-#: visitors-online.php:470
+#: visitors-online.php:477
 msgid "Statistics was successfully cleared"
 msgstr ""
 
-#: visitors-online.php:483
+#: visitors-online.php:490
 msgid "Please fill The time period. The settings are not saved"
 msgstr "Zadejte časové období. Nastavení není uloženo"
 
-#: visitors-online.php:485
+#: visitors-online.php:492
 msgid "Please fill The data structure. The settings are not saved"
 msgstr ""
 
-#: visitors-online.php:491
+#: visitors-online.php:498
 msgid "Settings saved"
 msgstr "Nastavení uloženo"
 
-#: visitors-online.php:519
+#: visitors-online.php:526
 msgid "Visitors Online Settings"
 msgstr "Visitors Online nastavení"
 
-#: visitors-online.php:521 visitors-online.php:1090 visitors-online.php:1109
+#: visitors-online.php:528 visitors-online.php:1080 visitors-online.php:1099
 msgid "Settings"
 msgstr "Nastavení"
 
-#: visitors-online.php:522
-msgid "Custom code"
+#: visitors-online.php:529
+msgid "Custom Code"
 msgstr ""
 
-#: visitors-online.php:523
+#: visitors-online.php:530
 msgid "Go PRO"
 msgstr "Získat verzi Pro"
 
-#: visitors-online.php:535
+#: visitors-online.php:542
 #, php-format
 msgid "You can add the Visitors Online counter by clicking on %s button."
 msgstr ""
 
-#: visitors-online.php:541
+#: visitors-online.php:548
 #, php-format
 msgid ""
 "You can add the Visitors Online counter to your content by clicking on %s "
@@ -155,91 +155,91 @@ msgid ""
 "displayed, please use the shortcode %s"
 msgstr ""
 
-#: visitors-online.php:548
+#: visitors-online.php:555
 msgid "You can also add a widget"
 msgstr "Můžete také přidat widget"
 
-#: visitors-online.php:550
+#: visitors-online.php:557
 msgid "Statistics can be viewed on the Dashboard."
 msgstr "Statistiky lze pohlížet na řídicím panelu."
 
-#: visitors-online.php:554
+#: visitors-online.php:561
 msgid "The time period when the user is online, without making any actions"
 msgstr "Časové období, kdy je uživatel online, bez provedení jakékoli akce"
 
-#: visitors-online.php:557 visitors-online.php:784
+#: visitors-online.php:564 visitors-online.php:791
 msgid "min"
 msgstr "min"
 
-#: visitors-online.php:561
-msgid "Data structure"
-msgstr ""
-
-#: visitors-online.php:565
-msgid "Allowed Variables"
-msgstr ""
-
-#: visitors-online.php:567
-msgid "Total number of current visitors"
-msgstr ""
-
 #: visitors-online.php:568
-msgid "Current number of registred users"
-msgstr ""
-
-#: visitors-online.php:569
-msgid "Current number of guests"
-msgstr ""
-
-#: visitors-online.php:570
-msgid "Current number of bots"
-msgstr ""
-
-#: visitors-online.php:571
-msgid "The date of the highest visitors attendance"
+msgid "Data Structure"
 msgstr ""
 
 #: visitors-online.php:572
-msgid "Total number of visitors at the highest attendance date"
-msgstr ""
-
-#: visitors-online.php:573
-msgid "The number of registered users at the highest attendance date"
+msgid "Allowed Variables"
 msgstr ""
 
 #: visitors-online.php:574
-msgid "The number of guests at the highest attendance date"
+msgid "Total number of current visitors"
 msgstr ""
 
 #: visitors-online.php:575
-msgid "The number of bots at the highest attendance date"
+msgid "Current number of registred users"
 msgstr ""
 
 #: visitors-online.php:576
-msgid "Country"
+msgid "Current number of guests"
 msgstr ""
 
 #: visitors-online.php:577
+msgid "Current number of bots"
+msgstr ""
+
+#: visitors-online.php:578
+msgid "The date of the highest visitors attendance"
+msgstr ""
+
+#: visitors-online.php:579
+msgid "Total number of visitors at the highest attendance date"
+msgstr ""
+
+#: visitors-online.php:580
+msgid "The number of registered users at the highest attendance date"
+msgstr ""
+
+#: visitors-online.php:581
+msgid "The number of guests at the highest attendance date"
+msgstr ""
+
+#: visitors-online.php:582
+msgid "The number of bots at the highest attendance date"
+msgstr ""
+
+#: visitors-online.php:583
+msgid "Country"
+msgstr ""
+
+#: visitors-online.php:584
 msgid "Browser"
 msgstr ""
 
-#: visitors-online.php:589
+#: visitors-online.php:596
 msgid "Close"
 msgstr "Zavřít"
 
-#: visitors-online.php:594
+#: visitors-online.php:601
 msgid "Update GeoIP"
 msgstr "Aktualizovat GeoIP"
 
-#: visitors-online.php:597
+#: visitors-online.php:604
 msgid "every"
 msgstr "každý"
 
-#: visitors-online.php:599
+#: visitors-online.php:606
 msgid "months"
 msgstr "měsíc"
 
-#: visitors-online.php:601
+#: visitors-online.php:608
 msgid ""
 "This option allows you to download lists with registered IP addresses all "
 "over the world to the database (from"
@@ -247,43 +247,43 @@ msgstr ""
 "Tato volba vám umožní stahovat seznamy registrovaných adres IP po celém "
 "světě do databáze (od"
 
-#: visitors-online.php:603
+#: visitors-online.php:610
 msgid ""
 "Hence you will receive the information about each IP address, and the "
 "country it belongs to. You can select the desired frequency for IP database "
 "updating"
 msgstr ""
 
-#: visitors-online.php:609
+#: visitors-online.php:616
 msgid "If you upgrade to Pro version all your settings will be saved."
 msgstr "Pokud upgradujete na verzi Pro všechna nastavení budou uložena."
 
-#: visitors-online.php:615
+#: visitors-online.php:622
 msgid "Learn More"
 msgstr "Zjistit více"
 
-#: visitors-online.php:622
-msgid "Clear the statistics"
-msgstr "Vymazat statistiku"
+#: visitors-online.php:629
+msgid "Clear the Statistics"
+msgstr ""
 
-#: visitors-online.php:624
+#: visitors-online.php:631
 msgid "Clear"
 msgstr "Vymazat"
 
-#: visitors-online.php:630
+#: visitors-online.php:637
 msgid "Save Changes"
 msgstr "Uložit změny"
 
-#: visitors-online.php:900 visitors-online.php:905 visitors-online.php:916
-#: visitors-online.php:917
+#: visitors-online.php:906 visitors-online.php:911 visitors-online.php:922
+#: visitors-online.php:923
 msgid "No data"
 msgstr ""
 
-#: visitors-online.php:978
+#: visitors-online.php:968
 msgid "Add the Visitors Online counter to your website"
 msgstr ""
 
-#: visitors-online.php:1000
+#: visitors-online.php:990
 msgid ""
 "This Widget shows the number of active visitors on the site, including "
 "users, guests and bots."
@@ -291,17 +291,20 @@ msgstr ""
 "Tento Widget zobrazuje počet aktivních návštěvníků na webu, včetně "
 "uživatelů, hostů a robotů."
 
-#: visitors-online.php:1027
+#: visitors-online.php:1017
 msgid "Title"
 msgstr "Název"
 
-#: visitors-online.php:1092
+#: visitors-online.php:1082
 msgid "FAQ"
 msgstr "Často kladené otázky"
 
-#: visitors-online.php:1093
+#: visitors-online.php:1083
 msgid "Support"
 msgstr "Podpora"
+
+#~ msgid "Clear the statistics"
+#~ msgstr "Vymazat statistiku"
 
 #~ msgid "all visits"
 #~ msgstr "všechny návštěvy"

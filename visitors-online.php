@@ -6,12 +6,12 @@ Description: Display live count of online visitors who are currently browsing yo
 Author: BestWebSoft
 Text Domain: visitors-online
 Domain Path: /languages
-Version: 1.0.2
+Version: 1.0.3
 Author URI: https://bestwebsoft.com/
 License: GPLv3 or later
 */
 
-/*  © Copyright 2017  BestWebSoft  ( https://support.bestwebsoft.com )
+/* © Copyright 2017 BestWebSoft ( https://support.bestwebsoft.com )
 
 	This program is free software; you can redistribute it and/or modify
 	it under the terms of the GNU General Public License, version 2, as
@@ -19,12 +19,12 @@ License: GPLv3 or later
 
 	This program is distributed in the hope that it will be useful,
 	but WITHOUT ANY WARRANTY; without even the implied warranty of
-	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 	GNU General Public License for more details.
 
 	You should have received a copy of the GNU General Public License
 	along with this program; if not, write to the Free Software
-	Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+	Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
 */
 
 /* Include files on import of table and declare the prefix */
@@ -79,7 +79,7 @@ if ( ! function_exists ( 'vstrsnln_plugin_admin_init' ) ) {
 		if ( ! isset( $bws_plugin_info ) || empty( $bws_plugin_info ) ) {
 			$bws_plugin_info = array( 'id' => '213', 'version' => $vstrsnln_plugin_info["Version"] );
 		}
-		/* add Visitors Online to global $bws_shortcode_list  */
+		/* add Visitors Online to global $bws_shortcode_list */
 		$bws_shortcode_list['vstrsnln'] = array( 'name' => 'Visitors Online' );
 	}
 }
@@ -100,6 +100,15 @@ if ( ! function_exists ( 'vstrsnln_default_options' ) ) {
 
 		/* Array merge incase this version has added new options */
 		if ( ! isset( $vstrsnln_options['plugin_option_version'] ) || $vstrsnln_options['plugin_option_version'] != $vstrsnln_plugin_info["Version"] ) {
+			/* register uninstall hook */
+			if ( is_multisite() ) {
+				switch_to_blog( 1 );
+				register_uninstall_hook( __FILE__, 'vstrsnln_uninstall' );
+				restore_current_blog();
+			} else {
+				register_uninstall_hook( __FILE__, 'vstrsnln_uninstall' );
+			}
+
 			$vstrsnln_option_defaults = vstrsnln_get_options_default();
 
 			$vstrsnln_options = array_merge( $vstrsnln_option_defaults, $vstrsnln_options );
@@ -146,8 +155,7 @@ if ( ! function_exists( 'vstrsnln_get_options_default' ) ) {
 		$blog_id = get_current_blog_id();
 		$table_general = vstrsnln_get_table_general( $blog_id );
 
-		$country_name = vstrsnln_get_country_name_table_general( $table_general );
-		if ( $country_name ) {
+		if ( ! empty( $table_general->country ) ) {
 			$default_options['structure_pattern'] .= "\n" . __( 'country', 'visitors-online' ) . ' – {COUNTRY}';
 		}
 
@@ -168,8 +176,8 @@ if ( ! function_exists ( 'vstrsnln_admin_head' ) ) {
 			wp_enqueue_script( 'vstrsnln_script', plugins_url( 'js/script.js', __FILE__ ), array( 'jquery' ) );
 			wp_enqueue_script( 'vstrsnln_country_script', plugins_url( 'js/import-country.js', __FILE__ ), array( 'jquery' ) );
 			$vstrsnln_var = array(
-				'notice_finish' 	=> __( 'Import was finished', 'visitors-online' ),
-				'notice_false'	 	=> __( 'Not enough rights to import from the GeoIPCountryWhois.csv file, import is impossible', 'visitors-online' ),
+				'notice_finish'		=> __( 'Import was finished', 'visitors-online' ),
+				'notice_false'		=> __( 'Not enough rights to import from the GeoIPCountryWhois.csv file, import is impossible', 'visitors-online' ),
 				'vstrsnln_nonce'	=> wp_create_nonce( 'bws_plugin', 'vstrsnln_ajax_nonce_field' )
 			);
 			wp_localize_script( 'vstrsnln_country_script', 'vstrsnln_var', $vstrsnln_var );
@@ -195,6 +203,14 @@ if ( ! function_exists( 'vstrsnln_install' ) ) {
 		if ( ! wp_next_scheduled( 'vstrsnln_count_visits_day' ) ) {
 			$vstrsnln_time_daily = strtotime( date( 'Y-m-d', strtotime( ' +1 day' ) ) . ' 00:00:59' );
 			wp_schedule_event( $vstrsnln_time_daily, 'daily', 'vstrsnln_count_visits_day' );
+		}
+		/* register uninstall hook */
+		if ( is_multisite() ) {
+			switch_to_blog( 1 );
+			register_uninstall_hook( __FILE__, 'vstrsnln_uninstall' );
+			restore_current_blog();
+		} else {
+			register_uninstall_hook( __FILE__, 'vstrsnln_uninstall' );
 		}
 	}
 }
@@ -222,7 +238,7 @@ if ( ! function_exists( 'vstrsnln_install_base' ) ) {
 		dbDelta( $sql );
 		/* Data about day wiht a number of connections */
 		$sql = "CREATE TABLE IF NOT EXISTS `" . $wpdb->base_prefix . "vstrsnln_general` (
-			`id` INT(3) UNSIGNED NOT NULL AUTO_INCREMENT,
+			`id` INT( 3 ) UNSIGNED NOT NULL AUTO_INCREMENT,
 			`date_connection` DATE NOT NULL,
 			`number_users` INT,
 			`number_bots` INT,
@@ -268,7 +284,7 @@ if ( ! function_exists( 'vstrsnln_write_user_base' ) ) {
 		$vstrsnln_record_table	= 0;
 
 		if ( isset( $_COOKIE['vstrsnln'] ) ) {
-			$vstrsnln_record_table = (int) $wpdb->get_var( $wpdb->prepare( "
+			$vstrsnln_record_table = ( int ) $wpdb->get_var( $wpdb->prepare( "
 				SELECT count( * )
 				FROM `" . $wpdb->base_prefix . "vstrsnln_detailing`
 				WHERE `time_off` IS NULL
@@ -395,7 +411,7 @@ if ( ! function_exists( 'vstrsnln_write_user_base' ) ) {
 			}
 			if ( ! empty( $ip ) ) {
 				/* Detects the country */
-				$vstrsnln_country 	= $wpdb->get_var( "
+				$vstrsnln_country = $wpdb->get_var( "
 					SELECT `id_country`
 					FROM `" . $wpdb->base_prefix . "bws_country`
 					WHERE `ip_from_int` <= '" . sprintf( '%u', ip2long( $ip ) ) . "'
@@ -519,7 +535,7 @@ if ( ! function_exists( 'vstrsnln_settings_page' ) ) {
 			<h1><?php _e( 'Visitors Online Settings', 'visitors-online' ); ?></h1>
 			<h2 class="nav-tab-wrapper">
 				<a class="nav-tab <?php if ( ! isset( $_GET['action'] ) ) echo ' nav-tab-active'; ?>" href="admin.php?page=visitors-online.php"><?php _e( 'Settings', 'visitors-online' ); ?></a>
-				<a class="nav-tab <?php if ( isset( $_GET['action'] ) && 'custom_code' == $_GET['action'] ) echo ' nav-tab-active'; ?>" href="admin.php?page=visitors-online.php&amp;action=custom_code"><?php _e( 'Custom code', 'visitors-online' ); ?></a>
+				<a class="nav-tab <?php if ( isset( $_GET['action'] ) && 'custom_code' == $_GET['action'] ) echo ' nav-tab-active'; ?>" href="admin.php?page=visitors-online.php&amp;action=custom_code"><?php _e( 'Custom Code', 'visitors-online' ); ?></a>
 				<a class="nav-tab bws_go_pro_tab<?php if ( isset( $_GET['action'] ) && 'go_pro' == $_GET['action'] ) echo ' nav-tab-active'; ?>" href="admin.php?page=visitors-online.php&amp;action=go_pro"><?php _e( 'Go PRO', 'visitors-online' ); ?></a>
 			</h2>
 			<div class="updated fade below-h2" <?php if ( '' == $message || '' != $error ) echo "style=\"display:none\""; ?>><p><strong><?php echo $message; ?></strong></p></div>
@@ -558,7 +574,7 @@ if ( ! function_exists( 'vstrsnln_settings_page' ) ) {
 							</td>
 						</tr>
 						<tr valign="top">
-							<th scope="row"><?php _e( 'Data structure', 'visitors-online' ); ?></th>
+							<th scope="row"><?php _e( 'Data Structure', 'visitors-online' ); ?></th>
 							<td>
 								<textarea id="vstrsnln_structure_builder" class="regular-text" name="vstrsnln_structure_pattern" required="required"><?php echo $vstrsnln_options['structure_pattern']; ?></textarea>
 								<div class="bws_info">
@@ -619,7 +635,7 @@ if ( ! function_exists( 'vstrsnln_settings_page' ) ) {
 					<?php } ?>
 					<table class="form-table">
 						<tr valign="top">
-							<th scope="row"><?php _e( 'Clear the statistics', 'visitors-online' ); ?></th>
+							<th scope="row"><?php _e( 'Clear the Statistics', 'visitors-online' ); ?></th>
 							<td>
 								<input type="submit" name="vstrsnln_button_clean" class="button" value=<?php _e( 'Clear', 'visitors-online' ); ?> />
 							</td>
@@ -674,14 +690,14 @@ if ( ! function_exists( 'vstrsnln_write_max_visits' ) ) {
 			} else {
 				$vstrsnln_date_yesterday = date( 'Y-m-d', strtotime( $date ) );
 			}
-			$vstrsnln_number_visits_detailing		= $wpdb->get_var( "
+			$vstrsnln_number_visits_detailing = $wpdb->get_var( "
 				SELECT count( * )
 				FROM `" . $wpdb->base_prefix . "vstrsnln_detailing`
 				WHERE `date_connection` = '" . $vstrsnln_date_yesterday . "'
 					AND `blog_id` = '" . $vstrsnln_blog_id . "'
 				LIMIT 1"
 			);
-			if ( $vstrsnln_number_visits_detailing != 0 ) {
+			if ( 0 != $vstrsnln_number_visits_detailing ) {
 				$vstrsnln_type_user	= $wpdb->get_row( "
 					SELECT COUNT( * ) AS 'guest',
 						( SELECT COUNT( * ) FROM `" . $wpdb->base_prefix . "vstrsnln_detailing`
@@ -720,7 +736,7 @@ if ( ! function_exists( 'vstrsnln_write_max_visits' ) ) {
 				if ( $vstrsnln_country_max_connections ) {
 					foreach ( $vstrsnln_country_max_connections as $vstrsnln_country ) {
 						if ( $vstrsnln_number_connections <= $vstrsnln_country->max_count ) {
-							$vstrsnln_number_connections 	= $vstrsnln_country->max_count;
+							$vstrsnln_number_connections = $vstrsnln_country->max_count;
 							$vstrsnln_name_country .= $vstrsnln_country->name_country . ' ';
 						}
 					}
@@ -740,8 +756,8 @@ if ( ! function_exists( 'vstrsnln_write_max_visits' ) ) {
 				if ( $vstrsnln_browser_max_connections ) {
 					foreach ( $vstrsnln_browser_max_connections as $vstrsnln_browser ) {
 						if ( $vstrsnln_number_connections <= $vstrsnln_browser->max_count ) {
-							$vstrsnln_number_connections 	= $vstrsnln_browser->max_count;
-							$vstrsnln_name_browser 	.= $vstrsnln_browser->browser . ' ';
+							$vstrsnln_number_connections = $vstrsnln_browser->max_count;
+							$vstrsnln_name_browser .= $vstrsnln_browser->browser . ' ';
 						}
 					}
 				}
@@ -893,10 +909,9 @@ if ( ! function_exists( 'vstrsnln_info_display' ) ) {
 			/* add geo replacements */
 			$geo_replacements = array();
 
-			$country_name = vstrsnln_get_country_name_table_general( $table_general );
 			$geo_replacements['country'] =
-				! empty( $country_name ) ?
-				$country_name :
+				! empty( $table_general->country ) ?
+				$table_general->country :
 				__( 'No data', 'visitors-online' );
 
 			$geo_replacements['browser'] =
@@ -926,7 +941,7 @@ if ( ! function_exists( 'vstrsnln_info_display' ) ) {
 		*/
 		$patterns = array();
 		foreach ( $replacements as $key => $value )
-			$patterns[] = '~{' . $key . '}~i'; /* "i" should be used to make the expression case-insensitive  */
+			$patterns[] = '~{' . $key . '}~i'; /* "i" should be used to make the expression case-insensitive */
 
 		$vstrsnln_content = preg_replace( $patterns, array_values( $replacements ), $vstrsnln_content );
 
@@ -940,7 +955,7 @@ if ( ! function_exists( 'vstrsnln_info_display' ) ) {
 	}
 }
 
-/* get general table  */
+/* get general table */
 if ( ! function_exists( 'vstrsnln_get_table_general' ) ) {
 	function vstrsnln_get_table_general( $blog_id ) {
 		global $wpdb;
@@ -954,23 +969,7 @@ if ( ! function_exists( 'vstrsnln_get_table_general' ) ) {
 	}
 }
 
-/* get country name by id from general table last added row  */
-if ( ! function_exists( 'vstrsnln_get_country_name_table_general' ) ) {
-	function vstrsnln_get_country_name_table_general( $table_general ) {
-		global $wpdb;
-
-		if ( ! empty( $table_general->country ) ) {
-			$country_name = $wpdb->get_var( "SELECT `name_country` FROM {$wpdb->base_prefix}bws_country WHERE `id_country` = '" . $table_general->country . "' LIMIT 1;" );
-		}
-
-		return
-			! empty( $country_name ) ?
-			$country_name :
-			false;
-	}
-}
-
-/* add shortcode content  */
+/* add shortcode content */
 if ( ! function_exists( 'vstrsnln_shortcode_button_content' ) ) {
 	function vstrsnln_shortcode_button_content( $content ) { ?>
 		<div id="vstrsnln" style="display:none;">
@@ -1114,7 +1113,7 @@ if ( ! function_exists( 'vstrsnln_plugin_action_links' ) ) {
 	}
 }
 
-/* add help tab  */
+/* add help tab */
 if ( ! function_exists( 'vstrsnln_add_tabs' ) ) {
 	function vstrsnln_add_tabs() {
 		$screen = get_current_screen();
@@ -1153,7 +1152,7 @@ if ( ! function_exists( 'vstrsnln_check_country' ) ) {
 				);
 				$wpdb->update( $wpdb->base_prefix . 'vstrsnln_detailing',
 					array(
-						'country_id'	=> $vstrsnln_country
+						'country_id' => $vstrsnln_country
 					),
 					array( 'id' => $vstrsnln_visitors->id )
 				);
@@ -1211,4 +1210,3 @@ add_action( 'wp_ajax_vstrsnln_insert_rows', 'vstrsnln_insert_rows' );
 add_action( 'wp_ajax_vstrsnln_check_country', 'vstrsnln_check_country' );
 
 add_action( 'admin_notices', 'vstrsnln_plugin_banner' );
-register_uninstall_hook( __FILE__, 'vstrsnln_uninstall' );
