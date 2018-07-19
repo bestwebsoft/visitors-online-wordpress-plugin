@@ -6,7 +6,7 @@ Description: Display live count of online visitors who are currently browsing yo
 Author: BestWebSoft
 Text Domain: visitors-online
 Domain Path: /languages
-Version: 1.0.3
+Version: 1.0.4
 Author URI: https://bestwebsoft.com/
 License: GPLv3 or later
 */
@@ -946,6 +946,7 @@ if ( ! function_exists( 'vstrsnln_info_display' ) ) {
 		$vstrsnln_content = preg_replace( $patterns, array_values( $replacements ), $vstrsnln_content );
 
 		$vstrsnln_content = '<div class="vstrsnln-block">' . wpautop( $vstrsnln_content ) . '</div>';
+		$vstrsnln_content = apply_filters( 'vstrsnln_content', $vstrsnln_content );
 
 		if ( is_admin() || true == $is_widget ) {
 			echo $vstrsnln_content;

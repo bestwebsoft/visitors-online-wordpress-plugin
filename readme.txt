@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: visitors online, visitors online plugin, count visitor, guests, guests counter, counter, visitors counter, add visitors counter, count, add guests counter, users online, guests online
 Requires at least: 3.9
-Tested up to: 4.9.4
-Stable tag: 1.0.3
+Tested up to: 4.9.7
+Stable tag: 1.0.4
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -125,6 +125,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 
 == Changelog ==
 
+= V1.0.4 - 19.07.2018 =
+* NEW : Ability to customize plugin data output using filters has been added.
+
 = V1.0.3 - 14.02.2018 =
 * Bugfix : The problem with data displaying in "Country" fields was fixed.
 * Update : All functionality for WordPress 4.9.4 was updated.
@@ -173,6 +176,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * NEW : Added detection of the country.
 
 == Upgrade Notice ==
+
+= V1.0.4 =
+* Functionality improved.
 
 = V1.0.3 =
 * Bugs fixed.
