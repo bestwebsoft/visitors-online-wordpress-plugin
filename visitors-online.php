@@ -6,12 +6,12 @@ Description: Display live count of online visitors who are currently browsing yo
 Author: BestWebSoft
 Text Domain: visitors-online
 Domain Path: /languages
-Version: 1.0.4
+Version: 1.0.5
 Author URI: https://bestwebsoft.com/
 License: GPLv3 or later
 */
 
-/* © Copyright 2017 BestWebSoft ( https://support.bestwebsoft.com )
+/* © Copyright 2019 BestWebSoft ( https://support.bestwebsoft.com )
 
 	This program is free software; you can redistribute it and/or modify
 	it under the terms of the GNU General Public License, version 2, as
@@ -34,8 +34,8 @@ if ( file_exists( $vstrsnln_fpath ) ) {
 }
 
 /* Function for adding menu and submenu */
-if ( ! function_exists( 'vstrsnln_admin_menu' ) ) {
-	function vstrsnln_admin_menu() {
+if ( ! function_exists( 'vstrsnln_add_admin_menu' ) ) {
+	function vstrsnln_add_admin_menu() {
 		bws_general_menu();
 		$settings = add_submenu_page( 'bws_panel', 'Visitors Online', 'Visitors Online', 'manage_options', 'visitors-online.php', 'vstrsnln_settings_page' );
 		add_action( 'load-' . $settings, 'vstrsnln_add_tabs' );
@@ -336,7 +336,7 @@ if ( ! function_exists( 'vstrsnln_write_user_base' ) ) {
 			if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && ! empty( $_SERVER['HTTP_USER_AGENT'] ) ) {
 				$vstrsnln_user_agent = $_SERVER['HTTP_USER_AGENT'];
 				/* Detects the browser and its version */
-				preg_match( '/(Firefox|Opera|Chrome|MSIE|OPR|Trident|Avant|Acoo|Iron|Orca|Lynx|Version|Opera Mini|Netscape|Konqueror|SeaMonkey|Camino|Minefield|Iceweasel|K-Meleon|Maxthon)(?:\/| )([0-9.]+)/', $vstrsnln_user_agent, $vstrsnln_browser_info );
+				preg_match( '/( Firefox|Opera|Chrome|MSIE|OPR|Trident|Avant|Acoo|Iron|Orca|Lynx|Version|Opera Mini|Netscape|Konqueror|SeaMonkey|Camino|Minefield|Iceweasel|K-Meleon|Maxthon)(?:\/| )([0-9.]+)/', $vstrsnln_user_agent, $vstrsnln_browser_info );
 				list( , $browser, $version )	= $vstrsnln_browser_info;
 				$vstrsnln_browser 			= $browser . ' ' . $version;
 				if ( preg_match( '/Opera ( [0-9.]+ ) /i', $vstrsnln_user_agent, $opera ) ) {
@@ -347,7 +347,7 @@ if ( ! function_exists( 'vstrsnln_write_user_base' ) ) {
 					$vstrsnln_browser = ( $ie && $ie[1] ) ? $ie[1] . ' based on IE ' . $version : 'IE '. $version;
 				}
 				if ( 'Firefox' == $browser ) {
-					preg_match( '/( Flock|Navigator|Epiphany)\/([0-9.]+ ) /', $vstrsnln_user_agent, $ff );
+					preg_match( '/( Flock|Navigator|Epiphany )\/( [0-9.]+ ) /', $vstrsnln_user_agent, $ff );
 					if ( $ff ) {
 						$vstrsnln_browser = ( $ff[1] && $ff[2] ) ? $ff[1] . ' ' . $ff[2] : '';
 					}
@@ -533,6 +533,13 @@ if ( ! function_exists( 'vstrsnln_settings_page' ) ) {
 		} ?>
 		<div class="wrap">
 			<h1><?php _e( 'Visitors Online Settings', 'visitors-online' ); ?></h1>
+			 <noscript>
+            	<div class="error below-h2">
+                	<p><strong><?php _e( 'WARNING', 'bws-linkedin-plus' ); ?>
+                        :</strong> <?php _e( 'The plugin works correctly only if JavaScript is enabled.', 'bws-linkedin-plus' ); ?>
+                	</p>
+            	</div>
+        	</noscript>
 			<h2 class="nav-tab-wrapper">
 				<a class="nav-tab <?php if ( ! isset( $_GET['action'] ) ) echo ' nav-tab-active'; ?>" href="admin.php?page=visitors-online.php"><?php _e( 'Settings', 'visitors-online' ); ?></a>
 				<a class="nav-tab <?php if ( isset( $_GET['action'] ) && 'custom_code' == $_GET['action'] ) echo ' nav-tab-active'; ?>" href="admin.php?page=visitors-online.php&amp;action=custom_code"><?php _e( 'Custom Code', 'visitors-online' ); ?></a>
@@ -614,7 +621,7 @@ if ( ! function_exists( 'vstrsnln_settings_page' ) ) {
 											<input type="number" disabled name="vstrsnln_loading_country" value="0" />
 											<?php _e( 'months', 'visitors-online' ); ?> <br>
 											<span class="bws_info">
-												<?php _e( 'This option allows you to download lists with registered IP addresses all over the world to the database (from', 'visitors-online' ); ?>&nbsp;<a href="https://www.maxmind.com" target="_blank">https://www.maxmind.com</a>).
+												<?php _e( 'This option allows you to download lists with registered IP addresses all over the world to the database ( from', 'visitors-online' ); ?>&nbsp;<a href="https://www.maxmind.com" target="_blank">https://www.maxmind.com</a>).
 												<br>
 												<?php _e( 'Hence you will receive the information about each IP address, and the country it belongs to. You can select the desired frequency for IP database updating', 'visitors-online' ); ?>.
 											</span>
@@ -1183,7 +1190,7 @@ if ( ! function_exists ( 'vstrsnln_plugin_banner' ) ) {
 
 register_activation_hook( __FILE__, 'vstrsnln_install' );
 
-add_action( 'admin_menu', 'vstrsnln_admin_menu' );
+add_action( 'admin_menu', 'vstrsnln_add_admin_menu' );
 add_action( 'init', 'vstrsnln_plugin_init' );
 add_action( 'admin_init', 'vstrsnln_plugin_admin_init' );
 add_action( 'plugins_loaded', 'vstrsnln_plugins_loaded' );

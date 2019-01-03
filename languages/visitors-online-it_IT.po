@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: visitors-online\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-13 11:54+0200\n"
-"PO-Revision-Date: 2018-02-13 11:54+0200\n"
+"POT-Creation-Date: 2018-12-20 17:17+0200\n"
+"PO-Revision-Date: 2018-12-20 17:17+0200\n"
 "Last-Translator: \n"
 "Language-Team: Dromar030186 <dromar030186@gmail.com>\n"
 "Language: it_IT\n"
@@ -13,7 +13,7 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.8.7.1\n"
+"X-Generator: Poedit 2.2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SearchPath-0: .\n"
 
@@ -70,87 +70,95 @@ msgstr "Numero di file caricati"
 msgid "Number of a loading file"
 msgstr "Numero di file in caricamento"
 
-#: import-country.php:197 import-country.php:205 visitors-online.php:171
+#: import-country.php:197 import-country.php:205 visitors-online.php:180
 msgid ""
 "Not enough rights to import from the GeoIPCountryWhois.csv file, import is "
 "impossible"
 msgstr ""
 "Impossibile importare dal file GeoIPCountryWhois.csv, diritti insufficienti."
 
-#: import-country.php:202 visitors-online.php:170
+#: import-country.php:202 visitors-online.php:179
 msgid "Import was finished"
 msgstr "Importazione terminata"
 
-#: visitors-online.php:135
+#: visitors-online.php:144
 msgid "Visitors online"
 msgstr "Visitatori online"
 
-#: visitors-online.php:136 visitors-online.php:141
+#: visitors-online.php:145 visitors-online.php:150
 msgid "users"
 msgstr "Utenti"
 
-#: visitors-online.php:137 visitors-online.php:142
+#: visitors-online.php:146 visitors-online.php:151
 msgid "guests"
 msgstr "Ospiti"
 
-#: visitors-online.php:138 visitors-online.php:143
+#: visitors-online.php:147 visitors-online.php:152
 msgid "bots"
 msgstr "Bots"
 
-#: visitors-online.php:139
+#: visitors-online.php:148
 msgid "The maximum number of visits was"
 msgstr "Il numero massimo di visitatori è stato"
 
-#: visitors-online.php:140
+#: visitors-online.php:149
 msgid "all visitors"
 msgstr ""
 
-#: visitors-online.php:150
+#: visitors-online.php:159
 msgid "country"
 msgstr "nazione"
 
-#: visitors-online.php:154
+#: visitors-online.php:163
 msgid "browser"
 msgstr "browser"
 
-#: visitors-online.php:477
+#: visitors-online.php:486
 msgid "Statistics was successfully cleared"
 msgstr ""
 
-#: visitors-online.php:490
+#: visitors-online.php:499
 msgid "Please fill The time period. The settings are not saved"
 msgstr "Riempi il \"Periodo di tempo\". Impostazioni non salvate."
 
-#: visitors-online.php:492
+#: visitors-online.php:501
 msgid "Please fill The data structure. The settings are not saved"
 msgstr ""
 
-#: visitors-online.php:498
+#: visitors-online.php:507
 msgid "Settings saved"
 msgstr "Impostazioni salvate"
 
-#: visitors-online.php:526
+#: visitors-online.php:535
 msgid "Visitors Online Settings"
 msgstr "Impostazioni Visitors Online"
 
-#: visitors-online.php:528 visitors-online.php:1080 visitors-online.php:1099
+#: visitors-online.php:538
+msgid "WARNING"
+msgstr ""
+
+#: visitors-online.php:539
+msgid "The plugin works correctly only if JavaScript is enabled."
+msgstr ""
+
+#: visitors-online.php:544 visitors-online.php:1097 visitors-online.php:1116
 msgid "Settings"
 msgstr "Impostazioni"
 
-#: visitors-online.php:529
+#: visitors-online.php:545
 msgid "Custom Code"
 msgstr ""
 
-#: visitors-online.php:530
+#: visitors-online.php:546
 msgid "Go PRO"
 msgstr "Go PRO"
 
-#: visitors-online.php:542
+#: visitors-online.php:558
 #, php-format
 msgid "You can add the Visitors Online counter by clicking on %s button."
 msgstr ""
 
-#: visitors-online.php:548
+#: visitors-online.php:564
 #, php-format
 msgid ""
 "You can add the Visitors Online counter to your content by clicking on %s "
@@ -158,136 +166,140 @@ msgid ""
 "displayed, please use the shortcode %s"
 msgstr ""
 
-#: visitors-online.php:555
+#: visitors-online.php:571
 msgid "You can also add a widget"
 msgstr "Puoi anche aggiungere un widget"
 
-#: visitors-online.php:557
+#: visitors-online.php:573
 msgid "Statistics can be viewed on the Dashboard."
 msgstr "Le statistiche sono disponibili sulla dashboard"
 
-#: visitors-online.php:561
+#: visitors-online.php:577
 msgid "The time period when the user is online, without making any actions"
 msgstr ""
 "Dopo quanto tempo un utente online che non effettua alcuna azione va rimosso?"
 
-#: visitors-online.php:564 visitors-online.php:791
+#: visitors-online.php:580 visitors-online.php:807
 msgid "min"
 msgstr "min"
 
-#: visitors-online.php:568
+#: visitors-online.php:584
 msgid "Data Structure"
 msgstr ""
 
-#: visitors-online.php:572
+#: visitors-online.php:588
 msgid "Allowed Variables"
 msgstr ""
 
-#: visitors-online.php:574
+#: visitors-online.php:590
 msgid "Total number of current visitors"
 msgstr ""
 
-#: visitors-online.php:575
+#: visitors-online.php:591
 msgid "Current number of registred users"
 msgstr ""
 
-#: visitors-online.php:576
+#: visitors-online.php:592
 msgid "Current number of guests"
 msgstr ""
 
-#: visitors-online.php:577
+#: visitors-online.php:593
 msgid "Current number of bots"
 msgstr ""
 
-#: visitors-online.php:578
+#: visitors-online.php:594
 msgid "The date of the highest visitors attendance"
 msgstr ""
 
-#: visitors-online.php:579
+#: visitors-online.php:595
 msgid "Total number of visitors at the highest attendance date"
 msgstr ""
 
-#: visitors-online.php:580
+#: visitors-online.php:596
 msgid "The number of registered users at the highest attendance date"
 msgstr ""
 
-#: visitors-online.php:581
+#: visitors-online.php:597
 msgid "The number of guests at the highest attendance date"
 msgstr ""
 
-#: visitors-online.php:582
+#: visitors-online.php:598
 msgid "The number of bots at the highest attendance date"
 msgstr ""
 
-#: visitors-online.php:583
+#: visitors-online.php:599
 msgid "Country"
 msgstr ""
 
-#: visitors-online.php:584
+#: visitors-online.php:600
 msgid "Browser"
 msgstr ""
 
-#: visitors-online.php:596
+#: visitors-online.php:612
 msgid "Close"
 msgstr "Chiudi"
 
-#: visitors-online.php:601
+#: visitors-online.php:617
 msgid "Update GeoIP"
 msgstr "Update GeoIP"
 
-#: visitors-online.php:604
+#: visitors-online.php:620
 msgid "every"
 msgstr "ogni"
 
-#: visitors-online.php:606
+#: visitors-online.php:622
 msgid "months"
 msgstr "mesi"
 
-#: visitors-online.php:608
+#: visitors-online.php:624
+#, fuzzy
+#| msgid ""
+#| "This option allows you to download lists with registered IP addresses all "
+#| "over the world to the database (from"
 msgid ""
 "This option allows you to download lists with registered IP addresses all "
-"over the world to the database (from"
+"over the world to the database ( from"
 msgstr ""
 "Questa opzione ti permette di scaricare la lista dal database mondiale degli "
 "IP"
 
-#: visitors-online.php:610
+#: visitors-online.php:626
 msgid ""
 "Hence you will receive the information about each IP address, and the "
 "country it belongs to. You can select the desired frequency for IP database "
 "updating"
 msgstr ""
 
-#: visitors-online.php:616
+#: visitors-online.php:632
 msgid "If you upgrade to Pro version all your settings will be saved."
 msgstr "Se passi a PRO le tue impostazioni non andranno perse"
 
-#: visitors-online.php:622
+#: visitors-online.php:638
 msgid "Learn More"
 msgstr "Leggi di più"
 
-#: visitors-online.php:629
+#: visitors-online.php:645
 msgid "Clear the Statistics"
 msgstr ""
 
-#: visitors-online.php:631
+#: visitors-online.php:647
 msgid "Clear"
 msgstr "Cancella"
 
-#: visitors-online.php:637
+#: visitors-online.php:653
 msgid "Save Changes"
 msgstr "Salva modifiche"
 
-#: visitors-online.php:906 visitors-online.php:911 visitors-online.php:922
-#: visitors-online.php:923
+#: visitors-online.php:922 visitors-online.php:927 visitors-online.php:938
+#: visitors-online.php:939
 msgid "No data"
 msgstr ""
 
-#: visitors-online.php:968
+#: visitors-online.php:985
 msgid "Add the Visitors Online counter to your website"
 msgstr ""
 
-#: visitors-online.php:990
+#: visitors-online.php:1007
 msgid ""
 "This Widget shows the number of active visitors on the site, including "
 "users, guests and bots."
@@ -295,15 +307,15 @@ msgstr ""
 "Questo Widget mostra il numero di visitatori online sul sito, inclusi utenti "
 "registrati, ospiti e bots."
 
-#: visitors-online.php:1017
+#: visitors-online.php:1034
 msgid "Title"
 msgstr "Titolo"
 
-#: visitors-online.php:1082
+#: visitors-online.php:1099
 msgid "FAQ"
 msgstr "FAQ"
 
-#: visitors-online.php:1083
+#: visitors-online.php:1100
 msgid "Support"
 msgstr "Supporto"
 

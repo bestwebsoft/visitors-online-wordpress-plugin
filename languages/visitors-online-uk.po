@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Visitors-Online\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-13 10:42+0200\n"
-"PO-Revision-Date: 2018-02-13 10:43+0200\n"
+"POT-Creation-Date: 2018-12-20 17:16+0200\n"
+"PO-Revision-Date: 2018-12-20 17:16+0200\n"
 "Last-Translator: bestwebsoft.com <plugins@bestwebsoft.com>\n"
 "Language-Team: bestwebsoft <https://bestwebsoft.com/>\n"
 "Language: uk\n"
@@ -13,7 +13,7 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.8.7.1\n"
+"X-Generator: Poedit 2.2\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: import-country.php:150
@@ -67,7 +67,7 @@ msgstr "Кількість завантажених файлів"
 msgid "Number of a loading file"
 msgstr "Номер файлу, що завантажується"
 
-#: import-country.php:197 import-country.php:205 visitors-online.php:171
+#: import-country.php:197 import-country.php:205 visitors-online.php:180
 msgid ""
 "Not enough rights to import from the GeoIPCountryWhois.csv file, import is "
 "impossible"
@@ -75,80 +75,88 @@ msgstr ""
 "Недостатньо прав для доступу до файлу GeoIPCountryWhois.csv, імпорт "
 "неможливий"
 
-#: import-country.php:202 visitors-online.php:170
+#: import-country.php:202 visitors-online.php:179
 msgid "Import was finished"
 msgstr "Імпорт успішно завершено"
 
-#: visitors-online.php:135
+#: visitors-online.php:144
 msgid "Visitors online"
 msgstr "Visitors online"
 
-#: visitors-online.php:136 visitors-online.php:141
+#: visitors-online.php:145 visitors-online.php:150
 msgid "users"
 msgstr "користувачів"
 
-#: visitors-online.php:137 visitors-online.php:142
+#: visitors-online.php:146 visitors-online.php:151
 msgid "guests"
 msgstr "гостей"
 
-#: visitors-online.php:138 visitors-online.php:143
+#: visitors-online.php:147 visitors-online.php:152
 msgid "bots"
 msgstr "ботів"
 
-#: visitors-online.php:139
+#: visitors-online.php:148
 msgid "The maximum number of visits was"
 msgstr "Максимальна кількість відвідувань була"
 
-#: visitors-online.php:140
+#: visitors-online.php:149
 msgid "all visitors"
 msgstr "всього відвідувачів"
 
-#: visitors-online.php:150
+#: visitors-online.php:159
 msgid "country"
 msgstr "країна"
 
-#: visitors-online.php:154
+#: visitors-online.php:163
 msgid "browser"
 msgstr "браузер"
 
-#: visitors-online.php:477
+#: visitors-online.php:486
 msgid "Statistics was successfully cleared"
 msgstr "Статистику успішно очищено"
 
-#: visitors-online.php:490
+#: visitors-online.php:499
 msgid "Please fill The time period. The settings are not saved"
 msgstr "Будь ласка, заповніть часовий проміжок. Налаштування не збережено"
 
-#: visitors-online.php:492
+#: visitors-online.php:501
 msgid "Please fill The data structure. The settings are not saved"
 msgstr "Будь ласка, заповніть структуру даних. Налаштування не збережено"
 
-#: visitors-online.php:498
+#: visitors-online.php:507
 msgid "Settings saved"
 msgstr "Налаштування збережено"
 
-#: visitors-online.php:526
+#: visitors-online.php:535
 msgid "Visitors Online Settings"
 msgstr "Налаштування Visitors Online"
 
-#: visitors-online.php:528 visitors-online.php:1080 visitors-online.php:1099
+#: visitors-online.php:538
+msgid "WARNING"
+msgstr "УВАГА"
+
+#: visitors-online.php:539
+msgid "The plugin works correctly only if JavaScript is enabled."
+msgstr "Плагін працює правильно, лише якщо ввімкнено JavaScript."
+
+#: visitors-online.php:544 visitors-online.php:1097 visitors-online.php:1116
 msgid "Settings"
 msgstr "Налаштування"
 
-#: visitors-online.php:529
+#: visitors-online.php:545
 msgid "Custom Code"
 msgstr "Користувацький код"
 
-#: visitors-online.php:530
+#: visitors-online.php:546
 msgid "Go PRO"
 msgstr "Перейти на Pro версію"
 
-#: visitors-online.php:542
+#: visitors-online.php:558
 #, php-format
 msgid "You can add the Visitors Online counter by clicking on %s button."
 msgstr "Ви можете додати лічильник Visitors Online натиснувши на кнопку %s."
 
-#: visitors-online.php:548
+#: visitors-online.php:564
 #, php-format
 msgid ""
 "You can add the Visitors Online counter to your content by clicking on %s "
@@ -159,102 +167,106 @@ msgstr ""
 "на кнопку %s в блоці редагування контенту в режимі Visual. Якщо кнопка не "
 "відображається, будь ласка, використовуйте шорткод %s"
 
-#: visitors-online.php:555
+#: visitors-online.php:571
 msgid "You can also add a widget"
 msgstr "Ви також можете додати віджет"
 
-#: visitors-online.php:557
+#: visitors-online.php:573
 msgid "Statistics can be viewed on the Dashboard."
 msgstr "Статистику можна знайти на панелі адміністратора."
 
-#: visitors-online.php:561
+#: visitors-online.php:577
 msgid "The time period when the user is online, without making any actions"
 msgstr "Час протягом якого користувач вважається онлайн, не роблячи ніяких дій"
 
-#: visitors-online.php:564 visitors-online.php:791
+#: visitors-online.php:580 visitors-online.php:807
 msgid "min"
 msgstr "хв"
 
-#: visitors-online.php:568
+#: visitors-online.php:584
 msgid "Data Structure"
 msgstr "Структура даних"
 
-#: visitors-online.php:572
+#: visitors-online.php:588
 msgid "Allowed Variables"
 msgstr "Доступнi змiннi"
 
-#: visitors-online.php:574
+#: visitors-online.php:590
 msgid "Total number of current visitors"
 msgstr "Загальна кiлькiсть поточних вiдвiдувачiв"
 
-#: visitors-online.php:575
+#: visitors-online.php:591
 msgid "Current number of registred users"
 msgstr "Поточна кiлькiсть зареєстрованих користувачiв"
 
-#: visitors-online.php:576
+#: visitors-online.php:592
 msgid "Current number of guests"
 msgstr "Поточна кiлькiсть гостей"
 
-#: visitors-online.php:577
+#: visitors-online.php:593
 msgid "Current number of bots"
 msgstr "Поточна кiлькiсть ботiв"
 
-#: visitors-online.php:578
+#: visitors-online.php:594
 msgid "The date of the highest visitors attendance"
 msgstr "Дата найбільшої кількості вiдвiдувань"
 
-#: visitors-online.php:579
+#: visitors-online.php:595
 msgid "Total number of visitors at the highest attendance date"
 msgstr ""
 "Загальна кiлькiсть користувачiв у день з найбільшою кількiстю вiдвiдувань"
 
-#: visitors-online.php:580
+#: visitors-online.php:596
 msgid "The number of registered users at the highest attendance date"
 msgstr ""
 "Загальна кiлькiсть зареєстрованих користувачiв у день з найбільшою кількiстю "
 "вiдвiдувань"
 
-#: visitors-online.php:581
+#: visitors-online.php:597
 msgid "The number of guests at the highest attendance date"
 msgstr "Загальна кiлькiсть готсей у день з найбільшою кількiстю вiдвiдувань"
 
-#: visitors-online.php:582
+#: visitors-online.php:598
 msgid "The number of bots at the highest attendance date"
 msgstr "Загальна кiлькiсть ботiв у день з найбільшою кількiстю вiдвiдувань"
 
-#: visitors-online.php:583
+#: visitors-online.php:599
 msgid "Country"
 msgstr "Країна"
 
-#: visitors-online.php:584
+#: visitors-online.php:600
 msgid "Browser"
 msgstr "Браузер"
 
-#: visitors-online.php:596
+#: visitors-online.php:612
 msgid "Close"
 msgstr "Закрити"
 
-#: visitors-online.php:601
+#: visitors-online.php:617
 msgid "Update GeoIP"
 msgstr "Оновити GeoIP"
 
-#: visitors-online.php:604
+#: visitors-online.php:620
 msgid "every"
 msgstr "кожні"
 
-#: visitors-online.php:606
+#: visitors-online.php:622
 msgid "months"
 msgstr "місяці"
 
-#: visitors-online.php:608
+#: visitors-online.php:624
+#, fuzzy
+#| msgid ""
+#| "This option allows you to download lists with registered IP addresses all "
+#| "over the world to the database (from"
 msgid ""
 "This option allows you to download lists with registered IP addresses all "
-"over the world to the database (from"
+"over the world to the database ( from"
 msgstr ""
 "Ця опція дозволяє завантажувати списки зі зареєстрованими IP-адресами по "
 "всьому світу до бази даних (з"
 
-#: visitors-online.php:610
+#: visitors-online.php:626
 msgid ""
 "Hence you will receive the information about each IP address, and the "
 "country it belongs to. You can select the desired frequency for IP database "
@@ -263,36 +275,36 @@ msgstr ""
 "Таким чином, ви отримаєте інформацію про кожну IP-адресу, і до якої країни "
 "вона належить. Ви можете вибрати потрібну частоту для оновлення бази даних IP"
 
-#: visitors-online.php:616
+#: visitors-online.php:632
 msgid "If you upgrade to Pro version all your settings will be saved."
 msgstr "При переході на Pro версію, всі ваші налаштування буде збережено."
 
-#: visitors-online.php:622
+#: visitors-online.php:638
 msgid "Learn More"
 msgstr "Дізнатись більше"
 
-#: visitors-online.php:629
+#: visitors-online.php:645
 msgid "Clear the Statistics"
 msgstr "Очистити статистику"
 
-#: visitors-online.php:631
+#: visitors-online.php:647
 msgid "Clear"
 msgstr "Очистити"
 
-#: visitors-online.php:637
+#: visitors-online.php:653
 msgid "Save Changes"
 msgstr "Зберегти зміни"
 
-#: visitors-online.php:906 visitors-online.php:911 visitors-online.php:922
-#: visitors-online.php:923
+#: visitors-online.php:922 visitors-online.php:927 visitors-online.php:938
+#: visitors-online.php:939
 msgid "No data"
 msgstr "Немає даних"
 
-#: visitors-online.php:968
+#: visitors-online.php:985
 msgid "Add the Visitors Online counter to your website"
 msgstr "Додати лічильник Visitors Online на ваш сайт"
 
-#: visitors-online.php:990
+#: visitors-online.php:1007
 msgid ""
 "This Widget shows the number of active visitors on the site, including "
 "users, guests and bots."
@@ -300,15 +312,15 @@ msgstr ""
 "Цей віджет показує кількість активних відвідувачів на сайті,  в тому числі "
 "користувачів, гостей і ботів."
 
-#: visitors-online.php:1017
+#: visitors-online.php:1034
 msgid "Title"
 msgstr "Заголовок"
 
-#: visitors-online.php:1082
+#: visitors-online.php:1099
 msgid "FAQ"
 msgstr "FAQ"
 
-#: visitors-online.php:1083
+#: visitors-online.php:1100
 msgid "Support"
 msgstr "Техпідтримка"
 
