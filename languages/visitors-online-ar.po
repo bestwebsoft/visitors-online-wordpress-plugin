@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Visitors-Online\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-20 17:17+0200\n"
-"PO-Revision-Date: 2018-12-20 17:17+0200\n"
+"POT-Creation-Date: 2019-01-03 15:47+0200\n"
+"PO-Revision-Date: 2019-01-03 15:47+0200\n"
 "Last-Translator: saidmoulla.com <support@saidmoulla.com>\n"
 "Language-Team: Arabic\n"
 "Language: ar\n"
@@ -16,7 +16,7 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 2.2\n"
+"X-Generator: Poedit 2.0.6\n"
 "X-Loco-Parser: loco_parse_po\n"
 "X-Poedit-SearchPath-0: .\n"
 
@@ -71,7 +71,7 @@ msgstr "عدد الملفات المحملة"
 msgid "Number of a loading file"
 msgstr "عدد الملفات الجاري تحميلها"
 
-#: import-country.php:197 import-country.php:205 visitors-online.php:180
+#: import-country.php:197 import-country.php:205 visitors-online.php:181
 msgid ""
 "Not enough rights to import from the GeoIPCountryWhois.csv file, import is "
 "impossible"
@@ -79,88 +79,80 @@ msgstr ""
 "صلاحيات غير كافية للوصول للبيانات في ملف GeoIPCountryWhois.csv، لا يمكن "
 "التحميل."
 
-#: import-country.php:202 visitors-online.php:179
+#: import-country.php:202 visitors-online.php:180
 msgid "Import was finished"
 msgstr "تمت الإنتهاء من التحميل"
 
-#: visitors-online.php:144
+#: visitors-online.php:145
 msgid "Visitors online"
 msgstr "المتواجدون حاليا"
 
-#: visitors-online.php:145 visitors-online.php:150
+#: visitors-online.php:146 visitors-online.php:151
 msgid "users"
 msgstr "أعضاء"
 
-#: visitors-online.php:146 visitors-online.php:151
+#: visitors-online.php:147 visitors-online.php:152
 msgid "guests"
 msgstr "الزوار"
 
-#: visitors-online.php:147 visitors-online.php:152
+#: visitors-online.php:148 visitors-online.php:153
 msgid "bots"
 msgstr "الربوتات"
 
-#: visitors-online.php:148
+#: visitors-online.php:149
 msgid "The maximum number of visits was"
 msgstr "العدد الإجمالي للزيارات"
 
-#: visitors-online.php:149
+#: visitors-online.php:150
 msgid "all visitors"
 msgstr ""
 
-#: visitors-online.php:159
+#: visitors-online.php:160
 msgid "country"
 msgstr "الدولة"
 
-#: visitors-online.php:163
+#: visitors-online.php:164
 msgid "browser"
 msgstr "المتصفح"
 
-#: visitors-online.php:486
+#: visitors-online.php:487
 msgid "Statistics was successfully cleared"
 msgstr ""
 
-#: visitors-online.php:499
+#: visitors-online.php:500
 msgid "Please fill The time period. The settings are not saved"
 msgstr "الرجاء تحديد المدة الزمنية، الإعدادات لم يتم بعد حفظها"
 
-#: visitors-online.php:501
+#: visitors-online.php:502
 msgid "Please fill The data structure. The settings are not saved"
 msgstr ""
 
-#: visitors-online.php:507
+#: visitors-online.php:508
 msgid "Settings saved"
 msgstr "تم حفظ الإعدادات"
 
-#: visitors-online.php:535
+#: visitors-online.php:536
 msgid "Visitors Online Settings"
 msgstr "إعدادات إضافة عداد الزوار"
 
-#: visitors-online.php:538
-msgid "WARNING"
-msgstr ""
-
-#: visitors-online.php:539
-msgid "The plugin works correctly only if JavaScript is enabled."
-msgstr ""
-
-#: visitors-online.php:544 visitors-online.php:1097 visitors-online.php:1116
+#: visitors-online.php:538 visitors-online.php:1106 visitors-online.php:1125
 msgid "Settings"
 msgstr "الإعدادات"
 
-#: visitors-online.php:545
+#: visitors-online.php:539
 msgid "Custom Code"
 msgstr ""
 
-#: visitors-online.php:546
+#: visitors-online.php:540
 msgid "Go PRO"
 msgstr "النسخة المدفوعة"
 
-#: visitors-online.php:558
+#: visitors-online.php:552
 #, php-format
 msgid "You can add the Visitors Online counter by clicking on %s button."
 msgstr ""
 
-#: visitors-online.php:564
+#: visitors-online.php:558
 #, php-format
 msgid ""
 "You can add the Visitors Online counter to your content by clicking on %s "
@@ -168,153 +160,157 @@ msgid ""
 "displayed, please use the shortcode %s"
 msgstr ""
 
-#: visitors-online.php:571
+#: visitors-online.php:565
 msgid "You can also add a widget"
 msgstr "يمكنك أيضا إضافة ويدجات"
 
-#: visitors-online.php:573
+#: visitors-online.php:567
 msgid "Statistics can be viewed on the Dashboard."
 msgstr "الإحصائيات يمكن مشاهدتها في لوحة الإدارة"
 
-#: visitors-online.php:577
+#: visitors-online.php:571
 msgid "The time period when the user is online, without making any actions"
 msgstr "وقت الخمول الذي سيتم فيه استمرار احتساب الزائر كمتصل بالموقع"
 
-#: visitors-online.php:580 visitors-online.php:807
+#: visitors-online.php:574 visitors-online.php:816
 msgid "min"
 msgstr "دقائق"
 
-#: visitors-online.php:584
+#: visitors-online.php:578
 msgid "Data Structure"
 msgstr ""
 
-#: visitors-online.php:588
+#: visitors-online.php:582
 msgid "Allowed Variables"
 msgstr ""
 
-#: visitors-online.php:590
+#: visitors-online.php:584
 msgid "Total number of current visitors"
 msgstr ""
 
-#: visitors-online.php:591
+#: visitors-online.php:585
 msgid "Current number of registred users"
 msgstr ""
 
-#: visitors-online.php:592
+#: visitors-online.php:586
 msgid "Current number of guests"
 msgstr ""
 
-#: visitors-online.php:593
+#: visitors-online.php:587
 msgid "Current number of bots"
 msgstr ""
 
-#: visitors-online.php:594
+#: visitors-online.php:588
 msgid "The date of the highest visitors attendance"
 msgstr ""
 
-#: visitors-online.php:595
+#: visitors-online.php:589
 msgid "Total number of visitors at the highest attendance date"
 msgstr ""
 
-#: visitors-online.php:596
+#: visitors-online.php:590
 msgid "The number of registered users at the highest attendance date"
 msgstr ""
 
-#: visitors-online.php:597
+#: visitors-online.php:591
 msgid "The number of guests at the highest attendance date"
 msgstr ""
 
-#: visitors-online.php:598
+#: visitors-online.php:592
 msgid "The number of bots at the highest attendance date"
 msgstr ""
 
-#: visitors-online.php:599
+#: visitors-online.php:593
 msgid "Country"
 msgstr ""
 
-#: visitors-online.php:600
+#: visitors-online.php:594
 msgid "Browser"
 msgstr ""
 
-#: visitors-online.php:612
+#: visitors-online.php:606
 msgid "Close"
 msgstr "إغلاق"
 
-#: visitors-online.php:617
+#: visitors-online.php:611
 msgid "Update GeoIP"
 msgstr "تحديث GeoIP"
 
-#: visitors-online.php:620
+#: visitors-online.php:614
 msgid "every"
 msgstr "كل"
 
-#: visitors-online.php:622
+#: visitors-online.php:616
 msgid "months"
 msgstr "أشهر"
 
-#: visitors-online.php:624
-#, fuzzy
-#| msgid ""
-#| "This option allows you to download lists with registered IP addresses all "
-#| "over the world to the database (from"
+#: visitors-online.php:620
 msgid ""
 "This option allows you to download lists with registered IP addresses all "
-"over the world to the database ( from"
+"over the world to the database (from"
 msgstr "هذا الخيار يسمح لك بتحميل لائحة عناوين IP المسجلة في قاعدة البيانات"
 
-#: visitors-online.php:626
+#: visitors-online.php:622
 msgid ""
 "Hence you will receive the information about each IP address, and the "
 "country it belongs to. You can select the desired frequency for IP database "
 "updating"
 msgstr ""
 
-#: visitors-online.php:632
+#: visitors-online.php:629
+msgid "User Data"
+msgstr ""
+
+#: visitors-online.php:635
+msgid "Enable to display the list of users and information about each of them."
+msgstr ""
+
+#: visitors-online.php:641
 msgid "If you upgrade to Pro version all your settings will be saved."
 msgstr ""
 "في حالة ما تمت الترقية إلى النسخة المدفوعة سيتم الإحتفاظ بالإعدادات الأصلية،"
 
-#: visitors-online.php:638
+#: visitors-online.php:647
 msgid "Learn More"
 msgstr "إقرأ المزيد"
 
-#: visitors-online.php:645
+#: visitors-online.php:654
 msgid "Clear the Statistics"
 msgstr ""
 
-#: visitors-online.php:647
+#: visitors-online.php:656
 msgid "Clear"
 msgstr "حذف"
 
-#: visitors-online.php:653
+#: visitors-online.php:662
 msgid "Save Changes"
 msgstr "حفظ الإعدادات"
 
-#: visitors-online.php:922 visitors-online.php:927 visitors-online.php:938
-#: visitors-online.php:939
+#: visitors-online.php:931 visitors-online.php:936 visitors-online.php:947
+#: visitors-online.php:948
 msgid "No data"
 msgstr ""
 
-#: visitors-online.php:985
+#: visitors-online.php:994
 msgid "Add the Visitors Online counter to your website"
 msgstr ""
 
-#: visitors-online.php:1007
+#: visitors-online.php:1016
 msgid ""
 "This Widget shows the number of active visitors on the site, including "
 "users, guests and bots."
 msgstr ""
 "هذا الودجات يظهر عدد المتواجدين في موقعك بما فيهم الأعضاء، الزوار، الربوتات"
 
-#: visitors-online.php:1034
+#: visitors-online.php:1043
 msgid "Title"
 msgstr "العنوان"
 
-#: visitors-online.php:1099
+#: visitors-online.php:1108
 msgid "FAQ"
 msgstr "أسئلة شائعة"
 
-#: visitors-online.php:1100
+#: visitors-online.php:1109
 msgid "Support"
 msgstr "الدعم"
 

@@ -6,7 +6,7 @@ Description: Display live count of online visitors who are currently browsing yo
 Author: BestWebSoft
 Text Domain: visitors-online
 Domain Path: /languages
-Version: 1.0.5
+Version: 1.0.6
 Author URI: https://bestwebsoft.com/
 License: GPLv3 or later
 */
@@ -34,8 +34,8 @@ if ( file_exists( $vstrsnln_fpath ) ) {
 }
 
 /* Function for adding menu and submenu */
-if ( ! function_exists( 'vstrsnln_add_admin_menu' ) ) {
-	function vstrsnln_add_admin_menu() {
+if ( ! function_exists( 'vstrsnln_admin_menu' ) ) {
+	function vstrsnln_admin_menu() {
 		bws_general_menu();
 		$settings = add_submenu_page( 'bws_panel', 'Visitors Online', 'Visitors Online', 'manage_options', 'visitors-online.php', 'vstrsnln_settings_page' );
 		add_action( 'load-' . $settings, 'vstrsnln_add_tabs' );
@@ -99,7 +99,9 @@ if ( ! function_exists ( 'vstrsnln_default_options' ) ) {
 		}
 
 		/* Array merge incase this version has added new options */
-		if ( ! isset( $vstrsnln_options['plugin_option_version'] ) || $vstrsnln_options['plugin_option_version'] != $vstrsnln_plugin_info["Version"] ) {
+		if ( ! isset( $vstrsnln_options['plugin_option_version'] ) ||
+		    $vstrsnln_options['plugin_option_version'] != $vstrsnln_plugin_info["Version"]
+		) {
 			/* register uninstall hook */
 			if ( is_multisite() ) {
 				switch_to_blog( 1 );
@@ -228,6 +230,7 @@ if ( ! function_exists( 'vstrsnln_install_base' ) ) {
 			`time_on` INT( 10 ),
 			`time_off` INT( 10 ),
 			`user_type` CHAR( 5 ),
+			`user_name` VARCHAR( 255 ),
 			`browser` CHAR( 100 ),
 			`country_id` INT( 10 ),
 			`ip_user` CHAR( 16 ),
@@ -236,7 +239,7 @@ if ( ! function_exists( 'vstrsnln_install_base' ) ) {
 			PRIMARY KEY ( `id` )
 			) ENGINE = InnoDB DEFAULT CHARSET = utf8;";
 		dbDelta( $sql );
-		/* Data about day wiht a number of connections */
+		/* Data about day with a number of connections */
 		$sql = "CREATE TABLE IF NOT EXISTS `" . $wpdb->base_prefix . "vstrsnln_general` (
 			`id` INT( 3 ) UNSIGNED NOT NULL AUTO_INCREMENT,
 			`date_connection` DATE NOT NULL,
@@ -336,7 +339,7 @@ if ( ! function_exists( 'vstrsnln_write_user_base' ) ) {
 			if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && ! empty( $_SERVER['HTTP_USER_AGENT'] ) ) {
 				$vstrsnln_user_agent = $_SERVER['HTTP_USER_AGENT'];
 				/* Detects the browser and its version */
-				preg_match( '/( Firefox|Opera|Chrome|MSIE|OPR|Trident|Avant|Acoo|Iron|Orca|Lynx|Version|Opera Mini|Netscape|Konqueror|SeaMonkey|Camino|Minefield|Iceweasel|K-Meleon|Maxthon)(?:\/| )([0-9.]+)/', $vstrsnln_user_agent, $vstrsnln_browser_info );
+				preg_match( '/(Firefox|Opera|Chrome|MSIE|OPR|Trident|Avant|Acoo|Iron|Orca|Lynx|Version|Opera Mini|Netscape|Konqueror|SeaMonkey|Camino|Minefield|Iceweasel|K-Meleon|Maxthon)(?:\/| )([0-9.]+)/', $vstrsnln_user_agent, $vstrsnln_browser_info );
 				list( , $browser, $version )	= $vstrsnln_browser_info;
 				$vstrsnln_browser 			= $browser . ' ' . $version;
 				if ( preg_match( '/Opera ( [0-9.]+ ) /i', $vstrsnln_user_agent, $opera ) ) {
@@ -347,7 +350,7 @@ if ( ! function_exists( 'vstrsnln_write_user_base' ) ) {
 					$vstrsnln_browser = ( $ie && $ie[1] ) ? $ie[1] . ' based on IE ' . $version : 'IE '. $version;
 				}
 				if ( 'Firefox' == $browser ) {
-					preg_match( '/( Flock|Navigator|Epiphany )\/( [0-9.]+ ) /', $vstrsnln_user_agent, $ff );
+					preg_match( '/( Flock|Navigator|Epiphany)\/([0-9.]+ ) /', $vstrsnln_user_agent, $ff );
 					if ( $ff ) {
 						$vstrsnln_browser = ( $ff[1] && $ff[2] ) ? $ff[1] . ' ' . $ff[2] : '';
 					}
@@ -533,13 +536,6 @@ if ( ! function_exists( 'vstrsnln_settings_page' ) ) {
 		} ?>
 		<div class="wrap">
 			<h1><?php _e( 'Visitors Online Settings', 'visitors-online' ); ?></h1>
-			 <noscript>
-            	<div class="error below-h2">
-                	<p><strong><?php _e( 'WARNING', 'bws-linkedin-plus' ); ?>
-                        :</strong> <?php _e( 'The plugin works correctly only if JavaScript is enabled.', 'bws-linkedin-plus' ); ?>
-                	</p>
-            	</div>
-        	</noscript>
 			<h2 class="nav-tab-wrapper">
 				<a class="nav-tab <?php if ( ! isset( $_GET['action'] ) ) echo ' nav-tab-active'; ?>" href="admin.php?page=visitors-online.php"><?php _e( 'Settings', 'visitors-online' ); ?></a>
 				<a class="nav-tab <?php if ( isset( $_GET['action'] ) && 'custom_code' == $_GET['action'] ) echo ' nav-tab-active'; ?>" href="admin.php?page=visitors-online.php&amp;action=custom_code"><?php _e( 'Custom Code', 'visitors-online' ); ?></a>
@@ -618,15 +614,30 @@ if ( ! function_exists( 'vstrsnln_settings_page' ) ) {
 										</th>
 										<td>
 											<?php _e( 'every', 'visitors-online' ); ?>
-											<input type="number" disabled name="vstrsnln_loading_country" value="0" />
-											<?php _e( 'months', 'visitors-online' ); ?> <br>
+											<input type="number" class="vstrsnln_input_value" disabled name="vstrsnln_loading_country" value="3" />
+                                            <?php _e( 'months', 'visitors-online' ); ?>
+                                            <input type="submit" id="bwscntrtbl_button_import" name="bwscntrtbl_button_import" class="button bwsplgns_need_disable" value="Update now">
+                                            </div><br>
 											<span class="bws_info">
-												<?php _e( 'This option allows you to download lists with registered IP addresses all over the world to the database ( from', 'visitors-online' ); ?>&nbsp;<a href="https://www.maxmind.com" target="_blank">https://www.maxmind.com</a>).
+												<?php _e( 'This option allows you to download lists with registered IP addresses all over the world to the database (from', 'visitors-online' ); ?>&nbsp;<a href="https://www.maxmind.com" target="_blank">https://www.maxmind.com</a>).
 												<br>
 												<?php _e( 'Hence you will receive the information about each IP address, and the country it belongs to. You can select the desired frequency for IP database updating', 'visitors-online' ); ?>.
 											</span>
 										</td>
 									</tr>
+                                    <tr valign="top">
+                                        <th>
+                                            <label for="vstrsnln_checkbox_info_users">
+												<?php _e( 'User Data', 'visitors-online' ); ?>
+                                            </label>
+                                        </th>
+                                        <td>
+                                            <label for="vstrsnln_checkbox_info_users">
+                                                <input type="checkbox" value="1" name="vstrsnln_checkbox_info_users" id="vstrsnln_checkbox_info_users" <?php checked( 1 ) ; ?> />
+                                                <span class="bws_info"><?php _e( 'Enable to display the list of users and information about each of them.', 'visitors-online' ); ?></span>
+                                            </label>
+                                        </td>
+                                    </tr>
 									<tr valign="top">
 										<th scope="row" colspan="2">
 											* <?php _e( 'If you upgrade to Pro version all your settings will be saved.', 'visitors-online' ); ?>
@@ -1190,7 +1201,7 @@ if ( ! function_exists ( 'vstrsnln_plugin_banner' ) ) {
 
 register_activation_hook( __FILE__, 'vstrsnln_install' );
 
-add_action( 'admin_menu', 'vstrsnln_add_admin_menu' );
+add_action( 'admin_menu', 'vstrsnln_admin_menu' );
 add_action( 'init', 'vstrsnln_plugin_init' );
 add_action( 'admin_init', 'vstrsnln_plugin_admin_init' );
 add_action( 'plugins_loaded', 'vstrsnln_plugins_loaded' );

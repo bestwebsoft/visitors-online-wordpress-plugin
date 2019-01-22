@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: visitors online, visitors online plugin, count visitor, guests, guests counter, counter, visitors counter, add visitors counter, count, add guests counter, users online, guests online
 Requires at least: 3.9
-Tested up to: 5.0.2
-Stable tag: 1.0.5
+Tested up to: 5.0.3
+Stable tag: 1.0.6
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -37,6 +37,7 @@ https://www.youtube.com/watch?v=7e6LzyRzxwA
 > All features from Free version included plus:
 >
 > * Automatically download and update list of countries and IP addresses
+> * Display detailed user information [NEW]
 > * Get answer to your question within one business day ([Support Policy](https://bestwebsoft.com/support-policy/))
 >
 > [Upgrade to Pro Now](https://bestwebsoft.com/products/wordpress/plugins/visitors-online/?k=a58d73e5dee0c701959b47ea355c6e5b)
@@ -125,6 +126,10 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 
 == Changelog ==
 
+= V1.0.6 - 22.01.2019 =
+* PRO : Ability to display the list of users and information about each of them.
+* Update : All functionality for WordPress 5.0.3 was updated.
+
 = V1.0.5 - 03.01.2019 =
 * Update : All functionality for WordPress 5.0.2 was updated.
 
@@ -180,9 +185,13 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 
 == Upgrade Notice ==
 
-= V1.0.5 = 
+= V1.0.6 =
+* New features added.
 * The compatibility with new WordPress version updated.
- 
+
+= V1.0.5 =
+* The compatibility with new WordPress version updated.
+
 = V1.0.4 =
 * Functionality improved.
 
