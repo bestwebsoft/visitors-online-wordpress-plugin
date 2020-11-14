@@ -2,9 +2,9 @@
 Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: visitors online, visitors online plugin, count visitor, guests, guests counter, counter, visitors counter, add visitors counter, count, add guests counter, users online, guests online
-Requires at least: 3.9
-Tested up to: 5.0.3
-Stable tag: 1.0.6
+Requires at least: 4.5
+Tested up to: 5.5.3
+Stable tag: 1.1.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -37,7 +37,7 @@ https://www.youtube.com/watch?v=7e6LzyRzxwA
 > All features from Free version included plus:
 >
 > * Automatically download and update list of countries and IP addresses
-> * Display detailed user information [NEW]
+> * Display detailed user information
 > * Get answer to your question within one business day ([Support Policy](https://bestwebsoft.com/support-policy/))
 >
 > [Upgrade to Pro Now](https://bestwebsoft.com/products/wordpress/plugins/visitors-online/?k=a58d73e5dee0c701959b47ea355c6e5b)
@@ -46,6 +46,7 @@ If you have a feature suggestion or idea you'd like to see in the plugin, we'd l
 
 = Documentation & Videos =
 
+* [[Doc] User Guide](https://docs.google.com/document/d/1FaTnRsYs64adPiRz_REGH9u0pOPz2flCL4gi49qdfaw)
 * [[Doc] Installation](https://docs.google.com/document/d/1-hvn6WRvWnOqj5v5pLUk7Awyu87lq5B_dO-Tv-MC9JQ/)
 * [[Doc] Purchase](https://docs.google.com/document/d/1EUdBVvnm7IHZ6y0DNyldZypUQKpB8UVPToSc_LdOYQI/)
 * [[Video] Installation Instruction](https://www.youtube.com/watch?v=izPS7Tbgxqg)
@@ -72,11 +73,11 @@ Some of these translations are not complete. We are constantly adding new featur
 
 1. Upload `visitors-online` folder to the `/wp-content/plugins/` directory.
 2. Activate the plugin using the 'Plugins' menu in your WordPress admin panel.
-3. You can adjust the necessary settings using your WordPress admin panel in "BWS Panel" > "Visitors Online".
+3. You can adjust the necessary settings using your WordPress admin panel in "Visitors Online".
 4. Create a page or a post and insert the short-code [vstrsnln_info] into the text.
 5. Add a widget Visitors Online to the Sidebar column.
 
-[View a PDF version of Step-by-step Instruction on Visitors Online Installation](https://docs.google.com/document/d/1-hvn6WRvWnOqj5v5pLUk7Awyu87lq5B_dO-Tv-MC9JQ/)
+[View a Step-by-step Instruction on Visitors Online Installation](https://docs.google.com/document/d/1-hvn6WRvWnOqj5v5pLUk7Awyu87lq5B_dO-Tv-MC9JQ/)
 
 https://www.youtube.com/watch?v=izPS7Tbgxqg
 
@@ -89,9 +90,9 @@ https://www.youtube.com/watch?v=izPS7Tbgxqg
 - if the number of visits from different countries is the same, the plugin will display several countries, but not more than three;
 - if the number of visits from different browsers is the same, the plugin will display several browsers, but not more than three
 
-= I get "Not enough rights to import from the GeoIPCountryWhois.csv file" error. What shall I do? =
+= I get "Not enough rights to import from the IpToCountry.csv file" error. What shall I do? =
 
-You should set rights 755 to the folders wp-content, plugins, visitors-online and 644 to the GeoIPCountryWhois.csv file. In such case the plugin’s script will have enough rights to upload the file. Here is some useful information for you <https://codex.wordpress.org/Changing_File_Permissions#Shared_Hosting_with_suexec>.
+You should set rights 755 to the folders wp-content, plugins, visitors-online and 644 to the IpToCountry.csv file. In such case the plugin’s script will have enough rights to upload the file. Here is some useful information for you <https://codex.wordpress.org/Changing_File_Permissions#Shared_Hosting_with_suexec>.
 
 = Where can I find statistics? =
 
@@ -109,6 +110,13 @@ The plugin receives data from the server variable $_SERVER['HTTP_USER_AGENT'], a
 
 The plugin counts the number of the site visitors during the day. If the same user visits the site 5 times during the day, the plugin sees 5 visits, but not one. The visit means that a user enters the site or console as a guest user or bot, and stays within the time set on the plugin settings page. (The time period when the user is online, without making any actions).
 
+= How can I load GeoIP? =
+
+1. Download the necessary file by a link <http://software77.net/geo-ip/?DL=2&x=Download>.
+2. Unzip the file IpToCountry.csv.zip to a folder {your_site_folder}/wp-content/plugins/visitor-online/geolite-country.
+3. Go to the settings page of the plugin Visitors Online by a link http://{your_domain}/wp-admin/admin.php?page=visitors-online.php or Admin Panel->Visitors Online.
+4. Find an option "Import Database" and click "Import" button.
+
 = I have some problems with the plugin's work. What Information should I provide to receive proper support? =
 
 Please make sure that the problem hasn't been discussed yet on our forum (<https://support.bestwebsoft.com>). If no, please provide the following data along with your problem's description:
@@ -125,6 +133,26 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 3. Plugin Settings page.
 
 == Changelog ==
+
+= V1.1.1 - 13.11.2020 =
+* Update : BWS Panel section was updated.
+* Update : Functionality for downloading and updating the country table was updated.
+
+= V1.1.0 - 31.08.2020 =
+* Update : All functionality for WordPress 5.5 was updated.
+* Update : BWS Panel section was updated.
+* Update : Settings page was updated.
+
+= V1.0.9 - 04.09.2019 =
+* Update: The deactivation feedback has been changed. Misleading buttons have been removed.
+
+= V1.0.8 - 12.08.2019 =
+* Update : BWS menu has been updated.
+* Bugfix : The bug related with database table prefix has been fixed.
+
+= V1.0.7 - 02.07.2019 =
+* Update : The plugin settings page has been changed.
+* Bugfix : The problem with import/update GeoIP databases was fixed.
 
 = V1.0.6 - 22.01.2019 =
 * PRO : Ability to display the list of users and information about each of them.
@@ -184,6 +212,22 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * NEW : Added detection of the country.
 
 == Upgrade Notice ==
+
+= V1.1.1 =
+* Bugs fixed.
+
+= V1.1.0 =
+* The compatibility with new WordPress version updated.
+
+= V1.0.9 =
+* Usability improved.
+
+= V1.0.8 =
+* Functionality improved.
+* Bugs fixed.
+
+= V1.0.7 =
+* Functionality expanded.
 
 = V1.0.6 =
 * New features added.

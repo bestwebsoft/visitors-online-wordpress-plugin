@@ -1,0 +1,8 @@
+/*Visitor Online*/
+.menu-top.toplevel_page_visitors-online .wp-menu-image {
+    font-family: 'bwsicons' !important;
+}
+.menu-top.toplevel_page_visitors-online .wp-menu-image:before {
+    content: "\e934";
+    font-family: 'bwsicons' !important;
+}
