@@ -38,6 +38,8 @@ Customize and manage your visitor statistic list, see how many visitors are on y
 </ul>
 <h4>Help &amp; Support</h4>
 <p>Visit our Help Center if you have any questions, our friendly Support Team is happy to help — <a href="https://support.bestwebsoft.com/" rel="nofollow ugc">https://support.bestwebsoft.com/</a></p>
+<h4>Affiliate Program</h4>
+<p>Earn 20% commission by selling the premium WordPress plugins and themes by BestWebSoft — <a href="https://bestwebsoft.com/affiliate/" rel="nofollow">https://bestwebsoft.com/affiliate/</a></p>
 <h4>Translation</h4>
 <ul>
 <li>Arabic (ar) (thanks to <a href="mailto:&#115;&#117;&#112;&#112;&#x6f;&#x72;&#x74;&#x40;&#x73;&#x61;&#x69;&#x64;&#x6d;o&#117;&#108;&#108;&#097;&#046;&#099;&#111;&#109;" rel="nofollow ugc">Said Moulla</a>, www.SaidMoulla.com)</li>
