@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: visitors online, visitors online plugin, count visitor, guests, guests counter, counter, visitors counter, add visitors counter, count, add guests counter, users online, guests online
 Requires at least: 4.5
-Tested up to: 5.5.3
-Stable tag: 1.1.1
+Tested up to: 5.9
+Stable tag: 1.1.2
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -16,6 +16,8 @@ Visitors Online plugin is a helpful tool which displays your website visitors co
 Customize and manage your visitor statistic list, see how many visitors are on your website, and the highest level of visits.
 
 Start tracking your live traffic today!
+
+[View Demo](https://bestwebsoft.com/demo-visitors-online-for-wordpress/?ref=readme)
 
 https://www.youtube.com/watch?v=7e6LzyRzxwA
 
@@ -134,6 +136,10 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 
 == Changelog ==
 
+= V1.1.2 - 23.03.2022 =
+* Update : Functionality for WordPress 5.9 was updated.
+* Update : BWS Panel section was updated.
+
 = V1.1.1 - 13.11.2020 =
 * Update : BWS Panel section was updated.
 * Update : Functionality for downloading and updating the country table was updated.
@@ -212,6 +218,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * NEW : Added detection of the country.
 
 == Upgrade Notice ==
+
+= V1.1.2 =
+* Usability improved.
 
 = V1.1.1 =
 * Bugs fixed.
