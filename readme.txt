@@ -4,7 +4,7 @@ Donate link: https://bestwebsoft.com/donate/
 Tags: visitors online, visitors online plugin, count visitor, guests, guests counter, counter, visitors counter, add visitors counter, count, add guests counter, users online, guests online
 Requires at least: 4.5
 Tested up to: 5.9
-Stable tag: 1.1.2
+Stable tag: 1.1.3
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -136,6 +136,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 
 == Changelog ==
 
+= V1.1.3 - 26.04.2022 =
+* Bugfix : Deactivation Feedback fix.
+
 = V1.1.2 - 23.03.2022 =
 * Update : Functionality for WordPress 5.9 was updated.
 * Update : BWS Panel section was updated.
@@ -218,6 +221,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * NEW : Added detection of the country.
 
 == Upgrade Notice ==
+
+= V1.1.3 =
+* Bugs fixed.
 
 = V1.1.2 =
 * Usability improved.

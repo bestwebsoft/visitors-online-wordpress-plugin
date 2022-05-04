@@ -6,7 +6,7 @@ Description: Display live count of online visitors who are currently browsing yo
 Author: BestWebSoft
 Text Domain: visitors-online
 Domain Path: /languages
-Version: 1.1.2
+Version: 1.1.3
 Author URI: https://bestwebsoft.com/
 License: GPLv3 or later
 */
