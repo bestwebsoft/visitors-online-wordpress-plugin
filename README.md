@@ -25,6 +25,7 @@ Customize and manage your visitor statistic list, see how many visitors are on y
 <ul>
 <li>Automatically download and update list of countries and IP addresses</li>
 <li>Display detailed user information</li>
+<li>Displays online users</li>
 <li>Get answer to your question within one business day (<a href="https://bestwebsoft.com/support-policy/" rel="nofollow ugc">Support Policy</a>)</li>
 </ul>
 <p><a href="https://bestwebsoft.com/products/wordpress/plugins/visitors-online/?k=a58d73e5dee0c701959b47ea355c6e5b" rel="nofollow ugc">Upgrade to Pro Now</a></p>

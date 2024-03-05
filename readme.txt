@@ -2,9 +2,9 @@
 Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: visitors online, visitors online plugin, count visitor, guests, guests counter, counter, visitors counter, add visitors counter, count, add guests counter, users online, guests online
-Requires at least: 4.5
-Tested up to: 5.9
-Stable tag: 1.1.3
+Requires at least: 5.6
+Tested up to: 6.4.3
+Stable tag: 1.1.4
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -40,6 +40,7 @@ https://www.youtube.com/watch?v=7e6LzyRzxwA
 >
 > * Automatically download and update list of countries and IP addresses
 > * Display detailed user information
+> * Displays online users
 > * Get answer to your question within one business day ([Support Policy](https://bestwebsoft.com/support-policy/))
 >
 > [Upgrade to Pro Now](https://bestwebsoft.com/products/wordpress/plugins/visitors-online/?k=a58d73e5dee0c701959b47ea355c6e5b)
@@ -136,6 +137,16 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 
 == Changelog ==
 
+= V1.1.4 - 05.03.2024 =
+* NEW : Аdded shortcode that displays online users.
+* Bugfix : Fixed bug with detailed information about roles in.
+* Bugfix : Fixed bug with shortcodes not working in new version WP.
+
+= V1.1.4 - 01.08.2022 =
+* NEW :  A new shortcode for Visitors Online users info was added.
+* Update : BWS Panel section was updated.
+* Update : All functionality for WordPress 6.0.1 was updated.
+
 = V1.1.3 - 26.04.2022 =
 * Bugfix : Deactivation Feedback fix.
 
@@ -221,6 +232,10 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * NEW : Added detection of the country.
 
 == Upgrade Notice ==
+
+= V1.1.4 =
+* New features added.
+* The compatibility with new WordPress version updated.
 
 = V1.1.3 =
 * Bugs fixed.

@@ -2,131 +2,68 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Visitors-Online\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-13 15:23+0200\n"
-"PO-Revision-Date: 2020-11-13 15:23+0200\n"
+"POT-Creation-Date: 2024-03-05 16:20+0200\n"
+"PO-Revision-Date: 2024-03-05 16:21+0200\n"
 "Last-Translator: bestwebsoft.com <plugins@bestwebsoft.com>\n"
 "Language-Team: bestwebsoft <https://bestwebsoft.com/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 2.3\n"
+"X-Generator: Poedit 3.2.2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: bws_menu\n"
 
-#: import-country.php:266
-msgid "Import Database"
-msgstr "Імпорт таблиці країн"
-
-#: import-country.php:275
-msgid ""
-"To collect statistics on the country for the day with the highest number of "
-"visits, you need to import the information on the countries to the database."
-msgstr ""
-"Для збору статистичних даних про країну за добу з найбільшою кількістю "
-"відвідувань, необхідно імпортувати інформацію про країни до бази даних."
-
-#: import-country.php:277
-msgid "You do not have permission to access the file"
-msgstr "У вас немає прав для доступу до файлу"
-
-#: import-country.php:278
-msgid "cannot be imported"
-msgstr "імпорт неможливий"
-
-#: import-country.php:283
-msgid "the file is not found, import is impossible"
-msgstr "файл не знайдено, імпорт неможливий"
-
-#: import-country.php:289
-msgid "The table is already loaded, you can also update the data using this "
-msgstr "Таблицю завантажено, ви також можете оновити дані, використовуючи цю "
-
-#: import-country.php:291
-msgid "Instructions on downloading and updating the country table"
-msgstr "Інструкція по завантаженню і оновленню таблиці країн"
-
-#: import-country.php:293
-msgid "here"
-msgstr "тут"
-
-#: import-country.php:298
-msgid "Update"
-msgstr "Оновити"
-
-#: import-country.php:300
-msgid "Import"
-msgstr "Імпорт"
-
-#: import-country.php:307
-msgid "Number of loaded files"
-msgstr "Кількість завантажених файлів"
-
-#: import-country.php:308
-msgid "Number of a loading file"
-msgstr "Номер файлу, що завантажується"
-
-#: import-country.php:324 import-country.php:332
-msgid ""
-"Not enough rights to import from the IpToCountry.csv file, import is "
-"impossible"
-msgstr ""
-"Недостатньо прав для доступу до файлу IpToCountry.csv, імпорт неможливий"
-
-#: import-country.php:329 visitors-online.php:227
-msgid "Import was finished"
-msgstr "Імпорт успішно завершено"
-
-#: includes/class-vstrsnln-settings.php:20 visitors-online.php:53
-#: visitors-online.php:1019 visitors-online.php:1038
+#: includes/class-vstrsnln-settings.php:24 visitors-online.php:56
+#: visitors-online.php:1276 visitors-online.php:1300
 msgid "Settings"
 msgstr "Налаштування"
 
-#: includes/class-vstrsnln-settings.php:21
+#: includes/class-vstrsnln-settings.php:25
 msgid "Misc"
 msgstr "Різне"
 
-#: includes/class-vstrsnln-settings.php:22
+#: includes/class-vstrsnln-settings.php:26
 msgid "Custom Code"
 msgstr "Користувацький код"
 
-#: includes/class-vstrsnln-settings.php:23
+#: includes/class-vstrsnln-settings.php:27
 msgid "License Key"
 msgstr "Ліцензійний ключ"
 
-#: includes/class-vstrsnln-settings.php:65
+#: includes/class-vstrsnln-settings.php:75
 msgid "Statistics was successfully cleared"
 msgstr "Статистику успішно очищено"
 
-#: includes/class-vstrsnln-settings.php:78
+#: includes/class-vstrsnln-settings.php:88
 msgid "Please fill The time period. The settings are not saved"
 msgstr "Будь ласка, заповніть часовий проміжок. Налаштування не збережено"
 
-#: includes/class-vstrsnln-settings.php:80
+#: includes/class-vstrsnln-settings.php:90
 msgid "Please fill The data structure. The settings are not saved"
 msgstr "Будь ласка, заповніть структуру даних. Налаштування не збережено"
 
-#: includes/class-vstrsnln-settings.php:86
+#: includes/class-vstrsnln-settings.php:96
 msgid "Settings saved"
 msgstr "Налаштування збережено"
 
-#: includes/class-vstrsnln-settings.php:94 visitors-online.php:43
-#: visitors-online.php:52 visitors-online.php:590
+#: includes/class-vstrsnln-settings.php:110 visitors-online.php:46
+#: visitors-online.php:55 visitors-online.php:678
 msgid "Visitors Online Settings"
 msgstr "Налаштування Visitors Online"
 
-#: includes/class-vstrsnln-settings.php:100
+#: includes/class-vstrsnln-settings.php:116
 msgid "No Activity Threshold"
 msgstr "Поріг неактивності"
 
-#: includes/class-vstrsnln-settings.php:103 visitors-online.php:721
+#: includes/class-vstrsnln-settings.php:119 visitors-online.php:858
 msgid "min"
 msgstr "хв"
 
-#: includes/class-vstrsnln-settings.php:104
+#: includes/class-vstrsnln-settings.php:120
 msgid ""
 "Set the maximum time during which the visitor is not performing any "
 "activity, but is still considered as an online visitor."
@@ -134,78 +71,84 @@ msgstr ""
 "Встановити максимальний час, протягом якого відвідувач не виконує будь-якої "
 "діяльності, але як і раніше розглядається як онлайн-відвідувач."
 
-#: includes/class-vstrsnln-settings.php:108
+#: includes/class-vstrsnln-settings.php:124
 msgid "Data Structure"
 msgstr "Структура даних"
 
-#: includes/class-vstrsnln-settings.php:112
+#: includes/class-vstrsnln-settings.php:128
 msgid "Allowed Variables"
 msgstr "Доступнi змiннi"
 
-#: includes/class-vstrsnln-settings.php:114
+#: includes/class-vstrsnln-settings.php:131
 msgid "Total number of current visitors"
 msgstr "Загальна кiлькiсть поточних вiдвiдувачiв"
 
-#: includes/class-vstrsnln-settings.php:115
+#: includes/class-vstrsnln-settings.php:132
 msgid "Current number of registred users"
 msgstr "Поточна кiлькiсть зареєстрованих користувачiв"
 
-#: includes/class-vstrsnln-settings.php:116
+#: includes/class-vstrsnln-settings.php:133
 msgid "Current number of guests"
 msgstr "Поточна кiлькiсть гостей"
 
-#: includes/class-vstrsnln-settings.php:117
+#: includes/class-vstrsnln-settings.php:134
 msgid "Current number of bots"
 msgstr "Поточна кiлькiсть ботiв"
 
-#: includes/class-vstrsnln-settings.php:118
+#: includes/class-vstrsnln-settings.php:135
 msgid "The date of the highest visitors attendance"
 msgstr "Дата найбільшої кількості вiдвiдувань"
 
-#: includes/class-vstrsnln-settings.php:119
+#: includes/class-vstrsnln-settings.php:136
 msgid "Total number of visitors at the highest attendance date"
 msgstr ""
 "Загальна кiлькiсть користувачiв у день з найбільшою кількiстю вiдвiдувань"
 
-#: includes/class-vstrsnln-settings.php:120
+#: includes/class-vstrsnln-settings.php:137
 msgid "The number of registered users at the highest attendance date"
 msgstr ""
 "Загальна кiлькiсть зареєстрованих користувачiв у день з найбільшою кількiстю "
 "вiдвiдувань"
 
-#: includes/class-vstrsnln-settings.php:121
+#: includes/class-vstrsnln-settings.php:138
 msgid "The number of guests at the highest attendance date"
 msgstr "Загальна кiлькiсть готсей у день з найбільшою кількiстю вiдвiдувань"
 
-#: includes/class-vstrsnln-settings.php:122
+#: includes/class-vstrsnln-settings.php:139
 msgid "The number of bots at the highest attendance date"
 msgstr "Загальна кiлькiсть ботiв у день з найбільшою кількiстю вiдвiдувань"
 
-#: includes/class-vstrsnln-settings.php:123
+#: includes/class-vstrsnln-settings.php:146
 msgid "Country"
 msgstr "Країна"
 
-#: includes/class-vstrsnln-settings.php:124
+#: includes/class-vstrsnln-settings.php:146
+#: includes/class-vstrsnln-settings.php:150
+msgid "Data is collected for 1 day and then displayed"
+msgstr "Дані збираються протягом 1 дня, а потім відображаються"
+
+#: includes/class-vstrsnln-settings.php:150
 msgid "Browser"
 msgstr "Браузер"
 
-#: includes/class-vstrsnln-settings.php:137
+#: includes/class-vstrsnln-settings.php:163
+#: includes/class-vstrsnln-settings.php:238
 msgid "Close"
 msgstr "Закрити"
 
-#: includes/class-vstrsnln-settings.php:142
+#: includes/class-vstrsnln-settings.php:168
 msgid "Update GeoIP"
 msgstr "Оновити GeoIP"
 
-#: includes/class-vstrsnln-settings.php:145
+#: includes/class-vstrsnln-settings.php:171
 msgid "every"
 msgstr "кожні"
 
-#: includes/class-vstrsnln-settings.php:147
+#: includes/class-vstrsnln-settings.php:173
 msgid "months"
 msgstr "місяці"
 
-#: includes/class-vstrsnln-settings.php:151
+#: includes/class-vstrsnln-settings.php:177
 msgid ""
 "This option allows you to download lists with registered IP addresses all "
 "over the world to the database (from"
@@ -213,7 +156,7 @@ msgstr ""
 "Ця опція дозволяє завантажувати списки зі зареєстрованими IP-адресами по "
 "всьому світу до бази даних (з"
 
-#: includes/class-vstrsnln-settings.php:153
+#: includes/class-vstrsnln-settings.php:179
 msgid ""
 "Hence you will receive the information about each IP address, and the "
 "country it belongs to. You can select the desired frequency for IP database "
@@ -222,80 +165,124 @@ msgstr ""
 "Таким чином, ви отримаєте інформацію про кожну IP-адресу, і до якої країни "
 "вона належить. Ви можете вибрати потрібну частоту для оновлення бази даних IP"
 
-#: includes/class-vstrsnln-settings.php:160
+#: includes/class-vstrsnln-settings.php:186
 msgid "User Data"
 msgstr "Тип відвідувача"
 
-#: includes/class-vstrsnln-settings.php:166
+#: includes/class-vstrsnln-settings.php:192
 msgid "Enable to display the list of users and information about each of them."
 msgstr ""
 "Увімкніть відображення списку користувачів та інформації про кожне з них."
 
-#: includes/class-vstrsnln-settings.php:177
+#: includes/class-vstrsnln-settings.php:203
 msgid "Clear the Statistics"
 msgstr "Очистити статистику"
 
-#: includes/class-vstrsnln-settings.php:179
+#: includes/class-vstrsnln-settings.php:205
 msgid "Clear"
 msgstr "Очистити"
 
-#: includes/class-vstrsnln-settings.php:196
+#: includes/class-vstrsnln-settings.php:224
 msgid "Visitors Online Shortcode"
 msgstr "Visitors Online шорткод"
 
-#: includes/class-vstrsnln-settings.php:200
-#, php-format
-msgid "Real-time statistics can be viewed on the %sDashboard%s."
-msgstr ""
-"Статистику в реальному часі можна переглянути на %sпанелі адміністратора%s."
-
-#: includes/class-vstrsnln-settings.php:204
-#, php-format
+#: includes/class-vstrsnln-settings.php:241
 msgid ""
-"Add a real-time online visitors counter to your posts, pages or custom post "
-"types using %swidgets%s or the following shortcode:"
+"Add online-users to your posts, pages, custom post types or widgets by using "
+"the following shortcode:"
 msgstr ""
 "Додайте лічильник відвідувачів онлайн в режимі реального часу для ваших "
-"постів, сторінок або користувальницьких типів записів за допомогою %sвіджетів"
-"%s або шорткоду:"
+"постів, сторінок або користувальницьких типів записів за допомогою віджетів "
+"або шорткоду:"
 
-#: visitors-online.php:68
+#: includes/import-country.php:303
+msgid "Import Database"
+msgstr "Імпорт таблиці країн"
+
+#: includes/import-country.php:313
+msgid ""
+"To collect statistics on the country for the day with the highest number of "
+"visits, you need to import the information on the countries to the database."
+msgstr ""
+"Для збору статистичних даних про країну за добу з найбільшою кількістю "
+"відвідувань, необхідно імпортувати інформацію про країни до бази даних."
+
+#: includes/import-country.php:315
+msgid "You do not have permission to access the file"
+msgstr "У вас немає прав для доступу до файлу"
+
+#: includes/import-country.php:316
+msgid "cannot be imported"
+msgstr "імпорт неможливий"
+
+#: includes/import-country.php:321
+msgid "the file is not found, import is impossible"
+msgstr "файл не знайдено, імпорт неможливий"
+
+#: includes/import-country.php:329
+msgid "The table is already loaded"
+msgstr "Таблиця вже завантажена"
+
+#: includes/import-country.php:338
+msgid "Import"
+msgstr "Імпорт"
+
+#: includes/import-country.php:347
+msgid "Number of loaded files"
+msgstr "Кількість завантажених файлів"
+
+#: includes/import-country.php:348
+msgid "Number of a loading file"
+msgstr "Номер файлу, що завантажується"
+
+#: includes/import-country.php:368 includes/import-country.php:376
+msgid ""
+"Not enough rights to import from the IpToCountry.csv file, import is "
+"impossible"
+msgstr ""
+"Недостатньо прав для доступу до файлу IpToCountry.csv, імпорт неможливий"
+
+#: includes/import-country.php:373 visitors-online.php:257
+msgid "Import was finished"
+msgstr "Імпорт успішно завершено"
+
+#: visitors-online.php:73
 msgid "Upgrade to Pro"
 msgstr "Оновитися на Pro"
 
-#: visitors-online.php:190
+#: visitors-online.php:211
 msgid "Visitors online"
 msgstr "Visitors online"
 
-#: visitors-online.php:191 visitors-online.php:196
+#: visitors-online.php:212 visitors-online.php:217
 msgid "users"
 msgstr "користувачів"
 
-#: visitors-online.php:192 visitors-online.php:197
+#: visitors-online.php:213 visitors-online.php:218
 msgid "guests"
 msgstr "гостей"
 
-#: visitors-online.php:193 visitors-online.php:198
+#: visitors-online.php:214 visitors-online.php:219
 msgid "bots"
 msgstr "ботів"
 
-#: visitors-online.php:194
+#: visitors-online.php:215
 msgid "The maximum number of visits was"
 msgstr "Максимальна кількість відвідувань була"
 
-#: visitors-online.php:195
+#: visitors-online.php:216
 msgid "all visitors"
 msgstr "всього відвідувачів"
 
-#: visitors-online.php:205
+#: visitors-online.php:226
 msgid "country"
 msgstr "країна"
 
-#: visitors-online.php:209
+#: visitors-online.php:230
 msgid "browser"
 msgstr "браузер"
 
-#: visitors-online.php:228
+#: visitors-online.php:258
 msgid ""
 "Not enough rights to import from the GeoIPCountryWhois.csv file, import is "
 "impossible"
@@ -303,20 +290,20 @@ msgstr ""
 "Недостатньо прав для доступу до файлу GeoIPCountryWhois.csv, імпорт "
 "неможливий"
 
-#: visitors-online.php:596
+#: visitors-online.php:694
 msgid "Please, enable JavaScript in your browser."
 msgstr "Будь ласка, увімкніть JavaScript у вашому браузері."
 
-#: visitors-online.php:843 visitors-online.php:849 visitors-online.php:860
-#: visitors-online.php:861
+#: visitors-online.php:1045 visitors-online.php:1051 visitors-online.php:1062
+#: visitors-online.php:1063
 msgid "No data"
 msgstr "Немає даних"
 
-#: visitors-online.php:907
+#: visitors-online.php:1122
 msgid "Add the Visitors Online counter to your website"
 msgstr "Додати лічильник Visitors Online на ваш сайт"
 
-#: visitors-online.php:929
+#: visitors-online.php:1157
 msgid ""
 "This Widget shows the number of active visitors on the site, including "
 "users, guests and bots."
@@ -324,17 +311,37 @@ msgstr ""
 "Цей віджет показує кількість активних відвідувачів на сайті,  в тому числі "
 "користувачів, гостей і ботів."
 
-#: visitors-online.php:955
+#: visitors-online.php:1202
 msgid "Title"
 msgstr "Заголовок"
 
-#: visitors-online.php:1021
+#: visitors-online.php:1278
 msgid "FAQ"
 msgstr "FAQ"
 
-#: visitors-online.php:1022
+#: visitors-online.php:1279
 msgid "Support"
 msgstr "Техпідтримка"
+
+#~ msgid ""
+#~ "The table is already loaded, you can also update the data using this "
+#~ msgstr ""
+#~ "Таблицю завантажено, ви також можете оновити дані, використовуючи цю "
+
+#~ msgid "Instructions on downloading and updating the country table"
+#~ msgstr "Інструкція по завантаженню і оновленню таблиці країн"
+
+#~ msgid "here"
+#~ msgstr "тут"
+
+#~ msgid "Update"
+#~ msgstr "Оновити"
+
+#, php-format
+#~ msgid "Real-time statistics can be viewed on the %sDashboard%s."
+#~ msgstr ""
+#~ "Статистику в реальному часі можна переглянути на %sпанелі "
+#~ "адміністратора%s."
 
 #~ msgid ""
 #~ "Not enough rights to import from the GeoLite2-Country-Blocks-IPv4.csv "

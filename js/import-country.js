@@ -18,7 +18,7 @@
 				success: function( count_rows_in_file ) {
 					number_records_file = count_rows_in_file;
 					if ( number_records_file != 0 ) {
-						$( '#vstrsnln_message' ).css( 'display', 'block' );
+						$( '#vstrsnln_message' ).css( 'display', 'inline-block' );
 						$( '#vstrsnln_loaded_rows' ).text( number_records_file );
 					}
 					insert_data( count_rows, number_records_file );
@@ -85,7 +85,7 @@
 							$( '#vstrsnln_img_loader' ).hide();
 							$( '#vstrsnln_settings_notice p' ).html( '<strong>' + vstrsnln_var.notice_finish + '</strong>' );
 							$( '#vstrsnln_settings_notice' ).css( 'display', 'block' );
-							$( '#vstrsnln_button_import' ).attr( 'disabled', false );
+							$( '#vstrsnln_button_import' ).attr( 'disabled', false ).css( 'display', 'none' );
 						}
 					}
 				},
