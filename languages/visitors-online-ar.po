@@ -2,25 +2,215 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Visitors-Online\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-11 18:32+0200\n"
-"PO-Revision-Date: 2019-03-11 18:32+0200\n"
+"POT-Creation-Date: 2025-02-27 11:52+0200\n"
+"PO-Revision-Date: 2025-02-27 11:53+0200\n"
 "Last-Translator: saidmoulla.com <support@saidmoulla.com>\n"
 "Language-Team: Arabic\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 && n"
-"%10<=4 &&(n%100<10||n%100 >= 20)? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 && "
+"n%10<=4 &&(n%100<10||n%100 >= 20)? 1 : 2);\n"
 "X-Loco-Source-Locale: fr_MA\n"
-"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html__;esc_attr_e;esc_attr__\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 2.2.1\n"
+"X-Generator: Poedit 3.5\n"
 "X-Loco-Parser: loco_parse_po\n"
 "X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: bws_menu\n"
 
-#: import-country.php:150
+#: includes/class-vstrsnln-settings.php:24 visitors-online.php:56
+#: visitors-online.php:1280 visitors-online.php:1304
+msgid "Settings"
+msgstr "الإعدادات"
+
+#: includes/class-vstrsnln-settings.php:25
+msgid "Misc"
+msgstr "متفرقات"
+
+#: includes/class-vstrsnln-settings.php:26
+msgid "Custom Code"
+msgstr "الرمز المخصص"
+
+#: includes/class-vstrsnln-settings.php:27
+msgid "License Key"
+msgstr "مفتاح الترخيص"
+
+#: includes/class-vstrsnln-settings.php:75
+msgid "Statistics was successfully cleared"
+msgstr "تم مسح الإحصائيات بنجاح"
+
+#: includes/class-vstrsnln-settings.php:88
+msgid "Please fill The time period. The settings are not saved"
+msgstr "الرجاء تحديد المدة الزمنية، الإعدادات لم يتم بعد حفظها"
+
+#: includes/class-vstrsnln-settings.php:90
+msgid "Please fill The data structure. The settings are not saved"
+msgstr "يرجى ملء بنية البيانات. لم يتم حفظ الإعدادات"
+
+#: includes/class-vstrsnln-settings.php:96
+msgid "Settings saved"
+msgstr "تم حفظ الإعدادات"
+
+#: includes/class-vstrsnln-settings.php:110 visitors-online.php:46
+#: visitors-online.php:55 visitors-online.php:678
+msgid "Visitors Online Settings"
+msgstr "إعدادات إضافة عداد الزوار"
+
+#: includes/class-vstrsnln-settings.php:116
+msgid "No Activity Threshold"
+msgstr "لا توجد عتبة نشاط"
+
+#: includes/class-vstrsnln-settings.php:119 visitors-online.php:858
+msgid "min"
+msgstr "دقائق"
+
+#: includes/class-vstrsnln-settings.php:120
+msgid ""
+"Set the maximum time during which the visitor is not performing any "
+"activity, but is still considered as an online visitor."
+msgstr ""
+"قم بتعيين الحد الأقصى للوقت الذي لا يقوم خلاله الزائر بأي نشاط، ولكنه لا "
+"يزال يعتبر زائرًا عبر الإنترنت."
+
+#: includes/class-vstrsnln-settings.php:124
+msgid "Data Structure"
+msgstr "هيكل البيانات"
+
+#: includes/class-vstrsnln-settings.php:128
+msgid "Allowed Variables"
+msgstr "المتغيرات المسموح بها"
+
+#: includes/class-vstrsnln-settings.php:131
+msgid "Total number of current visitors"
+msgstr "إجمالي عدد الزوار الحاليين"
+
+#: includes/class-vstrsnln-settings.php:132
+msgid "Current number of registred users"
+msgstr "العدد الحالي للمستخدمين المسجلين"
+
+#: includes/class-vstrsnln-settings.php:133
+msgid "Current number of guests"
+msgstr "العدد الحالي للضيوف"
+
+#: includes/class-vstrsnln-settings.php:134
+msgid "Current number of bots"
+msgstr "العدد الحالي للروبوتات"
+
+#: includes/class-vstrsnln-settings.php:135
+msgid "The date of the highest visitors attendance"
+msgstr "تاريخ أعلى نسبة حضور للزوار"
+
+#: includes/class-vstrsnln-settings.php:136
+msgid "Total number of visitors at the highest attendance date"
+msgstr "إجمالي عدد الزوار في أعلى تاريخ حضور"
+
+#: includes/class-vstrsnln-settings.php:137
+msgid "The number of registered users at the highest attendance date"
+msgstr "عدد المستخدمين المسجلين في أعلى تاريخ حضور"
+
+#: includes/class-vstrsnln-settings.php:138
+msgid "The number of guests at the highest attendance date"
+msgstr "عدد الضيوف في أعلى موعد للحضور"
+
+#: includes/class-vstrsnln-settings.php:139
+msgid "The number of bots at the highest attendance date"
+msgstr "عدد الروبوتات في أعلى تاريخ حضور"
+
+#: includes/class-vstrsnln-settings.php:146
+msgid "Country"
+msgstr "البلد"
+
+#: includes/class-vstrsnln-settings.php:146
+#: includes/class-vstrsnln-settings.php:150
+msgid "Data is collected for 1 day and then displayed"
+msgstr "يتم جمع البيانات لمدة يوم واحد ثم عرضها"
+
+#: includes/class-vstrsnln-settings.php:150
+msgid "Browser"
+msgstr "المتصفح"
+
+#: includes/class-vstrsnln-settings.php:163
+#: includes/class-vstrsnln-settings.php:238
+msgid "Close"
+msgstr "إغلاق"
+
+#: includes/class-vstrsnln-settings.php:168
+msgid "Update GeoIP"
+msgstr "تحديث GeoIP"
+
+#: includes/class-vstrsnln-settings.php:171
+msgid "every"
+msgstr "كل"
+
+#: includes/class-vstrsnln-settings.php:173
+msgid "months"
+msgstr "أشهر"
+
+#: includes/class-vstrsnln-settings.php:177
+msgid ""
+"This option allows you to download lists with registered IP addresses all "
+"over the world to the database (from"
+msgstr "هذا الخيار يسمح لك بتحميل لائحة عناوين IP المسجلة في قاعدة البيانات"
+
+#: includes/class-vstrsnln-settings.php:179
+msgid ""
+"Hence you will receive the information about each IP address, and the "
+"country it belongs to. You can select the desired frequency for IP database "
+"updating"
+msgstr ""
+"ومن ثم ستتلقى معلومات حول كل عنوان IP والبلد الذي ينتمي إليه. يمكنك تحديد "
+"التردد المطلوب لتحديث قاعدة بيانات IP"
+
+#: includes/class-vstrsnln-settings.php:186
+msgid "User Data"
+msgstr "بيانات المستخدم"
+
+#: includes/class-vstrsnln-settings.php:192
+msgid "Enable to display the list of users and information about each of them."
+msgstr "تمكين عرض قائمة المستخدمين ومعلومات عن كل منهم."
+
+#: includes/class-vstrsnln-settings.php:203
+msgid "Clear the Statistics"
+msgstr "مسح الإحصائيات"
+
+#: includes/class-vstrsnln-settings.php:205
+msgid "Clear"
+msgstr "حذف"
+
+#: includes/class-vstrsnln-settings.php:224
+msgid "Visitors Online Shortcode"
+msgstr "الرمز القصير للزوار عبر الإنترنت"
+
+#: includes/class-vstrsnln-settings.php:228
+#, php-format
+msgid "Real-time statistics can be viewed on the %1$sDashboard%2$s."
+msgstr "يمكن عرض الإحصائيات في الوقت الفعلي على %1$s لوحة التحكم%2$s."
+
+#: includes/class-vstrsnln-settings.php:232
+#, php-format
+msgid ""
+"Add a real-time online visitors counter to your posts, pages or custom post "
+"types using %1$swidgets%2$s or the following shortcode:"
+msgstr ""
+"أضف عداد الزوار عبر الإنترنت في الوقت الفعلي إلى مقالاتك أو صفحاتك أو أنواع "
+"المقالات المخصصة باستخدام %1$s الأدوات الذكية %2$s أو الكود القصير التالي:"
+
+#: includes/class-vstrsnln-settings.php:241
+msgid ""
+"Add online-users to your posts, pages, custom post types or widgets by using "
+"the following shortcode:"
+msgstr ""
+"أضف مستخدمين عبر الإنترنت إلى مقالاتك أو صفحاتك أو أنواع المقالات المخصصة أو "
+"الأدوات الذكية باستخدام الكود القصير التالي:"
+
+#: includes/import-country.php:303
+msgid "Import Database"
+msgstr "استيراد قاعدة بيانات"
+
+#: includes/import-country.php:313
 msgid ""
 "To collect statistics on the country for the day with the highest number of "
 "visits, you need to import the information on the countries to the database."
@@ -28,50 +218,81 @@ msgstr ""
 "لجمع الإحصائيات عن هذه الدولة لهذا اليوم، تحتاج إلى تحميل معلومات الدول "
 "لقاعدة البيانات."
 
-#: import-country.php:151
-msgid "Importing country information from the GeoIPCountryWhois.csv file"
-msgstr "تحميل بيانات الدولة انطلاقا من ملف GeoIPCountryWhois.csv"
-
-#: import-country.php:153
+#: includes/import-country.php:315
 msgid "You do not have permission to access the file"
 msgstr "لا تملك صلاحية الوصول إلى الملف"
 
-#: import-country.php:154
+#: includes/import-country.php:316
 msgid "cannot be imported"
 msgstr "لا يمكن تحميلها"
 
-#: import-country.php:159
+#: includes/import-country.php:321
 msgid "the file is not found, import is impossible"
 msgstr "لم يتم ايجاد الملف، عملية التحميل لم تتم"
 
-#: import-country.php:165
-msgid ""
-"The table is already loaded, you can also update the data using this "
-"instructions"
-msgstr ""
-"الجدول تم تحميله بالفعل، يمكنك أيضا تحميل البيانات من خلال هذه الإرشادات"
+#: includes/import-country.php:329
+msgid "The table is already loaded"
+msgstr "تم تحميل الجدول بالفعل"
 
-#: import-country.php:167
-msgid "Instructions on downloading and updating the country table"
-msgstr "إرشادات لتحميل وتحديث جدول الدول"
-
-#: import-country.php:174
-msgid "Update"
-msgstr "تحديث"
-
-#: import-country.php:176
+#: includes/import-country.php:338
 msgid "Import"
 msgstr "تحميل"
 
-#: import-country.php:183
+#: includes/import-country.php:347
 msgid "Number of loaded files"
 msgstr "عدد الملفات المحملة"
 
-#: import-country.php:184
+#: includes/import-country.php:348
 msgid "Number of a loading file"
 msgstr "عدد الملفات الجاري تحميلها"
 
-#: import-country.php:197 import-country.php:205 visitors-online.php:192
+#: includes/import-country.php:368 includes/import-country.php:376
+msgid ""
+"Not enough rights to import from the IpToCountry.csv file, import is "
+"impossible"
+msgstr "لا توجد حقوق كافية للاستيراد من ملف IpToCountry.csv، الاستيراد مستحيل"
+
+#: includes/import-country.php:373 visitors-online.php:257
+msgid "Import was finished"
+msgstr "تمت الإنتهاء من التحميل"
+
+#: visitors-online.php:73
+msgid "Upgrade to Pro"
+msgstr "الترقية إلى Pro"
+
+#: visitors-online.php:211
+msgid "Visitors online"
+msgstr "المتواجدون حاليا"
+
+#: visitors-online.php:212 visitors-online.php:217
+msgid "users"
+msgstr "أعضاء"
+
+#: visitors-online.php:213 visitors-online.php:218
+msgid "guests"
+msgstr "الزوار"
+
+#: visitors-online.php:214 visitors-online.php:219
+msgid "bots"
+msgstr "الربوتات"
+
+#: visitors-online.php:215
+msgid "The maximum number of visits was"
+msgstr "العدد الإجمالي للزيارات"
+
+#: visitors-online.php:216
+msgid "all visitors"
+msgstr "جميع الزائرين"
+
+#: visitors-online.php:226
+msgid "country"
+msgstr "الدولة"
+
+#: visitors-online.php:230
+msgid "browser"
+msgstr "المتصفح"
+
+#: visitors-online.php:258
 msgid ""
 "Not enough rights to import from the GeoIPCountryWhois.csv file, import is "
 "impossible"
@@ -79,244 +300,68 @@ msgstr ""
 "صلاحيات غير كافية للوصول للبيانات في ملف GeoIPCountryWhois.csv، لا يمكن "
 "التحميل."
 
-#: import-country.php:202 visitors-online.php:191
-msgid "Import was finished"
-msgstr "تمت الإنتهاء من التحميل"
+#: visitors-online.php:694
+msgid "Please, enable JavaScript in your browser."
+msgstr "من فضلك، قم بتمكين JavaScript في متصفحك."
 
-#: includes/class-vstrsnln-settings.php:22 visitors-online.php:41
-#: visitors-online.php:938 visitors-online.php:957
-msgid "Settings"
-msgstr "الإعدادات"
-
-#: includes/class-vstrsnln-settings.php:23
-msgid "Misc"
-msgstr ""
-
-#: includes/class-vstrsnln-settings.php:24
-msgid "Custom Code"
-msgstr ""
-
-#: includes/class-vstrsnln-settings.php:25
-msgid "License Key"
-msgstr ""
-
-#: includes/class-vstrsnln-settings.php:65
-msgid "Statistics was successfully cleared"
-msgstr ""
-
-#: includes/class-vstrsnln-settings.php:78
-msgid "Please fill The time period. The settings are not saved"
-msgstr "الرجاء تحديد المدة الزمنية، الإعدادات لم يتم بعد حفظها"
-
-#: includes/class-vstrsnln-settings.php:80
-msgid "Please fill The data structure. The settings are not saved"
-msgstr ""
-
-#: includes/class-vstrsnln-settings.php:86
-msgid "Settings saved"
-msgstr "تم حفظ الإعدادات"
-
-#: includes/class-vstrsnln-settings.php:93
-#: includes/class-vstrsnln-settings.php:96 visitors-online.php:40
-#: visitors-online.php:41 visitors-online.php:502
-msgid "Visitors Online Settings"
-msgstr "إعدادات إضافة عداد الزوار"
-
-#: includes/class-vstrsnln-settings.php:100
-msgid "The time period when the user is online, without making any actions"
-msgstr "وقت الخمول الذي سيتم فيه استمرار احتساب الزائر كمتصل بالموقع"
-
-#: includes/class-vstrsnln-settings.php:103 visitors-online.php:648
-msgid "min"
-msgstr "دقائق"
-
-#: includes/class-vstrsnln-settings.php:107
-msgid "Data Structure"
-msgstr ""
-
-#: includes/class-vstrsnln-settings.php:111
-msgid "Allowed Variables"
-msgstr ""
-
-#: includes/class-vstrsnln-settings.php:113
-msgid "Total number of current visitors"
-msgstr ""
-
-#: includes/class-vstrsnln-settings.php:114
-msgid "Current number of registred users"
-msgstr ""
-
-#: includes/class-vstrsnln-settings.php:115
-msgid "Current number of guests"
-msgstr ""
-
-#: includes/class-vstrsnln-settings.php:116
-msgid "Current number of bots"
-msgstr ""
-
-#: includes/class-vstrsnln-settings.php:117
-msgid "The date of the highest visitors attendance"
-msgstr ""
-
-#: includes/class-vstrsnln-settings.php:118
-msgid "Total number of visitors at the highest attendance date"
-msgstr ""
-
-#: includes/class-vstrsnln-settings.php:119
-msgid "The number of registered users at the highest attendance date"
-msgstr ""
-
-#: includes/class-vstrsnln-settings.php:120
-msgid "The number of guests at the highest attendance date"
-msgstr ""
-
-#: includes/class-vstrsnln-settings.php:121
-msgid "The number of bots at the highest attendance date"
-msgstr ""
-
-#: includes/class-vstrsnln-settings.php:122
-msgid "Country"
-msgstr ""
-
-#: includes/class-vstrsnln-settings.php:123
-msgid "Browser"
-msgstr ""
-
-#: includes/class-vstrsnln-settings.php:135
-msgid "Close"
-msgstr "إغلاق"
-
-#: includes/class-vstrsnln-settings.php:140
-msgid "Update GeoIP"
-msgstr "تحديث GeoIP"
-
-#: includes/class-vstrsnln-settings.php:143
-msgid "every"
-msgstr "كل"
-
-#: includes/class-vstrsnln-settings.php:145
-msgid "months"
-msgstr "أشهر"
-
-#: includes/class-vstrsnln-settings.php:149
-msgid ""
-"This option allows you to download lists with registered IP addresses all "
-"over the world to the database (from"
-msgstr "هذا الخيار يسمح لك بتحميل لائحة عناوين IP المسجلة في قاعدة البيانات"
-
-#: includes/class-vstrsnln-settings.php:151
-msgid ""
-"Hence you will receive the information about each IP address, and the "
-"country it belongs to. You can select the desired frequency for IP database "
-"updating"
-msgstr ""
-
-#: includes/class-vstrsnln-settings.php:158
-msgid "User Data"
-msgstr ""
-
-#: includes/class-vstrsnln-settings.php:164
-msgid "Enable to display the list of users and information about each of them."
-msgstr ""
-
-#: includes/class-vstrsnln-settings.php:175
-msgid "Clear the Statistics"
-msgstr ""
-
-#: includes/class-vstrsnln-settings.php:177
-msgid "Clear"
-msgstr "حذف"
-
-#: includes/class-vstrsnln-settings.php:194
-#, fuzzy
-#| msgid "Visitors Online Settings"
-msgid "Visitors Online Shortcode"
-msgstr "إعدادات إضافة عداد الزوار"
-
-#: includes/class-vstrsnln-settings.php:198
-#, fuzzy
-#| msgid "You can also add a widget"
-msgid "You can also add a widget: Visitors Online."
-msgstr "يمكنك أيضا إضافة ويدجات"
-
-#: includes/class-vstrsnln-settings.php:198
-msgid "Navigate to Widgets"
-msgstr ""
-
-#: includes/class-vstrsnln-settings.php:202
-#, fuzzy
-#| msgid "You can add the counter of Visitors Online by clicking on %s button."
-msgid ""
-"You can add the Visitors Online counter on page or post use next shortcode:"
-msgstr "يمكنك إضافة عداد الزوار بالضغط على زر %s"
-
-#: includes/class-vstrsnln-settings.php:207
-msgid "Statistics can be viewed on the Dashboard."
-msgstr "الإحصائيات يمكن مشاهدتها في لوحة الإدارة"
-
-#: visitors-online.php:46
-msgid "Upgrade to Pro"
-msgstr ""
-
-#: visitors-online.php:155
-msgid "Visitors online"
-msgstr "المتواجدون حاليا"
-
-#: visitors-online.php:156 visitors-online.php:161
-msgid "users"
-msgstr "أعضاء"
-
-#: visitors-online.php:157 visitors-online.php:162
-msgid "guests"
-msgstr "الزوار"
-
-#: visitors-online.php:158 visitors-online.php:163
-msgid "bots"
-msgstr "الربوتات"
-
-#: visitors-online.php:159
-msgid "The maximum number of visits was"
-msgstr "العدد الإجمالي للزيارات"
-
-#: visitors-online.php:160
-msgid "all visitors"
-msgstr ""
-
-#: visitors-online.php:170
-msgid "country"
-msgstr "الدولة"
-
-#: visitors-online.php:174
-msgid "browser"
-msgstr "المتصفح"
-
-#: visitors-online.php:763 visitors-online.php:768 visitors-online.php:779
-#: visitors-online.php:780
+#: visitors-online.php:1049 visitors-online.php:1055 visitors-online.php:1066
+#: visitors-online.php:1067
 msgid "No data"
-msgstr ""
+msgstr "لا توجد بيانات"
 
-#: visitors-online.php:826
+#: visitors-online.php:1126
 msgid "Add the Visitors Online counter to your website"
-msgstr ""
+msgstr "إضافة عداد الزوار عبر الإنترنت إلى موقعك الإلكتروني"
 
-#: visitors-online.php:848
+#: visitors-online.php:1161
 msgid ""
 "This Widget shows the number of active visitors on the site, including "
 "users, guests and bots."
 msgstr ""
 "هذا الودجات يظهر عدد المتواجدين في موقعك بما فيهم الأعضاء، الزوار، الربوتات"
 
-#: visitors-online.php:875
+#: visitors-online.php:1206
 msgid "Title"
 msgstr "العنوان"
 
-#: visitors-online.php:940
+#: visitors-online.php:1282
 msgid "FAQ"
 msgstr "أسئلة شائعة"
 
-#: visitors-online.php:941
+#: visitors-online.php:1283
 msgid "Support"
 msgstr "الدعم"
+
+#~ msgid "Importing country information from the GeoIPCountryWhois.csv file"
+#~ msgstr "تحميل بيانات الدولة انطلاقا من ملف GeoIPCountryWhois.csv"
+
+#~ msgid ""
+#~ "The table is already loaded, you can also update the data using this "
+#~ "instructions"
+#~ msgstr ""
+#~ "الجدول تم تحميله بالفعل، يمكنك أيضا تحميل البيانات من خلال هذه الإرشادات"
+
+#~ msgid "Instructions on downloading and updating the country table"
+#~ msgstr "إرشادات لتحميل وتحديث جدول الدول"
+
+#~ msgid "Update"
+#~ msgstr "تحديث"
+
+#~ msgid "The time period when the user is online, without making any actions"
+#~ msgstr "وقت الخمول الذي سيتم فيه استمرار احتساب الزائر كمتصل بالموقع"
+
+#, fuzzy
+#~| msgid "You can also add a widget"
+#~ msgid "You can also add a widget: Visitors Online."
+#~ msgstr "يمكنك أيضا إضافة ويدجات"
+
+#, fuzzy
+#~| msgid ""
+#~| "You can add the counter of Visitors Online by clicking on %s button."
+#~ msgid ""
+#~ "You can add the Visitors Online counter on page or post use next "
+#~ "shortcode:"
+#~ msgstr "يمكنك إضافة عداد الزوار بالضغط على زر %s"
 
 #~ msgid "Go PRO"
 #~ msgstr "النسخة المدفوعة"

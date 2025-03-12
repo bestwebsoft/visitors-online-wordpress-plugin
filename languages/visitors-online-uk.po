@@ -2,23 +2,23 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Visitors-Online\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-05 16:20+0200\n"
-"PO-Revision-Date: 2024-03-05 16:21+0200\n"
+"POT-Creation-Date: 2025-02-27 11:57+0200\n"
+"PO-Revision-Date: 2025-02-27 11:57+0200\n"
 "Last-Translator: bestwebsoft.com <plugins@bestwebsoft.com>\n"
 "Language-Team: bestwebsoft <https://bestwebsoft.com/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-KeywordsList: __;_e;esc_html_e\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html__\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.5\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: bws_menu\n"
 
 #: includes/class-vstrsnln-settings.php:24 visitors-online.php:56
-#: visitors-online.php:1276 visitors-online.php:1300
+#: visitors-online.php:1280 visitors-online.php:1304
 msgid "Settings"
 msgstr "Налаштування"
 
@@ -186,6 +186,21 @@ msgstr "Очистити"
 msgid "Visitors Online Shortcode"
 msgstr "Visitors Online шорткод"
 
+#: includes/class-vstrsnln-settings.php:228
+#, php-format
+msgid "Real-time statistics can be viewed on the %1$sDashboard%2$s."
+msgstr "Статистику в реальному часі можна переглянути на %1$sDashboard%2$s."
+
+#: includes/class-vstrsnln-settings.php:232
+#, php-format
+msgid ""
+"Add a real-time online visitors counter to your posts, pages or custom post "
+"types using %1$swidgets%2$s or the following shortcode:"
+msgstr ""
+"Додайте лічильник відвідувачів у реальному часі до ваших дописів, сторінок "
+"або кастомних типів дописів за допомогою %1$sвіджетів%2$s або наступного "
+"шорткоду:"
+
 #: includes/class-vstrsnln-settings.php:241
 msgid ""
 "Add online-users to your posts, pages, custom post types or widgets by using "
@@ -294,16 +309,16 @@ msgstr ""
 msgid "Please, enable JavaScript in your browser."
 msgstr "Будь ласка, увімкніть JavaScript у вашому браузері."
 
-#: visitors-online.php:1045 visitors-online.php:1051 visitors-online.php:1062
-#: visitors-online.php:1063
+#: visitors-online.php:1049 visitors-online.php:1055 visitors-online.php:1066
+#: visitors-online.php:1067
 msgid "No data"
 msgstr "Немає даних"
 
-#: visitors-online.php:1122
+#: visitors-online.php:1126
 msgid "Add the Visitors Online counter to your website"
 msgstr "Додати лічильник Visitors Online на ваш сайт"
 
-#: visitors-online.php:1157
+#: visitors-online.php:1161
 msgid ""
 "This Widget shows the number of active visitors on the site, including "
 "users, guests and bots."
@@ -311,15 +326,15 @@ msgstr ""
 "Цей віджет показує кількість активних відвідувачів на сайті,  в тому числі "
 "користувачів, гостей і ботів."
 
-#: visitors-online.php:1202
+#: visitors-online.php:1206
 msgid "Title"
 msgstr "Заголовок"
 
-#: visitors-online.php:1278
+#: visitors-online.php:1282
 msgid "FAQ"
 msgstr "FAQ"
 
-#: visitors-online.php:1279
+#: visitors-online.php:1283
 msgid "Support"
 msgstr "Техпідтримка"
 
@@ -336,12 +351,6 @@ msgstr "Техпідтримка"
 
 #~ msgid "Update"
 #~ msgstr "Оновити"
-
-#, php-format
-#~ msgid "Real-time statistics can be viewed on the %sDashboard%s."
-#~ msgstr ""
-#~ "Статистику в реальному часі можна переглянути на %sпанелі "
-#~ "адміністратора%s."
 
 #~ msgid ""
 #~ "Not enough rights to import from the GeoLite2-Country-Blocks-IPv4.csv "

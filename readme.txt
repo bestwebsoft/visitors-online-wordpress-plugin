@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: visitors online, visitors online plugin, count visitor, guests, guests counter, counter, visitors counter, add visitors counter, count, add guests counter, users online, guests online
 Requires at least: 5.6
-Tested up to: 6.4.3
-Stable tag: 1.1.4
+Tested up to: 6.7
+Stable tag: 1.1.6
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -137,6 +137,11 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 
 == Changelog ==
 
+= V1.1.6 - 11.03.2025 =
+* Bugfix : Fixed bug with Allowed Variables.
+* Update : BWS Panel section was updated.
+* Update : All functionality for WordPress 6.7 was updated.
+
 = V1.1.4 - 05.03.2024 =
 * NEW : Аdded shortcode that displays online users.
 * Bugfix : Fixed bug with detailed information about roles in.
@@ -232,6 +237,11 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * NEW : Added detection of the country.
 
 == Upgrade Notice ==
+
+= V1.1.5 =
+* Bugs fixed.
+* The compatibility with new WordPress version updated.
+* Usability improved.
 
 = V1.1.4 =
 * New features added.

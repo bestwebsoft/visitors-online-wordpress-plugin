@@ -5,7 +5,7 @@
 Customize and manage your visitor statistic list, see how many visitors are on your website, and the highest level of visits.</p>
 <p>Start tracking your live traffic today!</p>
 <p><a href="https://bestwebsoft.com/demo-visitors-online-for-wordpress/?ref=readme" rel="nofollow ugc">View Demo</a></p>
-<p><span class="embed-youtube" style="text-align:center; display: block;"></span></p>
+<p></p>
 <h4>Free Features</h4>
 <ul>
 <li>Automatically display visitor statistics on your dashboard</li>
